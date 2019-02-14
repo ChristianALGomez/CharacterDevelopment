@@ -21,7 +21,10 @@ public class MvoeCharacter : MonoBehaviour
         postion.x = Input.GetAxis("Horizontal")*MoveSpeed*Time.deltaTime;
         if (CC.isGrounded)
         {
-            
+            if (Input.GetKey(KeyCode.Space))
+            {
+                postion.y += 100;
+            }
         }
         
         

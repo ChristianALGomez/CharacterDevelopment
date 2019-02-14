@@ -12,20 +12,20 @@
     <session id="-1122609820">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="854" />
+          <entry key="cs" value="911" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="854" />
+          <entry key="C#" value="911" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -77,14 +77,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MvoeCharacter.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+            <state relative-caret-position="315">
+              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
               <folding>
-                <marker date="1550173834016" expanded="false" signature="6:78" ph="..." />
-                <marker date="1550173834016" expanded="true" signature="122:616" ph="{...}" />
-                <marker date="1550173834016" expanded="true" signature="288:350" ph="{...}" />
-                <marker date="1550173834016" expanded="true" signature="369:614" ph="{...}" />
-                <marker date="1550173834016" expanded="true" signature="476:509" ph="{...}" />
+                <marker date="1550173991028" expanded="false" signature="6:78" ph="..." />
+                <marker date="1550173991028" expanded="true" signature="122:710" ph="{...}" />
+                <marker date="1550173991028" expanded="true" signature="288:350" ph="{...}" />
+                <marker date="1550173991028" expanded="true" signature="369:708" ph="{...}" />
+                <marker date="1550173991028" expanded="true" signature="476:603" ph="{...}" />
+                <marker date="1550173991028" expanded="true" signature="531:593" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -128,11 +129,11 @@
     </navigator>
     <panes>
       <pane id="FileSystemExplorer" />
-      <pane id="UnityExplorer">
-        <option name="show-hidden-items" value="false" />
-      </pane>
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
       </pane>
     </panes>
   </component>
@@ -181,11 +182,12 @@
       <updated>1549999554596</updated>
       <workItem from="1549999559747" duration="2074000" />
       <workItem from="1550172095893" duration="1733000" />
+      <workItem from="1550173877360" duration="324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3807000" />
+    <option name="totallyTimeSpent" value="4131000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -199,7 +201,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -272,14 +274,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MvoeCharacter.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        <state relative-caret-position="315">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
           <folding>
-            <marker date="1550173834016" expanded="false" signature="6:78" ph="..." />
-            <marker date="1550173834016" expanded="true" signature="122:616" ph="{...}" />
-            <marker date="1550173834016" expanded="true" signature="288:350" ph="{...}" />
-            <marker date="1550173834016" expanded="true" signature="369:614" ph="{...}" />
-            <marker date="1550173834016" expanded="true" signature="476:509" ph="{...}" />
+            <marker date="1550173991028" expanded="false" signature="6:78" ph="..." />
+            <marker date="1550173991028" expanded="true" signature="122:710" ph="{...}" />
+            <marker date="1550173991028" expanded="true" signature="288:350" ph="{...}" />
+            <marker date="1550173991028" expanded="true" signature="369:708" ph="{...}" />
+            <marker date="1550173991028" expanded="true" signature="476:603" ph="{...}" />
+            <marker date="1550173991028" expanded="true" signature="531:593" ph="{...}" />
           </folding>
         </state>
       </provider>
