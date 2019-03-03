@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Quetzal V3.ma
-//Last modified: Sat, Mar 02, 2019 05:54:43 PM
+//Last modified: Sat, Mar 02, 2019 05:57:59 PM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -15,15 +15,15 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "D7B7ED26-475F-BAB1-CE5C-6AA66B056119";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -11.199672621201461 3.2105940887046724 2.4109474439747558 ;
-	setAttr ".r" -type "double3" 4329.2614911659111 27981.800591361185 360.00015749430298 ;
+	setAttr ".t" -type "double3" -1.1789887232247371 5.1251731043272972 3.6087553539199031 ;
+	setAttr ".r" -type "double3" 4313.0616021971018 27963.400591351066 360.00005015927337 ;
 	setAttr ".rp" -type "double3" 0 -2.2204460492503131e-16 -3.5527136788005009e-15 ;
 	setAttr ".rpt" -type "double3" 4.0175065507844811e-15 -5.371596219667463e-16 3.8563032004957653e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "7DE3BFD7-4980-4BE7-2D29-A29503DE20DF";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 10.790177846978356;
+	setAttr ".coi" 1.019576078863992;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -68776,9 +68776,9 @@ createNode mesh -n "pCylinderShape12" -p "pCylinder12";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pCylinder13";
 	rename -uid "1933A5D8-47C5-8C08-0193-B194DE870848";
-	setAttr ".t" -type "double3" -0.43843761291110028 4.9608935163086851 3.7360861010321669 ;
+	setAttr ".t" -type "double3" -0.32111632410650287 5.0598421032823069 3.9463283646050327 ;
 	setAttr ".r" -type "double3" -32.988197432254616 3.1805546814635168e-15 85.387833717130931 ;
-	setAttr ".s" -type "double3" 0.18169141470482417 0.18169141470482417 0.18169141470482417 ;
+	setAttr ".s" -type "double3" 0.039251204233944625 0.21577518952074229 0.039251204233944625 ;
 	setAttr ".rp" -type "double3" -1.1920928955078125e-07 0 -1.7881393432617188e-07 ;
 	setAttr ".sp" -type "double3" -1.1920928955078125e-07 0 -1.7881393432617188e-07 ;
 createNode mesh -n "pCylinderShape13" -p "pCylinder13";
@@ -74489,7 +74489,7 @@ createNode polySplit -n "polySplit8";
 	setAttr ".sma" 180;
 	setAttr ".m2015" yes;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "ACCF8A52-4AB3-CCD2-C162-79985405A24C";
+	rename -uid "77CA08B4-44BB-A4AF-3B4F-1395C3D1DA1C";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -2266.6665765974267 -10406.600438201654 ;
 	setAttr ".tgi[0].vh" -type "double2" 3023.8094036541361 10454.219483928491 ;
