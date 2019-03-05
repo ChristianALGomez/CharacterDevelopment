@@ -7,8 +7,13 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="DoubleClick.cs" t="Include" />
           <e p="Flip.cs" t="Include" />
-          <e p="MvoeCharacter.cs" t="Include" />
+          <e p="MOVE2.cs" t="Include" />
+          <e p="Movebase.cs" t="Include" />
+          <e p="MoveCharacter.cs" t="Include" />
+          <e p="MoveSingleJump.cs" t="Include" />
+          <e p="MoveWithAxis.cs" t="Include" />
           <e p="Updating.cs" t="Include" />
         </e>
       </e>
