@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: oldman head.ma
-//Last modified: Mon, Mar 25, 2019 09:43:33 PM
+//Last modified: Mon, Mar 25, 2019 09:44:12 PM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -15,15 +15,15 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "3C878A16-7543-7D86-1DCE-3EAAE647F5BA";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 7.9389363840558849 31.127011899196944 7.6127334365811725 ;
-	setAttr ".r" -type "double3" 6.1829657099724287 -1031.9466287696462 0 ;
+	setAttr ".t" -type "double3" 14.419848573036445 30.690145583441591 8.4100092592367979 ;
+	setAttr ".r" -type "double3" -0.41703429003352832 -1019.5466287696335 5.0388329750463028e-17 ;
 	setAttr ".rp" -type "double3" -4.4408920985006262e-16 3.5527136788005009e-15 7.1054273576010019e-15 ;
 	setAttr ".rpt" -type "double3" 3.4777623162934506e-16 2.4202336766036458e-15 6.824916414705855e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "52AE4400-F64B-F0CE-C35C-B9923F5AFC70";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 10.515161905585948;
+	setAttr ".coi" 16.147619351250921;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -12900,7 +12900,7 @@ createNode polySplit -n "polySplit1";
 	setAttr ".sma" 180;
 	setAttr ".m2015" yes;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "9022C7DC-418B-19A2-7A0B-E9A042376579";
+	rename -uid "FBF823F9-4F11-C551-A1D6-A78D7ABE9A32";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -412.33191638851099 -221.94676989211234 ;
 	setAttr ".tgi[0].vh" -type "double2" 426.61763010656205 357.81511183212507 ;
