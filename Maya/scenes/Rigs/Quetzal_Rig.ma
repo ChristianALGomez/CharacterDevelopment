@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Quetzal_Rig.ma
-//Last modified: Fri, Mar 29, 2019 11:26:37 PM
+//Last modified: Tue, Apr 02, 2019 11:20:56 AM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -10,20 +10,20 @@ fileInfo "application" "maya";
 fileInfo "product" "Maya 2018";
 fileInfo "version" "2018";
 fileInfo "cutIdentifier" "201706261615-f9658c4cfc";
-fileInfo "osv" "Microsoft Windows 8 Business Edition, 64-bit  (Build 9200)\n";
+fileInfo "osv" "Microsoft Windows 8 Enterprise Edition, 64-bit  (Build 9200)\n";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "D7B7ED26-475F-BAB1-CE5C-6AA66B056119";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.58791775645711675 6.0628736036846842 -11.256828057432015 ;
-	setAttr ".r" -type "double3" -723.6797907588666 -3050.8225057608342 -719.58978211291674 ;
+	setAttr ".t" -type "double3" 1.7786872917806642 7.4386502160707773 7.5302024478757508 ;
+	setAttr ".r" -type "double3" -741.62551670166783 -3598.4223139526725 -720.40512017396577 ;
 	setAttr ".rp" -type "double3" -4.4408920985006262e-16 0 3.5527136788005009e-15 ;
 	setAttr ".rpt" -type "double3" 9.9543724826510014e-15 2.1087066102476015e-15 -4.4415281901403831e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "7DE3BFD7-4980-4BE7-2D29-A29503DE20DF";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 15.777224412842148;
+	setAttr ".coi" 4.3975934337747757;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -32,14 +32,14 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode transform -s -n "top";
 	rename -uid "A6C755D7-4E1B-F160-A668-31987E637585";
-	setAttr ".t" -type "double3" 2.7525709731571983 1000.2777146892905 2.7235815737225373 ;
+	setAttr ".t" -type "double3" 2.4240499912518354 1000.2777146892905 2.6886337280523134 ;
 	setAttr ".r" -type "double3" -89.999999999999986 0 0 ;
 createNode camera -s -n "topShape" -p "top";
 	rename -uid "EE2598BE-4281-E93B-0193-12B6B73B9904";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".coi" 993.77092597341823;
-	setAttr ".ow" 4.8968974248582775;
+	setAttr ".ow" 4.7940797523056942;
 	setAttr ".imn" -type "string" "top";
 	setAttr ".den" -type "string" "top_depth";
 	setAttr ".man" -type "string" "top_mask";
@@ -50,23 +50,23 @@ createNode camera -s -n "topShape" -p "top";
 createNode transform -s -n "front";
 	rename -uid "6A138D0C-4A16-7664-31B7-3592F6B4FDBE";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.16885426322018804 3.6952125683297719 1000.8980745535947 ;
+	setAttr ".t" -type "double3" 0.54331415737314126 2.1951864442472413 1000.9346694585468 ;
 createNode camera -s -n "frontShape" -p "front";
 	rename -uid "5B20842F-461E-73B6-A6C9-AFB15C1DD644";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
-	setAttr ".coi" 997.41685575749341;
-	setAttr ".ow" 5.4654625828223722;
+	setAttr ".coi" 979.77341520929133;
+	setAttr ".ow" 7.6953423990338585;
 	setAttr ".imn" -type "string" "front";
 	setAttr ".den" -type "string" "front_depth";
 	setAttr ".man" -type "string" "front_mask";
-	setAttr ".tp" -type "double3" 2.1695287999445867e-07 2.1411224456932176 3.4812187961012748 ;
+	setAttr ".tp" -type "double3" 0.4659451378817957 0 21.161254249255435 ;
 	setAttr ".hc" -type "string" "viewSet -f %camera";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -s -n "side";
 	rename -uid "6D1CED15-48A3-C9C9-0206-A48CCA491797";
-	setAttr ".t" -type "double3" 1000.6148322786879 3.318779377645221 3.3962380113007935 ;
+	setAttr ".t" -type "double3" 1000.6148322786879 4.1493522169429262 8.2838397194757487 ;
 	setAttr ".r" -type "double3" 0 89.999999999999986 0 ;
 	setAttr ".s" -type "double3" 0.044957377950005602 0.044957377950005602 0.044957377950005602 ;
 createNode camera -s -n "sideShape" -p "side";
@@ -74,7 +74,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.6066011151222;
-	setAttr ".ow" 16.505346627324716;
+	setAttr ".ow" 25.843593345840127;
 	setAttr ".imn" -type "string" "side";
 	setAttr ".den" -type "string" "side_depth";
 	setAttr ".man" -type "string" "side_mask";
@@ -9383,6 +9383,44 @@ createNode mesh -n "polySurfaceShape96" -p "|GEO|FeatherCards|L_Feather_Grp|pPla
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode parentConstraint -n "pPlane46_parentConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane46";
+	rename -uid "C4C944D3-4A36-344F-AB51-C5AB2A5E5D75";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Wing_2_JNTW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 0.94478035673485317 0.49432568105968855 0.042264001358462533 ;
+	setAttr ".rst" -type "double3" -4.4408920985006262e-16 0 4.4408920985006262e-16 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "pPlane46_orientConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane46";
+	rename -uid "7DE03406-4EBC-22E6-602A-718A0637E799";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_FeatherBunch_Turn_CNTLW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -89.999999999999986 -52.593675761027299 90.000000000000114 ;
+	setAttr ".o" -type "double3" 37.406324238972694 89.999999999999886 0 ;
+	setAttr ".rsrr" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
+	setAttr -k on ".w0";
 createNode transform -n "pPlane45" -p "L_Feather_Grp";
 	rename -uid "B51DE425-4378-D6D5-8A3A-26B453186BFD";
 	setAttr ".rp" -type "double3" 2.7801680369575741 5.6739817585094707 3.9558623756445082 ;
@@ -9705,6 +9743,44 @@ createNode mesh -n "polySurfaceShape96" -p "|GEO|FeatherCards|L_Feather_Grp|pPla
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode parentConstraint -n "pPlane45_parentConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane45";
+	rename -uid "CD9CBF4A-4282-1B1C-AF8A-B09BE3E467CB";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Wing_2_JNTW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 0.89206093770173145 0.43269610307509954 0.042870077740085666 ;
+	setAttr ".rst" -type "double3" 0 0 4.4408920985006262e-16 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "pPlane45_orientConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane45";
+	rename -uid "6EA4937F-4320-EAC5-81B9-9B901F4D5E85";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_FeatherBunch_Turn_CNTLW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -89.999999999999986 -52.593675761027299 90.000000000000114 ;
+	setAttr ".o" -type "double3" 37.406324238972694 89.999999999999886 0 ;
+	setAttr ".rsrr" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
+	setAttr -k on ".w0";
 createNode transform -n "pPlane42" -p "L_Feather_Grp";
 	rename -uid "D2F42243-4353-0859-D1A1-4D895DDC47CF";
 	setAttr ".rp" -type "double3" 2.198010597490216 5.4213528633117676 3.8556719879116041 ;
@@ -10027,6 +10103,44 @@ createNode mesh -n "polySurfaceShape96" -p "|GEO|FeatherCards|L_Feather_Grp|pPla
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode parentConstraint -n "pPlane42_parentConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane42";
+	rename -uid "2D90E89F-4C5F-04D5-1D99-E391812D5798";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Wing_2_JNTW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 0.30990349823437113 0.1800672078774026 -0.057320309992817453 ;
+	setAttr ".rst" -type "double3" -4.4408920985006262e-16 3.5527136788005009e-15 8.8817841970012523e-16 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "pPlane42_orientConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane42";
+	rename -uid "DC5E2F24-4980-5F23-4D79-A89E397C8C0F";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_FeatherBunch_Turn_CNTLW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -89.999999999999986 -52.593675761027299 90.000000000000114 ;
+	setAttr ".o" -type "double3" 37.406324238972694 89.999999999999886 0 ;
+	setAttr ".rsrr" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
+	setAttr -k on ".w0";
 createNode transform -n "pPlane41" -p "L_Feather_Grp";
 	rename -uid "C4AE284B-450E-C9D0-EEFA-21BCA7B60E3C";
 	setAttr ".rp" -type "double3" 2.3684400292621599 5.3679665817419684 3.9038870885402641 ;
@@ -10349,6 +10463,44 @@ createNode mesh -n "polySurfaceShape96" -p "|GEO|FeatherCards|L_Feather_Grp|pPla
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode parentConstraint -n "pPlane41_parentConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane41";
+	rename -uid "CA1AA1A0-49E0-18A7-3CE6-B5B895F5DA2E";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Wing_2_JNTW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 0.48033293000631461 0.12668092630760253 -0.0091052093641583731 ;
+	setAttr ".rst" -type "double3" -8.8817841970012523e-16 2.6645352591003757e-15 0 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "pPlane41_orientConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane41";
+	rename -uid "367EAFA6-462C-DD32-D69F-EBBAAC38E820";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_FeatherBunch_Turn_CNTLW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -89.999999999999986 -52.593675761027299 90.000000000000114 ;
+	setAttr ".o" -type "double3" 37.406324238972694 89.999999999999886 0 ;
+	setAttr ".rsrr" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
+	setAttr -k on ".w0";
 createNode transform -n "pPlane44" -p "L_Feather_Grp";
 	rename -uid "86497AAF-4537-F96D-21CA-7F8BEBCF07D5";
 	setAttr ".rp" -type "double3" 2.6613202682189265 5.5925867076958653 4.0115134921642159 ;
@@ -10671,6 +10823,44 @@ createNode mesh -n "polySurfaceShape96" -p "|GEO|FeatherCards|L_Feather_Grp|pPla
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode parentConstraint -n "pPlane44_parentConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane44";
+	rename -uid "738E57BB-4415-1F82-744E-E687D76F19AB";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Wing_2_JNTW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 0.7732131689630839 0.35130105226149588 0.098521194259794331 ;
+	setAttr ".rst" -type "double3" 4.4408920985006262e-16 8.8817841970012523e-16 1.7763568394002505e-15 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "pPlane44_orientConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane44";
+	rename -uid "7E824090-4F97-67DE-4CE4-E5BE7451C378";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_FeatherBunch_Turn_CNTLW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -89.999999999999986 -52.593675761027299 90.000000000000114 ;
+	setAttr ".o" -type "double3" 37.406324238972694 89.999999999999886 0 ;
+	setAttr ".rsrr" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
+	setAttr -k on ".w0";
 createNode transform -n "pPlane43" -p "L_Feather_Grp";
 	rename -uid "2764FB2A-486D-BE33-2111-3AB2F0BD639C";
 	setAttr ".rp" -type "double3" 2.4911070401515261 5.4978365092732639 3.9596828838757614 ;
@@ -10993,6 +11183,44 @@ createNode mesh -n "polySurfaceShape96" -p "|GEO|FeatherCards|L_Feather_Grp|pPla
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode parentConstraint -n "pPlane43_parentConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane43";
+	rename -uid "8AABA15A-41B3-7AC6-A16C-1EAEE418B580";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Wing_2_JNTW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 0.6029999408956821 0.25655085383889542 0.046690585971338905 ;
+	setAttr ".rst" -type "double3" -4.4408920985006262e-16 8.8817841970012523e-16 0 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "pPlane43_orientConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane43";
+	rename -uid "B08B2E82-4266-9783-D804-19B2D68545E4";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_FeatherBunch_Turn_CNTLW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -89.999999999999986 -52.593675761027299 90.000000000000114 ;
+	setAttr ".o" -type "double3" 37.406324238972694 89.999999999999886 0 ;
+	setAttr ".rsrr" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
+	setAttr -k on ".w0";
 createNode transform -n "pPlane47" -p "L_Feather_Grp";
 	rename -uid "56B1235D-4E47-F1F8-04EF-FEB4C67EC110";
 	setAttr ".rp" -type "double3" 2.9684797762565105 5.8611229671324461 3.9653545912655579 ;
@@ -11315,6 +11543,44 @@ createNode mesh -n "polySurfaceShape96" -p "|GEO|FeatherCards|L_Feather_Grp|pPla
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode parentConstraint -n "pPlane47_parentConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane47";
+	rename -uid "B69A1AE0-4A12-3ADD-9411-CE8E0595681A";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Wing_2_JNTW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.0803726770006679 0.61983731169807577 0.052362293361134959 ;
+	setAttr ".rst" -type "double3" -8.8817841970012523e-16 8.8817841970012523e-16 0 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "pPlane47_orientConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane47";
+	rename -uid "7ADF5BCB-4CF4-CCF5-084F-C58A4BA3AB39";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_FeatherBunch_Turn_CNTLW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -89.999999999999986 -52.593675761027299 90.000000000000114 ;
+	setAttr ".o" -type "double3" 37.406324238972694 89.999999999999886 0 ;
+	setAttr ".rsrr" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
+	setAttr -k on ".w0";
 createNode transform -n "pPlane50" -p "L_Feather_Grp";
 	rename -uid "0B56AD81-4DC6-249E-FE3B-DC8B04CE67B2";
 	setAttr ".rp" -type "double3" 3.4197554158957599 6.231995850391927 3.9770558319721885 ;
@@ -11637,6 +11903,44 @@ createNode mesh -n "polySurfaceShape96" -p "|GEO|FeatherCards|L_Feather_Grp|pPla
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode parentConstraint -n "pPlane50_parentConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane50";
+	rename -uid "CFBEA6A7-4769-E215-FDDF-D9BAAA96A88F";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Wing_2_JNTW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.5316483166399195 0.99071019495755408 0.064063534067765548 ;
+	setAttr ".rst" -type "double3" -4.4408920985006262e-16 8.8817841970012523e-16 4.4408920985006262e-16 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "pPlane50_orientConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane50";
+	rename -uid "E247E970-4DCB-8A0A-4533-448078B366D8";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_FeatherBunch_Turn_CNTLW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -89.999999999999986 -52.593675761027299 90.000000000000114 ;
+	setAttr ".o" -type "double3" 37.406324238972694 89.999999999999886 0 ;
+	setAttr ".rsrr" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
+	setAttr -k on ".w0";
 createNode transform -n "pPlane51" -p "L_Feather_Grp";
 	rename -uid "750ADC20-43E2-D9AA-114C-B3A12EF3DAF2";
 	setAttr ".rp" -type "double3" 3.4688258483849608 6.2834194674852881 4.0017442112369377 ;
@@ -11958,6 +12262,44 @@ createNode mesh -n "polySurfaceShape96" -p "|GEO|FeatherCards|L_Feather_Grp|pPla
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode parentConstraint -n "pPlane51_parentConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane51";
+	rename -uid "D4D9376A-444F-23E6-B99D-79958A5767CA";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Wing_2_JNTW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.5807187491291212 1.042133812050916 0.088751913332514309 ;
+	setAttr ".rst" -type "double3" 4.4408920985006262e-16 1.7763568394002505e-15 0 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "pPlane51_orientConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane51";
+	rename -uid "155296FF-4EB7-840B-82EF-19ADB9743FA0";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_FeatherBunch_Turn_CNTLW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -89.999999999999986 -52.593675761027299 90.000000000000114 ;
+	setAttr ".o" -type "double3" 37.406324238972694 89.999999999999886 0 ;
+	setAttr ".rsrr" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
+	setAttr -k on ".w0";
 createNode transform -n "pPlane48" -p "L_Feather_Grp";
 	rename -uid "C27735EE-43C5-67AE-6F27-CDB3CF57DD4A";
 	setAttr ".rp" -type "double3" 3.1000284771376543 5.970776889266169 3.9707741114738875 ;
@@ -12280,6 +12622,44 @@ createNode mesh -n "polySurfaceShape96" -p "|GEO|FeatherCards|L_Feather_Grp|pPla
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode parentConstraint -n "pPlane48_parentConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane48";
+	rename -uid "EB44CCFF-4169-5295-B9F2-31AAF1DAA5A8";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Wing_2_JNTW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.2119213778818134 0.7294912338317987 0.057781813569464546 ;
+	setAttr ".rst" -type "double3" 4.4408920985006262e-16 1.7763568394002505e-15 0 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "pPlane48_orientConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane48";
+	rename -uid "C543DB4B-4D2F-D81A-62DA-44A9A0BDD78F";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_FeatherBunch_Turn_CNTLW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -89.999999999999986 -52.593675761027299 90.000000000000114 ;
+	setAttr ".o" -type "double3" 37.406324238972694 89.999999999999886 0 ;
+	setAttr ".rsrr" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
+	setAttr -k on ".w0";
 createNode transform -n "pPlane49" -p "L_Feather_Grp";
 	rename -uid "2E0AEB0F-4E04-18DD-B0AF-AE88B4B95F9A";
 	setAttr ".rp" -type "double3" 3.3149240103569566 6.0896713426178675 3.9352678261700347 ;
@@ -12602,6 +12982,44 @@ createNode mesh -n "polySurfaceShape96" -p "|GEO|FeatherCards|L_Feather_Grp|pPla
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode parentConstraint -n "pPlane49_parentConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane49";
+	rename -uid "16E74280-4C32-D055-C3CC-159887947034";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Wing_2_JNTW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.4268169111011157 0.84838568718349538 0.0222755282656113 ;
+	setAttr ".rst" -type "double3" 0 8.8817841970012523e-16 0 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "pPlane49_orientConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane49";
+	rename -uid "493C047B-425F-D8D0-1D4E-BF8807DAA4B8";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_FeatherBunch_Turn_CNTLW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -89.999999999999986 -52.593675761027299 90.000000000000114 ;
+	setAttr ".o" -type "double3" 37.406324238972694 89.999999999999886 0 ;
+	setAttr ".rsrr" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
+	setAttr -k on ".w0";
 createNode transform -n "pPlane52" -p "L_Feather_Grp";
 	rename -uid "E823028A-4C16-4919-9BE3-42986A113F93";
 	setAttr ".rp" -type "double3" 3.5785310589919992 6.3627960106206336 3.9261133743256247 ;
@@ -12924,9 +13342,46 @@ createNode mesh -n "polySurfaceShape96" -p "|GEO|FeatherCards|L_Feather_Grp|pPla
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode parentConstraint -n "pPlane52_parentConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane52";
+	rename -uid "83CEBCE4-44BE-01E3-451B-EDBE4D80D634";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Wing_2_JNTW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.6904239597361601 1.1215103551862589 0.013121076421201749 ;
+	setAttr ".rst" -type "double3" 4.4408920985006262e-16 -8.8817841970012523e-16 4.4408920985006262e-16 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "pPlane52_orientConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane52";
+	rename -uid "7E57CD89-4400-F0BB-187D-568F769D3150";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_FeatherBunch_Turn_CNTLW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -89.999999999999986 -52.593675761027299 90.000000000000114 ;
+	setAttr ".o" -type "double3" 37.406324238972694 89.999999999999886 0 ;
+	setAttr ".rsrr" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
+	setAttr -k on ".w0";
 createNode transform -n "pPlane55" -p "L_Feather_Grp";
 	rename -uid "BCFABE9B-48EA-05B2-87ED-9094494C0474";
-	setAttr ".r" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
 	setAttr ".rp" -type "double3" 3.843309153732767 6.4774827343004544 4.0674774362418802 ;
 	setAttr ".sp" -type "double3" 3.843309153732767 6.4774827343004544 4.0674774362418802 ;
 createNode mesh -n "pPlane55Shape" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane55";
@@ -13247,9 +13702,46 @@ createNode mesh -n "polySurfaceShape96" -p "|GEO|FeatherCards|L_Feather_Grp|pPla
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode parentConstraint -n "pPlane55_parentConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane55";
+	rename -uid "DDDDA5B5-4599-3458-AACA-B68930E48263";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Wing_2_JNTW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.9552020544769293 1.2361970788660805 0.15448513833746125 ;
+	setAttr ".rst" -type "double3" 4.4408920985006262e-16 1.7763568394002505e-15 5.3290705182007514e-15 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "pPlane55_orientConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane55";
+	rename -uid "FF06B2CD-400E-5B67-DDE7-D99B6E248628";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_FeatherBunch_Turn_CNTLW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -89.999999999999986 -52.593675761027299 90.000000000000114 ;
+	setAttr ".o" -type "double3" 37.406324238972694 89.999999999999886 0 ;
+	setAttr ".rsrr" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
+	setAttr -k on ".w0";
 createNode transform -n "pPlane54" -p "L_Feather_Grp";
 	rename -uid "3E36945D-4BC1-581C-7B0E-05B827D126B6";
-	setAttr ".r" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
 	setAttr ".rp" -type "double3" 3.8085728149342035 6.4521365128709531 4.0399337573280327 ;
 	setAttr ".sp" -type "double3" 3.8085728149342035 6.4521365128709531 4.0399337573280327 ;
 createNode mesh -n "pPlane54Shape" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane54";
@@ -13570,9 +14062,46 @@ createNode mesh -n "polySurfaceShape96" -p "|GEO|FeatherCards|L_Feather_Grp|pPla
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode parentConstraint -n "pPlane54_parentConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane54";
+	rename -uid "80F325CE-4798-4737-9474-79B007E18095";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Wing_2_JNTW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.9204657156783649 1.2108508574365793 0.12694145942360935 ;
+	setAttr ".rst" -type "double3" 0 1.7763568394002505e-15 0 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "pPlane54_orientConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane54";
+	rename -uid "990DDE1B-484C-AD24-AFE7-5DB0AE6C5170";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_FeatherBunch_Turn_CNTLW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -89.999999999999986 -52.593675761027299 90.000000000000114 ;
+	setAttr ".o" -type "double3" 37.406324238972694 89.999999999999886 0 ;
+	setAttr ".rsrr" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
+	setAttr -k on ".w0";
 createNode transform -n "pPlane53" -p "L_Feather_Grp";
 	rename -uid "F7C288C1-44AE-6B25-E9FD-61B58A7E5853";
-	setAttr ".r" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
 	setAttr ".rp" -type "double3" 3.7707371585532772 6.4084370780309365 3.9352791035179138 ;
 	setAttr ".sp" -type "double3" 3.7707371585532772 6.4084370780309365 3.9352791035179138 ;
 createNode mesh -n "pPlane53Shape" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane53";
@@ -13893,6 +14422,44 @@ createNode mesh -n "polySurfaceShape96" -p "|GEO|FeatherCards|L_Feather_Grp|pPla
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode parentConstraint -n "pPlane53_parentConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane53";
+	rename -uid "C29B93A4-4A8F-4392-C1B7-0D9D5E24EB82";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Wing_2_JNTW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 1.8826300592974385 1.1671514225965636 0.022286805613490834 ;
+	setAttr ".rst" -type "double3" 4.4408920985006262e-16 2.6645352591003757e-15 8.8817841970012523e-16 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "pPlane53_orientConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane53";
+	rename -uid "716A624A-4722-D0EC-8F4C-E79BFAAE8E6E";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_FeatherBunch_Turn_CNTLW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -89.999999999999986 -52.593675761027299 90.000000000000114 ;
+	setAttr ".o" -type "double3" 37.406324238972694 89.999999999999886 0 ;
+	setAttr ".rsrr" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
+	setAttr -k on ".w0";
 createNode transform -n "pPlane37" -p "L_Feather_Grp";
 	rename -uid "CC5C400B-4590-F06F-8129-59BB9D5162E7";
 	setAttr ".rp" -type "double3" 1.7515048016589148 5.0762777328491211 3.7713958119982549 ;
@@ -14216,10 +14783,9 @@ createNode mesh -n "polySurfaceShape96" -p "|GEO|FeatherCards|L_Feather_Grp|pPla
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode orientConstraint -n "pPlane37_orientConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane37";
-	rename -uid "05170AE7-443E-B6F2-0348-579DF815B8C1";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Feather_Turn_CNTLW0" -dv 1 -min 
-		0 -at "double";
+createNode parentConstraint -n "pPlane37_parentConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane37";
+	rename -uid "64BFAF97-43E6-DBE3-31FA-69A983C1E7BD";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Wing_2_JNTW0" -dv 1 -min 0 -at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
 	setAttr -k off ".tx";
@@ -14232,6 +14798,28 @@ createNode orientConstraint -n "pPlane37_orientConstraint1" -p "|GEO|FeatherCard
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" -0.13660229759693121 -0.16500792258524477 -0.14159648590616669 ;
+	setAttr ".rst" -type "double3" 0 0 4.4408920985006262e-16 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "pPlane37_orientConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane37";
+	rename -uid "9949AC95-4B9B-FC7B-4B24-E1B578CFB789";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_FeatherBunch_Turn_CNTLW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -89.999999999999986 -52.593675761027299 90.000000000000114 ;
+	setAttr ".o" -type "double3" 37.406324238972694 89.999999999999886 0 ;
+	setAttr ".rsrr" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
 	setAttr -k on ".w0";
 createNode transform -n "pPlane40" -p "L_Feather_Grp";
 	rename -uid "30E0BBB9-49F2-E7EC-38F5-0DBC4636DC50";
@@ -14555,6 +15143,44 @@ createNode mesh -n "polySurfaceShape96" -p "|GEO|FeatherCards|L_Feather_Grp|pPla
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode parentConstraint -n "pPlane40_parentConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane40";
+	rename -uid "CF79EAEB-4596-D4F5-809D-97ACECCF08D8";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Wing_2_JNTW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 0.15476374901027268 -0.057214591439005424 -0.054841097069274092 ;
+	setAttr ".rst" -type "double3" -4.4408920985006262e-16 8.8817841970012523e-16 4.4408920985006262e-16 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "pPlane40_orientConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane40";
+	rename -uid "B76C6C3F-4BCA-0A28-CD4B-16A889322FFD";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_FeatherBunch_Turn_CNTLW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -89.999999999999986 -52.593675761027299 90.000000000000114 ;
+	setAttr ".o" -type "double3" 37.406324238972694 89.999999999999886 0 ;
+	setAttr ".rsrr" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
+	setAttr -k on ".w0";
 createNode transform -n "pPlane38" -p "L_Feather_Grp";
 	rename -uid "07CAE46E-4EBF-9985-906B-6DA7E302547E";
 	setAttr ".rp" -type "double3" 1.9217446893017776 5.1564774513244629 3.8205288896616514 ;
@@ -14877,6 +15503,45 @@ createNode mesh -n "polySurfaceShape96" -p "|GEO|FeatherCards|L_Feather_Grp|pPla
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
+createNode parentConstraint -n "pPlane38_parentConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane38";
+	rename -uid "632DCD29-4EBA-F8E1-1D4B-ABBC015058ED";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Wing_2_JNTW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".tg[0].tot" -type "double3" 0.033637590045932253 -0.084808204109903862 
+		-0.092463408242770662 ;
+	setAttr ".rst" -type "double3" 2.2204460492503131e-16 0 0 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "pPlane38_orientConstraint1" -p "|GEO|FeatherCards|L_Feather_Grp|pPlane38";
+	rename -uid "95FF0F73-4BDE-B6BA-E37D-9D8BCA9987F7";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_FeatherBunch_Turn_CNTLW0" -dv 1 
+		-min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -89.999999999999986 -52.593675761027299 90.000000000000114 ;
+	setAttr ".o" -type "double3" 37.406324238972694 89.999999999999886 0 ;
+	setAttr ".rsrr" -type "double3" -6.3611093629271747e-15 -8.189928304768555e-14 1.9719439025073803e-13 ;
+	setAttr -k on ".w0";
 createNode transform -n "R_Feather_Grp" -p "FeatherCards";
 	rename -uid "2426A785-47BF-EB32-1613-DE801555E099";
 createNode transform -n "pPlane46" -p "R_Feather_Grp";
@@ -21035,17 +21700,17 @@ createNode nurbsCurve -n "R_Wing_CNTLShape" -p "R_Wing_CNTL";
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		1.5677909992657237 1.1843439893512842 0.71245059958659429
-		1.5258059706931819 1.1898016049940059 0.6102370000000249
-		1.5677909992657246 1.1843439893512842 0.50802340041345573
-		1.6691518246621799 1.1711681396484104 0.46568514120572629
-		1.7705126500586355 1.1579922899455384 0.50802340041345617
-		1.8124976786311797 1.1525346743028191 0.61023700000002579
-		1.7705126500586352 1.1579922899455379 0.71245059958659473
-		1.6691518246621802 1.1711681396484117 0.75478885879432456
-		1.5677909992657237 1.1843439893512842 0.71245059958659429
-		1.5258059706931819 1.1898016049940059 0.6102370000000249
-		1.5677909992657246 1.1843439893512842 0.50802340041345573
+		1.5677909992657235 1.1843439893512842 0.71245059958659418
+		1.5258059706931819 1.1898016049940057 0.61023700000002501
+		1.5677909992657244 1.1843439893512837 0.50802340041345562
+		1.6691518246621797 1.1711681396484099 0.46568514120572591
+		1.7705126500586355 1.1579922899455382 0.50802340041345606
+		1.8124976786311795 1.1525346743028186 0.61023700000002568
+		1.770512650058635 1.1579922899455377 0.71245059958659462
+		1.6691518246621802 1.1711681396484115 0.75478885879432434
+		1.5677909992657235 1.1843439893512842 0.71245059958659418
+		1.5258059706931819 1.1898016049940057 0.61023700000002501
+		1.5677909992657244 1.1843439893512837 0.50802340041345562
 		;
 createNode transform -n "R_Wing_Grp1" -p "R_Wing_CNTL";
 	rename -uid "0D9AF7D1-4EF1-C049-7066-AF9433542763";
@@ -21816,7 +22481,7 @@ createNode joint -n "Waist" -p "JNT";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
-	setAttr ".jo" -type "double3" -89.999999999999986 -52.593675761027313 90.000000000000128 ;
+	setAttr ".jo" -type "double3" -89.999999999999986 -52.59367576102732 90.000000000000128 ;
 	setAttr ".bps" -type "matrix" -1.1102230246251565e-15 0.60746352254989633 0.7943475742842494 0
 		 -1.7763568394002501e-15 0.79434757428424962 -0.60746352254989633 0 -0.99999999999999978 -2.2204460492503127e-15 2.2204460492503131e-16 0
 		 -4.2391447408011975e-16 3.4275873359670883 3.0939518372335755 1;
@@ -21877,7 +22542,7 @@ createNode parentConstraint -n "L_Wing_3_JNT_parentConstraint1" -p "L_Wing_3_JNT
 	setAttr ".tg[0].tot" -type "double3" -1.2434497875801753e-14 -2.6645352591003757e-15 
 		5.3290705182007514e-15 ;
 	setAttr ".tg[0].tor" -type "double3" 37.406324238972665 89.999999999999844 0 ;
-	setAttr ".lr" -type "double3" -3.1805546814634903e-15 -6.0430538947806815e-14 -5.0888874903416268e-14 ;
+	setAttr ".lr" -type "double3" -2.5444437451708115e-14 -5.1684013573782161e-14 -4.7708320221952748e-14 ;
 	setAttr ".rst" -type "double3" 0.8978485131632401 0.43847538935106822 0.14336036540746688 ;
 	setAttr ".rsrr" -type "double3" -3.1805546814634903e-15 -6.0430538947806815e-14 
 		-5.0888874903416268e-14 ;
@@ -21900,7 +22565,7 @@ createNode parentConstraint -n "L_Wing_2_JNT_parentConstraint1" -p "L_Wing_2_JNT
 	setAttr ".tg[0].tot" -type "double3" -1.0658141036401503e-14 -2.2204460492503131e-16 
 		5.3290705182007514e-15 ;
 	setAttr ".tg[0].tor" -type "double3" 37.406324238972665 89.999999999999844 0 ;
-	setAttr ".lr" -type "double3" -3.1805546814634903e-15 -6.0430538947806815e-14 -5.0888874903416268e-14 ;
+	setAttr ".lr" -type "double3" -2.5444437451708115e-14 -5.1684013573782161e-14 -4.7708320221952748e-14 ;
 	setAttr ".rst" -type "double3" 1.2778705760312223 0.27556403527362239 -0.040919673514876909 ;
 	setAttr ".rsrr" -type "double3" -3.1805546814634903e-15 -6.0430538947806815e-14 
 		-5.0888874903416268e-14 ;
@@ -21923,7 +22588,7 @@ createNode parentConstraint -n "L_Wing_1_JNT_parentConstraint1" -p "L_Wing_1_JNT
 	setAttr ".tg[0].tot" -type "double3" 0.0094757328834438326 -0.0012317107351076384 
 		-1.5543122344752192e-15 ;
 	setAttr ".tg[0].tor" -type "double3" 37.406324238972665 89.999999999999844 0 ;
-	setAttr ".lr" -type "double3" 3.180554681463542e-15 -6.9972202992197363e-14 -4.1347210859025721e-14 ;
+	setAttr ".lr" -type "double3" -3.1805546814635149e-14 -6.3611093629270348e-14 -3.4986101496098669e-14 ;
 	setAttr ".rst" -type "double3" 0.44888310871443604 0.3605370222060813 -0.61023652322462851 ;
 	setAttr ".rsrr" -type "double3" 3.180554681463542e-15 -6.9972202992197363e-14 -4.1347210859025721e-14 ;
 	setAttr -k on ".w0";
@@ -21973,7 +22638,7 @@ createNode parentConstraint -n "R_Wing_3_JNT_parentConstraint1" -p "R_Wing_3_JNT
 	setAttr ".tg[0].tot" -type "double3" 4.4408920985006262e-15 7.5495165674510645e-15 
 		-4.4408920985006262e-16 ;
 	setAttr ".tg[0].tor" -type "double3" -142.59367576102733 89.999999999999844 0 ;
-	setAttr ".lr" -type "double3" 1.2722218725854099e-14 6.3611093629270323e-14 5.0888874903416281e-14 ;
+	setAttr ".lr" -type "double3" -1.5902773407317562e-14 5.0888874903416281e-14 5.0888874903416268e-14 ;
 	setAttr ".rst" -type "double3" -0.89785000000000181 -0.43846999999999969 -0.14335999999999949 ;
 	setAttr ".rsrr" -type "double3" 1.2722218725854099e-14 6.3611093629270323e-14 5.0888874903416281e-14 ;
 	setAttr -k on ".w0";
@@ -21994,7 +22659,7 @@ createNode parentConstraint -n "R_Wing_2_JNT_parentConstraint1" -p "R_Wing_2_JNT
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 0 3.7747582837255322e-15 1.5543122344752192e-15 ;
 	setAttr ".tg[0].tor" -type "double3" -142.59367576102733 89.999999999999844 0 ;
-	setAttr ".lr" -type "double3" 1.2722218725854099e-14 6.3611093629270323e-14 5.0888874903416281e-14 ;
+	setAttr ".lr" -type "double3" -1.5902773407317562e-14 5.0888874903416281e-14 5.0888874903416268e-14 ;
 	setAttr ".rst" -type "double3" -1.2778730000000005 -0.27557000000000009 0.040919999999998513 ;
 	setAttr ".rsrr" -type "double3" 1.2722218725854099e-14 6.3611093629270323e-14 5.0888874903416281e-14 ;
 	setAttr -k on ".w0";
@@ -22016,7 +22681,7 @@ createNode parentConstraint -n "R_Wing_1_JNT_parentConstraint1" -p "R_Wing_1_JNT
 	setAttr ".tg[0].tot" -type "double3" 0.0094757328834482735 -0.0012317107351069723 
 		-2.8532731732866523e-14 ;
 	setAttr ".tg[0].tor" -type "double3" -142.59367576102736 89.999999999999844 0 ;
-	setAttr ".lr" -type "double3" -1.2722218725854039e-14 7.6333312355124402e-14 4.4527765540489235e-14 ;
+	setAttr ".lr" -type "double3" -5.4069429584879763e-14 6.3611093629270386e-14 5.0888874903416249e-14 ;
 	setAttr ".rst" -type "double3" 0.44888084898086067 0.36053820754105326 0.61023699999999592 ;
 	setAttr ".rsrr" -type "double3" -1.2722218725854039e-14 7.6333312355124402e-14 4.4527765540489235e-14 ;
 	setAttr -k on ".w0";
@@ -22028,7 +22693,7 @@ createNode joint -n "joint6" -p "Chest";
 	setAttr ".jo" -type "double3" 0 0 -12.75180059286744 ;
 	setAttr ".bps" -type "matrix" -1.5795122353309223e-15 0.81250594089105488 0.5829529106340765 0
 		 -1.3759287349756858e-15 0.58295291063407673 -0.81250594089105466 0 -0.99999999999999978 -2.2204460492503127e-15 2.2204460492503131e-16 0
-		 -5.028185188788672e-15 5.6521403742936895 4.6880491358896395 1;
+		 -5.0281851887886728e-15 5.6521403742936895 4.6880491358896395 1;
 	setAttr ".radi" 0.1;
 createNode joint -n "Head" -p "joint6";
 	rename -uid "890750E6-4DE1-E34A-28C5-D093A87AC455";
@@ -22068,7 +22733,7 @@ createNode parentConstraint -n "Lower_Jaw_JNT_parentConstraint1" -p "Lower_Jaw_J
 	setAttr ".tg[0].tot" -type "double3" -7.6181059682767227e-08 1.0332566824367007e-07 
 		-9.4490819291877539e-15 ;
 	setAttr ".tg[0].tor" -type "double3" 180 0 -50.958934459360542 ;
-	setAttr ".lr" -type "double3" -7.0622500768802555e-31 1.4124500153760508e-30 -1.2722218725854067e-14 ;
+	setAttr ".lr" -type "double3" 7.062250076880245e-31 3.8842375422841392e-30 -2.5444437451708134e-14 ;
 	setAttr ".rst" -type "double3" 0.56834617048661462 2.6645352591003757e-15 -1.246387902081664e-15 ;
 	setAttr ".rsrr" -type "double3" -7.0622500768802555e-31 1.4124500153760508e-30 -1.2722218725854067e-14 ;
 	setAttr -k on ".w0";
@@ -22090,6 +22755,7 @@ createNode parentConstraint -n "Head_parentConstraint1" -p "Head";
 	setAttr ".tg[0].tot" -type "double3" -7.1054273576010019e-15 1.5543122344752192e-15 
 		6.5620634761587201e-15 ;
 	setAttr ".tg[0].tor" -type "double3" 0 0 -109.59460676992548 ;
+	setAttr ".lr" -type "double3" 0 0 2.5444437451708134e-14 ;
 	setAttr ".rst" -type "double3" 0.54174407391449897 -4.6629367034256575e-15 -6.3523218840201025e-18 ;
 	setAttr -k on ".w0";
 createNode parentConstraint -n "joint6_parentConstraint1" -p "joint6";
@@ -22110,7 +22776,7 @@ createNode parentConstraint -n "joint6_parentConstraint1" -p "joint6";
 	setAttr ".tg[0].tot" -type "double3" -1.3920926633659292e-09 2.9534417267385038e-07 
 		-2.2624098655269482e-14 ;
 	setAttr ".tg[0].tor" -type "double3" 0 0 16.935171963794247 ;
-	setAttr ".lr" -type "double3" 0 0 3.180554681463516e-15 ;
+	setAttr ".lr" -type "double3" 0 0 4.1347210859025715e-14 ;
 	setAttr ".rst" -type "double3" 1.3669202647718643 -0.048530041219923437 -1.8147415840068648e-16 ;
 	setAttr ".rsrr" -type "double3" 0 0 3.180554681463516e-15 ;
 	setAttr -k on ".w0";
@@ -22199,7 +22865,7 @@ createNode parentConstraint -n "L_Back_Claw_JNT_parentConstraint1" -p "L_Back_Cl
 	setAttr ".tg[0].tot" -type "double3" 9.0393379448272526e-08 -6.9126718349465932e-08 
 		-2.4424906541753444e-15 ;
 	setAttr ".tg[0].tor" -type "double3" -179.99999999999986 7.3561199720643149 142.71613436441231 ;
-	setAttr ".lr" -type "double3" 5.5659706925611543e-15 -9.9392333795734899e-16 -3.727212517340059e-16 ;
+	setAttr ".lr" -type "double3" 1.391492673140289e-15 -9.939233379573486e-16 -3.2054027649124502e-14 ;
 	setAttr ".rst" -type "double3" 0.10557651613383756 -1.7763568394002505e-15 -8.8817841970012523e-16 ;
 	setAttr ".rsrr" -type "double3" 5.5659706925611543e-15 -9.9392333795734899e-16 -3.727212517340059e-16 ;
 	setAttr -k on ".w0";
@@ -22234,7 +22900,7 @@ createNode parentConstraint -n "R_Toe_1_JNT_parentConstraint1" -p "R_Toe_1_JNT";
 		-1.268129434794929e-08 ;
 	setAttr ".tg[0].tor" -type "double3" -1.2761164418953513e-13 14.538976260112481 
 		-39.549618385444681 ;
-	setAttr ".lr" -type "double3" 1.3119788061037012e-13 7.9513867036589398e-16 -1.2722218725854067e-14 ;
+	setAttr ".lr" -type "double3" 1.2602947925299188e-13 6.9574633657013739e-16 6.3611093629270351e-15 ;
 	setAttr ".rst" -type "double3" -0.20227676833878228 -0.070575790281681927 0.093679782835139003 ;
 	setAttr ".rsrr" -type "double3" 1.2921003393445537e-13 8.9453100416161419e-16 1.0086465563903685e-30 ;
 	setAttr -k on ".w0";
@@ -22269,7 +22935,7 @@ createNode parentConstraint -n "R_M_Toe_1_JNT_parentConstraint1" -p "R_M_Toe_1_J
 		-0.0032653364845990351 ;
 	setAttr ".tg[0].tor" -type "double3" -1.3790980753070644e-13 -1.6150893014341272 
 		-30.328227889210655 ;
-	setAttr ".lr" -type "double3" 1.3793171122503112e-13 -8.4483483726374856e-16 1.5902773407317576e-15 ;
+	setAttr ".lr" -type "double3" 1.3867715372849916e-13 -1.037407483993016e-15 2.7034714792439897e-14 ;
 	setAttr ".rst" -type "double3" -0.24249281560233271 -0.088281279386148714 0.0089213149742330966 ;
 	setAttr ".rsrr" -type "double3" 1.3795655930848005e-13 -6.3983814881004543e-16 1.5902773407317578e-15 ;
 	setAttr -k on ".w0";
@@ -22304,7 +22970,7 @@ createNode parentConstraint -n "R_E_Toe_1_JNT_parentConstraint1" -p "R_E_Toe_1_J
 		2.8388911776922043e-09 ;
 	setAttr ".tg[0].tor" -type "double3" -1.2891069292037538e-13 -16.791868330050828 
 		-39.16259784466876 ;
-	setAttr ".lr" -type "double3" 1.2881246459927238e-13 2.9817700138720825e-16 -3.180554681463516e-15 ;
+	setAttr ".lr" -type "double3" 1.359687126325653e-13 -2.6835930124848607e-15 1.5902773407317578e-14 ;
 	setAttr ".rst" -type "double3" -0.19008504910547153 -0.079371385200413869 -0.1021777873591983 ;
 	setAttr ".rsrr" -type "double3" 1.2881246459927238e-13 2.981770013872083e-16 -3.180554681463516e-15 ;
 	setAttr -k on ".w0";
@@ -22327,7 +22993,7 @@ createNode parentConstraint -n "L_Ankle_JNT_parentConstraint1" -p "L_Ankle_JNT";
 		1.1102230246251565e-15 ;
 	setAttr ".tg[0].tor" -type "double3" -179.99999999999986 4.8848226050172575e-14 
 		162.29966107621667 ;
-	setAttr ".lr" -type "double3" -2.3655375443384892e-14 4.8503458892318635e-14 3.2734243933539052e-14 ;
+	setAttr ".lr" -type "double3" 5.9635400277441649e-16 4.0949641523842781e-14 1.9862936706991395e-14 ;
 	setAttr ".rst" -type "double3" 0.46864430906009269 4.4408920985006262e-16 3.3306690738754696e-16 ;
 	setAttr ".rsrr" -type "double3" 1.9878466759147118e-15 4.8304674224727158e-14 3.2728031912676831e-14 ;
 	setAttr -k on ".w0";
@@ -22349,7 +23015,7 @@ createNode parentConstraint -n "L_Knee_JNT_parentConstraint1" -p "L_Knee_JNT";
 	setAttr ".tg[0].tot" -type "double3" -2.6645352591003757e-15 -3.6082248300317588e-15 
 		-2.3314683517128287e-15 ;
 	setAttr ".tg[0].tor" -type "double3" 1.8319994965229859e-12 182.16668717288911 71.724998294975606 ;
-	setAttr ".lr" -type "double3" -1.8300116498470709e-12 -2.298447719025893e-15 2.9842548222169438e-14 ;
+	setAttr ".lr" -type "double3" -1.8419387299025595e-12 3.1867667023256599e-15 -5.6793400732969673e-15 ;
 	setAttr ".rst" -type "double3" 0.73957224322437343 3.9968028886505635e-15 -4.4408920985006262e-16 ;
 	setAttr ".rsrr" -type "double3" -1.8300116498470709e-12 -2.2984477190258934e-15 
 		2.9842548222169438e-14 ;
@@ -22432,7 +23098,7 @@ createNode parentConstraint -n "R_BackToe0_JNT_parentConstraint1" -p "R_BackToe0
 	setAttr ".tg[0].tot" -type "double3" -0.0043223554921874019 0.0033054463537035561 
 		1.7763568394002505e-15 ;
 	setAttr ".tg[0].tor" -type "double3" -179.99999999999989 -7.356269801112747 142.71771158290829 ;
-	setAttr ".lr" -type "double3" 1.5902773407317584e-15 6.4605016967227689e-16 -3.093586389392249e-15 ;
+	setAttr ".lr" -type "double3" 4.5720473546038052e-15 -1.2424041724466749e-16 -2.8451055549029116e-14 ;
 	setAttr ".rst" -type "double3" 0.10557939240211667 1.2212453270876722e-15 -3.3306690738754696e-16 ;
 	setAttr ".rsrr" -type "double3" 1.5902773407317584e-15 6.4605016967227689e-16 -3.0935863893922486e-15 ;
 	setAttr -k on ".w0";
@@ -22465,7 +23131,7 @@ createNode parentConstraint -n "L_E_Toe_1_JNT_parentConstraint1" -p "L_E_Toe_1_J
 		-7.0133214791212595e-09 ;
 	setAttr ".tg[0].tor" -type "double3" -1.0930920703407324e-13 19.888223418430155 
 		-40.028654212066044 ;
-	setAttr ".lr" -type "double3" 1.0654858182902782e-13 5.9635400277440348e-16 6.3611093629270335e-15 ;
+	setAttr ".lr" -type "double3" 9.8597195125369017e-14 4.9696166897864984e-16 2.8624992133171654e-14 ;
 	setAttr ".rst" -type "double3" -0.19009020362194873 -0.079341685052472299 0.10217700000000035 ;
 	setAttr ".rsrr" -type "double3" 1.0654858182902782e-13 5.9635400277440348e-16 6.3611093629270335e-15 ;
 	setAttr -k on ".w0";
@@ -22498,7 +23164,7 @@ createNode parentConstraint -n "L_M_Toe_1_JNT_parentConstraint1" -p "L_M_Toe_1_J
 		-2.6302264921618246e-08 ;
 	setAttr ".tg[0].tor" -type "double3" -1.1541519628011094e-13 -0.66846073249619609 
 		-30.715277723954426 ;
-	setAttr ".lr" -type "double3" 1.1544419570374609e-13 -3.5719119957848643e-17 6.3611093629270335e-15 ;
+	setAttr ".lr" -type "double3" 1.157423727051333e-13 -1.366644589691692e-16 3.3395824155366928e-14 ;
 	setAttr ".rst" -type "double3" -0.25775467084084402 -0.080829779943205504 0.0037829531935962279 ;
 	setAttr ".rsrr" -type "double3" 1.1544419570374609e-13 -3.5719119957848643e-17 6.3611093629270335e-15 ;
 	setAttr -k on ".w0";
@@ -22531,7 +23197,7 @@ createNode parentConstraint -n "L_Toe_1_JNT_parentConstraint1" -p "L_Toe_1_JNT";
 		-2.5245672330420632e-08 ;
 	setAttr ".tg[0].tor" -type "double3" -1.0652276259508192e-13 -14.540077865349394 
 		-39.549215967791689 ;
-	setAttr ".lr" -type "double3" 1.0694615116421076e-13 -4.8702243559910101e-15 -4.5452889777030575e-30 ;
+	setAttr ".lr" -type "double3" 1.1290969119195482e-13 -3.2799470152592758e-15 2.5444437451708122e-14 ;
 	setAttr ".rst" -type "double3" -0.20228811526643975 -0.070548878247293501 -0.09367999999999943 ;
 	setAttr ".rsrr" -type "double3" 1.0694615116421076e-13 -4.8702243559910101e-15 -4.5452889777030575e-30 ;
 	setAttr -k on ".w0";
@@ -22554,7 +23220,7 @@ createNode parentConstraint -n "R_Ankle_JNT_parentConstraint1" -p "R_Ankle_JNT";
 		-4.4408920985006262e-16 ;
 	setAttr ".tg[0].tor" -type "double3" -179.99999999999986 2.6832824114417301e-14 
 		162.29349559282377 ;
-	setAttr ".lr" -type "double3" 4.9696166897867444e-15 2.7233499460031358e-14 -5.1249172113425671e-16 ;
+	setAttr ".lr" -type "double3" 9.1440947092076008e-15 3.9359364183111015e-14 -1.983498261311134e-14 ;
 	setAttr ".rst" -type "double3" 0.46864916560685455 -1.3322676295501878e-15 5.5511151231257827e-16 ;
 	setAttr ".rsrr" -type "double3" 4.9696166897867444e-15 2.7233499460031358e-14 -5.1249172113425671e-16 ;
 	setAttr -k on ".w0";
@@ -22576,7 +23242,7 @@ createNode parentConstraint -n "R_Knee_JNT_parentConstraint1" -p "R_Knee_JNT";
 	setAttr ".tg[0].tot" -type "double3" 7.9936057773011271e-15 -9.3660149080854183e-13 
 		-3.2529534621517087e-14 ;
 	setAttr ".tg[0].tor" -type "double3" 4.3255543667903831e-13 177.83332888019632 71.724653411700501 ;
-	setAttr ".lr" -type "double3" -4.403080387151056e-13 1.452370477590175e-14 -2.8187044662384751e-15 ;
+	setAttr ".lr" -type "double3" -4.4269345472620324e-13 3.9216487703279541e-14 -2.850541073157381e-14 ;
 	setAttr ".rst" -type "double3" 0.73957288670150678 1.7763568394002505e-15 -4.4408920985006262e-16 ;
 	setAttr ".rsrr" -type "double3" -4.389165460419653e-13 -1.1976776222385991e-14 1.655348259263658e-14 ;
 	setAttr -k on ".w0";
@@ -22670,7 +23336,7 @@ createNode parentConstraint -n "Tail_3_JNT_parentConstraint1" -p "Tail_3_JNT";
 	setAttr ".tg[0].tot" -type "double3" 1.7763568394002505e-15 4.4408920985006262e-16 
 		5.8323794287526884e-14 ;
 	setAttr ".tg[0].tor" -type "double3" 0 0 0.86097391610123419 ;
-	setAttr ".lr" -type "double3" 0 0 1.987846675914698e-16 ;
+	setAttr ".lr" -type "double3" 0 0 -2.5543829785503869e-14 ;
 	setAttr ".rst" -type "double3" 1.6078872853341544 -3.2406833012643688e-06 -3.570063112727992e-16 ;
 	setAttr ".rsrr" -type "double3" 0 0 1.987846675914698e-16 ;
 	setAttr -k on ".w0";
@@ -22691,7 +23357,7 @@ createNode parentConstraint -n "joint23_parentConstraint1" -p "joint23";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -8.8817841970012523e-16 0 4.6299925986616624e-14 ;
 	setAttr ".tg[0].tor" -type "double3" 0 0 0.86097391610123419 ;
-	setAttr ".lr" -type "double3" 0 0 1.987846675914698e-16 ;
+	setAttr ".lr" -type "double3" 0 0 -2.5543829785503869e-14 ;
 	setAttr ".rst" -type "double3" 2.3921127146658452 3.2406833008202796e-06 -5.311721084273213e-16 ;
 	setAttr ".rsrr" -type "double3" 0 0 1.987846675914698e-16 ;
 	setAttr -k on ".w0";
@@ -22754,7 +23420,7 @@ createNode parentConstraint -n "Tail_1_JNT_parentConstraint1" -p "Tail_1_JNT";
 	setAttr ".tg[0].tot" -type "double3" 0 8.8817841970012523e-16 2.8865798640254212e-15 ;
 	setAttr ".tg[0].tor" -type "double3" -2.5444437451708093e-14 -5.6498000615042044e-30 
 		-2.3273038162232493e-44 ;
-	setAttr ".lr" -type "double3" 2.544443745170809e-14 5.649800061504203e-30 1.2545076225621162e-45 ;
+	setAttr ".lr" -type "double3" 2.544443745170809e-14 1.0663997616089183e-28 -2.2263882770244617e-14 ;
 	setAttr ".rst" -type "double3" -1.5032299007556444 0.56181307888729515 2.67222295161626e-14 ;
 	setAttr ".rsrr" -type "double3" 2.5444437451708093e-14 5.6498000615042044e-30 1.2545076225621163e-45 ;
 	setAttr -k on ".w0";
@@ -22777,18 +23443,19 @@ createNode parentConstraint -n "Waist_parentConstraint1" -p "Waist";
 		-1.2878587085651816e-14 ;
 	setAttr ".tg[0].tor" -type "double3" 7.0622500768802538e-30 -5.6498000615042044e-30 
 		6.3611093629270335e-15 ;
-	setAttr ".lr" -type "double3" 3.1805546814635168e-15 -8.8278125961003194e-32 3.1805546814635168e-15 ;
+	setAttr ".lr" -type "double3" 3.1805546814635168e-15 -6.1794688172702221e-31 2.2263882770244617e-14 ;
 	setAttr ".rst" -type "double3" -4.2391447408011975e-16 3.4275873359670883 3.0939518372335759 ;
 	setAttr ".rsrr" -type "double3" 3.1805546814635168e-15 -8.8278125961003194e-32 3.1805546814635168e-15 ;
 	setAttr -k on ".w0";
 createNode transform -n "L_Feather_Turn_Grp";
 	rename -uid "EE385FBC-4F63-277A-CBD0-8BB7968E08DF";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 1.7515048016589148 5.0762777328491211 3.7713958119982536 ;
 createNode transform -n "L_Feather_Turn_CNTL" -p "L_Feather_Turn_Grp";
 	rename -uid "7AB79B53-4D62-6AD2-BEF3-E98309B3427C";
+	setAttr ".v" no;
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".s" -type "double3" 0.6102057181471765 0.6102057181471765 0.6102057181471765 ;
 	setAttr ".rp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
 	setAttr ".sp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
 createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp|L_Feather_Turn_CNTL";
@@ -22798,29 +23465,28 @@ createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp|L_Fe
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
-		-0.092485600631218051 0.53553765284518473 -0.12030512697261239
-		-0.065397195368445141 0.56460836575489681 -0.061724525977234435
-		-5.6516232780039894e-17 0.57664984930995422 -0.037459646552982034
-		0.065397195368445057 0.56460836575489681 -0.061724525977234448
-		0.092485600631217968 0.53553765284518473 -0.12030512697261238
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
+		0.039905742564613218 0.51779853759706351 -0.15605134467249027
+		-2.5377709641103249e-17 0.51045075547679231 -0.1708579128473208
+		-0.039905742564613274 0.51779853759706351 -0.15605134467249027
+		-0.056435242351445369 0.53553765284518473 -0.12030512697261245
+		-0.039905742564613274 0.55327676809330595 -0.084558909272734628
+		-3.4486528410517244e-17 0.56062455021357716 -0.069752341097904055
+		0.039905742564613218 0.55327676809330595 -0.084558909272734642
+		0.056435242351445321 0.53553765284518473 -0.12030512697261243
+		0.039905742564613218 0.51779853759706351 -0.15605134467249027
+		-2.5377709641103249e-17 0.51045075547679231 -0.1708579128473208
+		-0.039905742564613274 0.51779853759706351 -0.15605134467249027
 		;
 createNode transform -n "L_Feather_Turn_Grp1";
 	rename -uid "E685674A-455C-AD64-7387-B1AF9BFF0DE1";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 1.9217446893017776 5.1564774513244629 3.8205288896616501 ;
 createNode transform -n "L_Feather_Turn_CNTL" -p "L_Feather_Turn_Grp1";
 	rename -uid "3A9E72BB-49ED-932C-9848-98AA047F61F3";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".t" -type "double3" -0.0027092525363014985 1.7763568394002505e-15 -0.024383272826717928 ;
-	setAttr ".s" -type "double3" 0.6102057181471765 0.6102057181471765 0.6102057181471765 ;
-	setAttr ".rp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
-	setAttr ".sp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
+	setAttr ".rp" -type "double3" -0.0027092525363012765 0.48987880315960375 -0.14468839979933001 ;
+	setAttr ".sp" -type "double3" -0.0027092525363012765 0.48987880315960375 -0.14468839979933001 ;
 createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp1|L_Feather_Turn_CNTL";
 	rename -uid "6540611E-45B0-F618-C62C-DA9FE4A85095";
 	setAttr -k off ".v";
@@ -22828,29 +23494,28 @@ createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp1|L_F
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
-		-0.092485600631218051 0.53553765284518473 -0.12030512697261239
-		-0.065397195368445141 0.56460836575489681 -0.061724525977234435
-		-5.6516232780039894e-17 0.57664984930995422 -0.037459646552982034
-		0.065397195368445057 0.56460836575489681 -0.061724525977234448
-		0.092485600631217968 0.53553765284518473 -0.12030512697261238
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
+		0.037196490028311852 0.47213968791148248 -0.18043461749920792
+		-0.0027092525363013888 0.46479190579121127 -0.19524118567403845
+		-0.04261499510091464 0.47213968791148248 -0.18043461749920792
+		-0.059144494887746729 0.48987880315960375 -0.1446883997993301
+		-0.04261499510091464 0.50761791840772497 -0.10894218209945228
+		-0.0027092525363013979 0.51496570052799617 -0.094135613924621706
+		0.037196490028311852 0.50761791840772497 -0.10894218209945229
+		0.053725989815143954 0.48987880315960375 -0.14468839979933007
+		0.037196490028311852 0.47213968791148248 -0.18043461749920792
+		-0.0027092525363013888 0.46479190579121127 -0.19524118567403845
+		-0.04261499510091464 0.47213968791148248 -0.18043461749920792
 		;
 createNode transform -n "L_Feather_Turn_Grp2";
 	rename -uid "36918CEB-4151-C4C5-9EEF-829055841F4E";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 2.0428708482661184 5.1840710639953613 3.8581512008351462 ;
 createNode transform -n "L_Feather_Turn_CNTL" -p "L_Feather_Turn_Grp2";
 	rename -uid "DCA1045E-41E8-8754-99B8-06B864A89840";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".t" -type "double3" 0 0 -0.037929535508228973 ;
-	setAttr ".s" -type "double3" 0.6102057181471765 0.6102057181471765 0.6102057181471765 ;
-	setAttr ".rp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
-	setAttr ".sp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
+	setAttr ".rp" -type "double3" 0.01756109603291689 0.50919600879580962 -0.1582346624808415 ;
+	setAttr ".sp" -type "double3" 0.01756109603291689 0.50919600879580962 -0.1582346624808415 ;
 createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp2|L_Feather_Turn_CNTL";
 	rename -uid "74AD3449-4B01-BE10-249E-2AA6066D96E6";
 	setAttr -k off ".v";
@@ -22858,29 +23523,28 @@ createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp2|L_F
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
-		-0.092485600631218051 0.53553765284518473 -0.12030512697261239
-		-0.065397195368445141 0.56460836575489681 -0.061724525977234435
-		-5.6516232780039894e-17 0.57664984930995422 -0.037459646552982034
-		0.065397195368445057 0.56460836575489681 -0.061724525977234448
-		0.092485600631217968 0.53553765284518473 -0.12030512697261238
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
+		0.057466838597530101 0.49145689354768834 -0.19398088018071924
+		0.017561096032916862 0.48410911142741714 -0.20878744835554977
+		-0.022344646531696388 0.49145689354768834 -0.19398088018071924
+		-0.03887414631852848 0.50919600879580962 -0.15823466248084142
+		-0.022344646531696388 0.52693512404393084 -0.1224884447809636
+		0.017561096032916852 0.53428290616420204 -0.10768187660613303
+		0.057466838597530101 0.52693512404393084 -0.12248844478096362
+		0.073996338384362204 0.50919600879580962 -0.15823466248084139
+		0.057466838597530101 0.49145689354768834 -0.19398088018071924
+		0.017561096032916862 0.48410911142741714 -0.20878744835554977
+		-0.022344646531696388 0.49145689354768834 -0.19398088018071924
 		;
 createNode transform -n "L_Feather_Turn_Grp3";
 	rename -uid "89690828-472D-66D3-B3F6-5B9E4E8B46AE";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 2.198010597490216 5.4213528633117676 3.8556719879116028 ;
 createNode transform -n "L_Feather_Turn_CNTL" -p "L_Feather_Turn_Grp3";
 	rename -uid "253CAC06-4B34-EAC3-FC3A-B7BF2035FDB8";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".t" -type "double3" 0 0 -0.013546262681509269 ;
-	setAttr ".s" -type "double3" 0.6102057181471765 0.6102057181471765 0.6102057181471765 ;
-	setAttr ".rp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
-	setAttr ".sp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
+	setAttr ".rp" -type "double3" 0 0.32831671965676534 -0.1338513896541218 ;
+	setAttr ".sp" -type "double3" 0 0.32831671965676534 -0.1338513896541218 ;
 createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp3|L_Feather_Turn_CNTL";
 	rename -uid "15C45E89-40B7-EC83-C2CD-0E9087917FF9";
 	setAttr -k off ".v";
@@ -22888,29 +23552,28 @@ createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp3|L_F
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
-		-0.092485600631218051 0.53553765284518473 -0.12030512697261239
-		-0.065397195368445141 0.56460836575489681 -0.061724525977234435
-		-5.6516232780039894e-17 0.57664984930995422 -0.037459646552982034
-		0.065397195368445057 0.56460836575489681 -0.061724525977234448
-		0.092485600631217968 0.53553765284518473 -0.12030512697261238
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
+		0.039905742564613218 0.31057760440864407 -0.16959760735399954
+		-2.5377709641103249e-17 0.30322982228837286 -0.18440417552883007
+		-0.039905742564613274 0.31057760440864407 -0.16959760735399954
+		-0.056435242351445369 0.32831671965676534 -0.13385138965412172
+		-0.039905742564613274 0.34605583490488656 -0.098105171954243897
+		-3.4486528410517244e-17 0.35340361702515777 -0.083298603779413324
+		0.039905742564613218 0.34605583490488656 -0.098105171954243911
+		0.056435242351445321 0.32831671965676534 -0.13385138965412169
+		0.039905742564613218 0.31057760440864407 -0.16959760735399954
+		-2.5377709641103249e-17 0.30322982228837286 -0.18440417552883007
+		-0.039905742564613274 0.31057760440864407 -0.16959760735399954
 		;
 createNode transform -n "L_Feather_Turn_Grp4";
 	rename -uid "452739C4-4DED-1B30-4D88-C0AD85C68409";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 2.3684400292621599 5.3679665817419684 3.9038870885402628 ;
 createNode transform -n "L_Feather_Turn_CNTL" -p "L_Feather_Turn_Grp4";
 	rename -uid "B2EA6A8D-48FF-C4CE-A3E0-909E29B17573";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".t" -type "double3" -4.4408920985006262e-16 0 -0.032511030435624644 ;
-	setAttr ".s" -type "double3" 0.6102057181471765 0.6102057181471765 0.6102057181471765 ;
-	setAttr ".rp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
-	setAttr ".sp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
+	setAttr ".rp" -type "double3" -0.04390274008229289 0.44597606307730953 -0.15281615740823673 ;
+	setAttr ".sp" -type "double3" -0.04390274008229289 0.44597606307730953 -0.15281615740823673 ;
 createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp4|L_Feather_Turn_CNTL";
 	rename -uid "4FA3AC4B-4E50-C428-F956-358762A136B7";
 	setAttr -k off ".v";
@@ -22918,29 +23581,28 @@ createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp4|L_F
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
-		-0.092485600631218051 0.53553765284518473 -0.12030512697261239
-		-0.065397195368445141 0.56460836575489681 -0.061724525977234435
-		-5.6516232780039894e-17 0.57664984930995422 -0.037459646552982034
-		0.065397195368445057 0.56460836575489681 -0.061724525977234448
-		0.092485600631217968 0.53553765284518473 -0.12030512697261238
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
+		-0.0039969975176797692 0.42823694782918825 -0.18856237510811436
+		-0.043902740082293015 0.42088916570891705 -0.20336894328294489
+		-0.083808482646906268 0.42823694782918825 -0.18856237510811436
+		-0.10033798243373836 0.44597606307730953 -0.15281615740823654
+		-0.083808482646906268 0.46371517832543074 -0.11706993970835872
+		-0.043902740082293022 0.47106296044570195 -0.10226337153352814
+		-0.0039969975176797692 0.46371517832543074 -0.11706993970835873
+		0.012532502269152333 0.44597606307730953 -0.15281615740823651
+		-0.0039969975176797692 0.42823694782918825 -0.18856237510811436
+		-0.043902740082293015 0.42088916570891705 -0.20336894328294489
+		-0.083808482646906268 0.42823694782918825 -0.18856237510811436
 		;
 createNode transform -n "L_Feather_Turn_Grp5";
 	rename -uid "EF2AFE1A-4EF1-4DD2-2FAA-65BE31808CBA";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 2.4911070401515261 5.4978365092732639 3.9596828838757601 ;
 createNode transform -n "L_Feather_Turn_CNTL" -p "L_Feather_Turn_Grp5";
 	rename -uid "F182D345-4B5F-11F0-8799-8FA654E4FB1F";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".t" -type "double3" 0 0 -0.032511030435625976 ;
-	setAttr ".s" -type "double3" 0.6102057181471765 0.6102057181471765 0.6102057181471765 ;
-	setAttr ".rp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
-	setAttr ".sp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
+	setAttr ".rp" -type "double3" -0.011689108854582297 0.38055401509316233 -0.17229800549920915 ;
+	setAttr ".sp" -type "double3" -0.011689108854582297 0.38055401509316233 -0.17229800549920915 ;
 createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp5|L_Feather_Turn_CNTL";
 	rename -uid "35928C96-4A39-4C6A-12C0-E7935FB28EF9";
 	setAttr -k off ".v";
@@ -22948,29 +23610,28 @@ createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp5|L_F
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
-		-0.092485600631218051 0.53553765284518473 -0.12030512697261239
-		-0.065397195368445141 0.56460836575489681 -0.061724525977234435
-		-5.6516232780039894e-17 0.57664984930995422 -0.037459646552982034
-		0.065397195368445057 0.56460836575489681 -0.061724525977234448
-		0.092485600631217968 0.53553765284518473 -0.12030512697261238
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
+		0.028216633710030921 0.36281489984504106 -0.20804422319908683
+		-0.011689108854582322 0.35546711772476985 -0.22285079137391739
+		-0.051594851419195571 0.36281489984504106 -0.20804422319908683
+		-0.068124351206027667 0.38055401509316233 -0.17229800549920904
+		-0.051594851419195571 0.39829313034128355 -0.13655178779933122
+		-0.01168910885458233 0.40564091246155476 -0.12174521962450065
+		0.028216633710030921 0.39829313034128355 -0.13655178779933125
+		0.044746133496863023 0.38055401509316233 -0.17229800549920904
+		0.028216633710030921 0.36281489984504106 -0.20804422319908683
+		-0.011689108854582322 0.35546711772476985 -0.22285079137391739
+		-0.051594851419195571 0.36281489984504106 -0.20804422319908683
 		;
 createNode transform -n "L_Feather_Turn_Grp6";
 	rename -uid "41C3DEA1-4E58-EB05-76AE-0BAD708217ED";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 2.6613202682189265 5.5925867076958653 4.0115134921642142 ;
 createNode transform -n "L_Feather_Turn_CNTL" -p "L_Feather_Turn_Grp6";
 	rename -uid "E4B13490-4A98-8C2B-CA0D-D18AA08D76F2";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".t" -type "double3" -0.027092525363021203 0 -0.037929535508229417 ;
-	setAttr ".s" -type "double3" 0.6102057181471765 0.6102057181471765 0.6102057181471765 ;
-	setAttr ".rp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
-	setAttr ".sp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
+	setAttr ".rp" -type "double3" -0.040729819026700476 0.38055401509316233 -0.18745743461729703 ;
+	setAttr ".sp" -type "double3" -0.040729819026700476 0.38055401509316233 -0.18745743461729703 ;
 createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp6|L_Feather_Turn_CNTL";
 	rename -uid "9C351A4B-47DC-CEC4-93E2-4F8B67CB78AD";
 	setAttr -k off ".v";
@@ -22978,29 +23639,28 @@ createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp6|L_F
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
-		-0.092485600631218051 0.53553765284518473 -0.12030512697261239
-		-0.065397195368445141 0.56460836575489681 -0.061724525977234435
-		-5.6516232780039894e-17 0.57664984930995422 -0.037459646552982034
-		0.065397195368445057 0.56460836575489681 -0.061724525977234448
-		0.092485600631217968 0.53553765284518473 -0.12030512697261238
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
+		-0.00082407646208725732 0.36281489984504106 -0.22320365231717476
+		-0.040729819026700503 0.35546711772476985 -0.23801022049200529
+		-0.080635561591313742 0.36281489984504106 -0.22320365231717476
+		-0.097165061378145845 0.38055401509316233 -0.18745743461729694
+		-0.080635561591313742 0.39829313034128355 -0.15171121691741912
+		-0.04072981902670051 0.40564091246155476 -0.13690464874258856
+		-0.00082407646208725732 0.39829313034128355 -0.15171121691741912
+		0.015705423324744845 0.38055401509316233 -0.18745743461729691
+		-0.00082407646208725732 0.36281489984504106 -0.22320365231717476
+		-0.040729819026700503 0.35546711772476985 -0.23801022049200529
+		-0.080635561591313742 0.36281489984504106 -0.22320365231717476
 		;
 createNode transform -n "L_Feather_Turn_Grp7";
 	rename -uid "F59EFBAE-4D94-7DF0-BAA4-13BCFB5D5B57";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 2.7801680369575741 5.6739817585094707 3.9558623756445068 ;
 createNode transform -n "L_Feather_Turn_CNTL" -p "L_Feather_Turn_Grp7";
 	rename -uid "9BE97962-4865-094C-5C90-B6B41B5308CA";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".t" -type "double3" -0.029591777682926423 0 0.042042240114654295 ;
-	setAttr ".s" -type "double3" 0.6102057181471765 0.6102057181471765 0.6102057181471765 ;
-	setAttr ".rp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
-	setAttr ".sp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
+	setAttr ".rp" -type "double3" -0.029591777682926867 0.38055401509316233 -0.10943384380351073 ;
+	setAttr ".sp" -type "double3" -0.029591777682926867 0.38055401509316233 -0.10943384380351073 ;
 createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp7|L_Feather_Turn_CNTL";
 	rename -uid "C63F324A-4E98-BC2E-8AAB-E3917FCD438D";
 	setAttr -k off ".v";
@@ -23008,29 +23668,28 @@ createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp7|L_F
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
-		-0.092485600631218051 0.53553765284518473 -0.12030512697261239
-		-0.065397195368445141 0.56460836575489681 -0.061724525977234435
-		-5.6516232780039894e-17 0.57664984930995422 -0.037459646552982034
-		0.065397195368445057 0.56460836575489681 -0.061724525977234448
-		0.092485600631217968 0.53553765284518473 -0.12030512697261238
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
+		0.010313964881686524 0.36281489984504106 -0.14518006150338847
+		-0.029591777682926718 0.35546711772476985 -0.159986629678219
+		-0.069497520247539968 0.36281489984504106 -0.14518006150338847
+		-0.08602702003437207 0.38055401509316233 -0.10943384380351065
+		-0.069497520247539968 0.39829313034128355 -0.073687626103632831
+		-0.029591777682926729 0.40564091246155476 -0.058881057928802258
+		0.010313964881686524 0.39829313034128355 -0.073687626103632844
+		0.026843464668518627 0.38055401509316233 -0.10943384380351064
+		0.010313964881686524 0.36281489984504106 -0.14518006150338847
+		-0.029591777682926718 0.35546711772476985 -0.159986629678219
+		-0.069497520247539968 0.36281489984504106 -0.14518006150338847
 		;
 createNode transform -n "L_Feather_Turn_Grp8";
 	rename -uid "974B9821-4BCD-C8EE-B384-C59C462FCE63";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 2.8328874559906958 5.7356113364940597 3.9552562992628837 ;
 createNode transform -n "L_Feather_Turn_CNTL" -p "L_Feather_Turn_Grp8";
 	rename -uid "964C2AA1-4FA8-2851-EB88-FF8DE28D0FE7";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".t" -type "double3" 0.032659095186330145 -8.8817841970012523e-16 0.043125076755161196 ;
-	setAttr ".s" -type "double3" 0.6102057181471765 0.6102057181471765 0.6102057181471765 ;
-	setAttr ".rp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
-	setAttr ".sp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
+	setAttr ".rp" -type "double3" 0.032659095186330145 0.41289152034519994 -0.0888691590720323 ;
+	setAttr ".sp" -type "double3" 0.032659095186330145 0.41289152034519994 -0.0888691590720323 ;
 createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp8|L_Feather_Turn_CNTL";
 	rename -uid "5F57D662-48D9-A936-8F14-77893827065F";
 	setAttr -k off ".v";
@@ -23038,29 +23697,28 @@ createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp8|L_F
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
-		-0.092485600631218051 0.53553765284518473 -0.12030512697261239
-		-0.065397195368445141 0.56460836575489681 -0.061724525977234435
-		-5.6516232780039894e-17 0.57664984930995422 -0.037459646552982034
-		0.065397195368445057 0.56460836575489681 -0.061724525977234448
-		0.092485600631217968 0.53553765284518473 -0.12030512697261238
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
+		0.072564837750943356 0.395152405097079 -0.12461537677191019
+		0.032659095186330117 0.38780462297680779 -0.13942194494674073
+		-0.0072466473782831289 0.395152405097079 -0.12461537677191019
+		-0.023776147165115225 0.41289152034520027 -0.088869159072032383
+		-0.0072466473782831289 0.43063063559332149 -0.053122941372154571
+		0.03265909518633011 0.43797841771359269 -0.038316373197323991
+		0.072564837750943356 0.43063063559332149 -0.053122941372154578
+		0.089094337537775459 0.41289152034520027 -0.088869159072032369
+		0.072564837750943356 0.395152405097079 -0.12461537677191019
+		0.032659095186330117 0.38780462297680779 -0.13942194494674073
+		-0.0072466473782831289 0.395152405097079 -0.12461537677191019
 		;
 createNode transform -n "L_Feather_Turn_Grp9";
 	rename -uid "D3F34DCC-492A-504D-3864-07A2138F7A89";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 2.9684797762565105 5.8611229671324461 3.9653545912655566 ;
 createNode transform -n "L_Feather_Turn_CNTL" -p "L_Feather_Turn_Grp9";
 	rename -uid "BC1C2E91-4A38-5D24-5277-FBB18B280561";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".t" -type "double3" 0.018855446776317113 0 0.050522301531197744 ;
-	setAttr ".s" -type "double3" 0.6102057181471765 0.6102057181471765 0.6102057181471765 ;
-	setAttr ".rp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
-	setAttr ".sp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
+	setAttr ".rp" -type "double3" 0.018855446776316676 0.38055401509316145 -0.083420119105094948 ;
+	setAttr ".sp" -type "double3" 0.018855446776316676 0.38055401509316145 -0.083420119105094948 ;
 createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp9|L_Feather_Turn_CNTL";
 	rename -uid "7D7D2568-42B5-30DB-6629-D28DB64849FB";
 	setAttr -k off ".v";
@@ -23068,29 +23726,28 @@ createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp9|L_F
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
-		-0.092485600631218051 0.53553765284518473 -0.12030512697261239
-		-0.065397195368445141 0.56460836575489681 -0.061724525977234435
-		-5.6516232780039894e-17 0.57664984930995422 -0.037459646552982034
-		0.065397195368445057 0.56460836575489681 -0.061724525977234448
-		0.092485600631217968 0.53553765284518473 -0.12030512697261238
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
+		0.05876118934093006 0.36281489984504051 -0.11916633680497267
+		0.018855446776316818 0.3554671177247693 -0.13397290497980321
+		-0.021050295788296432 0.36281489984504051 -0.11916633680497267
+		-0.037579795575128527 0.38055401509316178 -0.083420119105094864
+		-0.021050295788296432 0.398293130341283 -0.047673901405217052
+		0.018855446776316807 0.4056409124615542 -0.032867333230386472
+		0.05876118934093006 0.398293130341283 -0.047673901405217059
+		0.075290689127762156 0.38055401509316178 -0.08342011910509485
+		0.05876118934093006 0.36281489984504051 -0.11916633680497267
+		0.018855446776316818 0.3554671177247693 -0.13397290497980321
+		-0.021050295788296432 0.36281489984504051 -0.11916633680497267
 		;
 createNode transform -n "L_Feather_Turn_Grp10";
 	rename -uid "B57F68A0-47C1-7289-34B2-B889B7C16A83";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 3.1000284771376543 5.970776889266169 3.9707741114738861 ;
 createNode transform -n "L_Feather_Turn_CNTL" -p "L_Feather_Turn_Grp10";
 	rename -uid "C5FB901A-4778-257A-60A1-8CA9CD9F5E48";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".t" -type "double3" -0.0017141315251194536 0 0.044567419653112499 ;
-	setAttr ".s" -type "double3" 0.6102057181471765 0.6102057181471765 0.6102057181471765 ;
-	setAttr ".rp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
-	setAttr ".sp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
+	setAttr ".rp" -type "double3" 0.0079412239298473075 0.33536680177057931 -0.075737707319498693 ;
+	setAttr ".sp" -type "double3" 0.0079412239298473075 0.33536680177057931 -0.075737707319498693 ;
 createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp10|L_Feather_Turn_CNTL";
 	rename -uid "BC65C114-4136-DDBD-BA12-42A4FFDA6DCF";
 	setAttr -k off ".v";
@@ -23098,29 +23755,28 @@ createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp10|L_
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
-		-0.092485600631218051 0.53553765284518473 -0.12030512697261239
-		-0.065397195368445141 0.56460836575489681 -0.061724525977234435
-		-5.6516232780039894e-17 0.57664984930995422 -0.037459646552982034
-		0.065397195368445057 0.56460836575489681 -0.061724525977234448
-		0.092485600631217968 0.53553765284518473 -0.12030512697261238
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
+		0.047846966494460332 0.31762768652245804 -0.1114839250193764
+		0.0079412239298470872 0.31027990440218683 -0.12629049319420693
+		-0.031964518634766161 0.31762768652245804 -0.1114839250193764
+		-0.048494018421598256 0.33536680177057931 -0.075737707319498596
+		-0.031964518634766161 0.35310591701870053 -0.039991489619620783
+		0.0079412239298470785 0.36045369913897174 -0.025184921444790204
+		0.047846966494460332 0.35310591701870053 -0.03999148961962079
+		0.064376466281292427 0.33536680177057931 -0.075737707319498582
+		0.047846966494460332 0.31762768652245804 -0.1114839250193764
+		0.0079412239298470872 0.31027990440218683 -0.12629049319420693
+		-0.031964518634766161 0.31762768652245804 -0.1114839250193764
 		;
 createNode transform -n "L_Feather_Turn_Grp11";
 	rename -uid "E951EA9E-4EBC-2719-C044-46AA374B1BFB";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 3.3149240103569566 6.0896713426178675 3.9352678261700333 ;
 createNode transform -n "L_Feather_Turn_CNTL" -p "L_Feather_Turn_Grp11";
 	rename -uid "4600A8B5-4350-8B16-9D01-6993444AAB86";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".t" -type "double3" -0.073438745531756222 0 0.089047121675945196 ;
-	setAttr ".s" -type "double3" 0.6102057181471765 0.6102057181471765 0.6102057181471765 ;
-	setAttr ".rp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
-	setAttr ".sp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
+	setAttr ".rp" -type "double3" -0.086480374523951298 0.30483740561715678 -0.033206190105765199 ;
+	setAttr ".sp" -type "double3" -0.086480374523951298 0.30483740561715678 -0.033206190105765199 ;
 createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp11|L_Feather_Turn_CNTL";
 	rename -uid "4699DBED-4461-43EA-CFC5-7CB769BEEDAF";
 	setAttr -k off ".v";
@@ -23128,28 +23784,28 @@ createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp11|L_
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
-		-0.092485600631218051 0.53553765284518473 -0.12030512697261239
-		-0.065397195368445141 0.56460836575489681 -0.061724525977234435
-		-5.6516232780039894e-17 0.57664984930995422 -0.037459646552982034
-		0.065397195368445057 0.56460836575489681 -0.061724525977234448
-		0.092485600631217968 0.53553765284518473 -0.12030512697261238
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
+		-0.046574631959337857 0.2870982903690355 -0.068952407805642865
+		-0.086480374523951103 0.2797505082487643 -0.08375897598047341
+		-0.12638611708856434 0.2870982903690355 -0.068952407805642865
+		-0.14291561687539645 0.30483740561715678 -0.03320619010576506
+		-0.12638611708856434 0.32257652086527799 0.0025400275941127523
+		-0.086480374523951103 0.3299243029855492 0.017346595768943332
+		-0.046574631959337857 0.32257652086527799 0.0025400275941127454
+		-0.030045132172505755 0.30483740561715678 -0.033206190105765046
+		-0.046574631959337857 0.2870982903690355 -0.068952407805642865
+		-0.086480374523951103 0.2797505082487643 -0.08375897598047341
+		-0.12638611708856434 0.2870982903690355 -0.068952407805642865
 		;
 createNode transform -n "L_Feather_Turn_Grp12";
 	rename -uid "CF177DDE-4AAB-8724-BBA4-78BFA6CECBD8";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 3.4197554158957599 6.231995850391927 3.9770558319721871 ;
 createNode transform -n "L_Feather_Turn_CNTL" -p "L_Feather_Turn_Grp12";
 	rename -uid "EAD6497E-4ACD-463B-AD2D-869FD4F5F0D8";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".s" -type "double3" 0.6102057181471765 0.6102057181471765 0.6102057181471765 ;
-	setAttr ".rp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
-	setAttr ".sp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
+	setAttr ".rp" -type "double3" -0.074336589609818482 0.22387084418846648 -0.07160050674518903 ;
+	setAttr ".sp" -type "double3" -0.074336589609818482 0.22387084418846648 -0.07160050674518903 ;
 createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp12|L_Feather_Turn_CNTL";
 	rename -uid "0BB7439B-45FE-8E83-8A52-C59D0DDB4E93";
 	setAttr -k off ".v";
@@ -23157,28 +23813,28 @@ createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp12|L_
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
-		-0.092485600631218051 0.53553765284518473 -0.12030512697261239
-		-0.065397195368445141 0.56460836575489681 -0.061724525977234435
-		-5.6516232780039894e-17 0.57664984930995422 -0.037459646552982034
-		0.065397195368445057 0.56460836575489681 -0.061724525977234448
-		0.092485600631217968 0.53553765284518473 -0.12030512697261238
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
+		-0.034430847045205042 0.2061317289403452 -0.1073467244450665
+		-0.074336589609818288 0.198783946820074 -0.12215329261989705
+		-0.11424233217443153 0.2061317289403452 -0.1073467244450665
+		-0.13077183196126363 0.22387084418846648 -0.071600506745188697
+		-0.11424233217443153 0.2416099594365877 -0.035854289045310885
+		-0.074336589609818288 0.2489577415568589 -0.021047720870480305
+		-0.034430847045205042 0.2416099594365877 -0.035854289045310891
+		-0.017901347258372939 0.22387084418846648 -0.071600506745188683
+		-0.034430847045205042 0.2061317289403452 -0.1073467244450665
+		-0.074336589609818288 0.198783946820074 -0.12215329261989705
+		-0.11424233217443153 0.2061317289403452 -0.1073467244450665
 		;
 createNode transform -n "L_Feather_Turn_Grp13";
 	rename -uid "AE17D3E2-4B6D-E441-00E9-22B1AD4F08A7";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 3.4688258483849608 6.2834194674852881 4.0017442112369359 ;
 createNode transform -n "L_Feather_Turn_CNTL" -p "L_Feather_Turn_Grp13";
 	rename -uid "5527AD6A-46D8-D05D-3796-C689771B8A94";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".s" -type "double3" 0.6102057181471765 0.6102057181471765 0.6102057181471765 ;
-	setAttr ".rp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
-	setAttr ".sp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
+	setAttr ".rp" -type "double3" -1.3322676295501878e-15 0.25766458828085259 -0.10277146369073975 ;
+	setAttr ".sp" -type "double3" -1.3322676295501878e-15 0.25766458828085259 -0.10277146369073975 ;
 createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp13|L_Feather_Turn_CNTL";
 	rename -uid "283BC2FD-4D71-C707-B8D5-8E9C302AC39D";
 	setAttr -k off ".v";
@@ -23186,28 +23842,28 @@ createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp13|L_
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
-		-0.092485600631218051 0.53553765284518473 -0.12030512697261239
-		-0.065397195368445141 0.56460836575489681 -0.061724525977234435
-		-5.6516232780039894e-17 0.57664984930995422 -0.037459646552982034
-		0.065397195368445057 0.56460836575489681 -0.061724525977234448
-		0.092485600631217968 0.53553765284518473 -0.12030512697261238
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
+		0.039905742564611865 0.23992547303273165 -0.13851768139061732
+		-1.3803065857309514e-15 0.23257769091246044 -0.15332424956544785
+		-0.039905742564614627 0.23992547303273165 -0.13851768139061732
+		-0.056435242351446722 0.25766458828085292 -0.1027714636907395
+		-0.039905742564614627 0.27540370352897414 -0.067025245990861682
+		-1.3894154045003653e-15 0.28275148564924535 -0.052218677816031109
+		0.039905742564611865 0.27540370352897414 -0.067025245990861695
+		0.056435242351443968 0.25766458828085292 -0.10277146369073949
+		0.039905742564611865 0.23992547303273165 -0.13851768139061732
+		-1.3803065857309514e-15 0.23257769091246044 -0.15332424956544785
+		-0.039905742564614627 0.23992547303273165 -0.13851768139061732
 		;
 createNode transform -n "L_Feather_Turn_Grp14";
 	rename -uid "4188D1E6-4D9B-EEA8-AFED-8BAAAA0A6C9E";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 3.5785310589919992 6.3627960106206336 3.9261133743256234 ;
 createNode transform -n "L_Feather_Turn_CNTL" -p "L_Feather_Turn_Grp14";
 	rename -uid "838C688C-46D2-3036-6E47-A59B5D835DB6";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".s" -type "double3" 0.6102057181471765 0.6102057181471765 0.6102057181471765 ;
-	setAttr ".rp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
-	setAttr ".sp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
+	setAttr ".rp" -type "double3" 0 0.23508952943195194 -0.024844071326855399 ;
+	setAttr ".sp" -type "double3" 0 0.23508952943195194 -0.024844071326855399 ;
 createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp14|L_Feather_Turn_CNTL";
 	rename -uid "366707EE-49EA-6881-5DC8-6EAFDF74E767";
 	setAttr -k off ".v";
@@ -23215,28 +23871,28 @@ createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp14|L_
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
-		-0.092485600631218051 0.53553765284518473 -0.12030512697261239
-		-0.065397195368445141 0.56460836575489681 -0.061724525977234435
-		-5.6516232780039894e-17 0.57664984930995422 -0.037459646552982034
-		0.065397195368445057 0.56460836575489681 -0.061724525977234448
-		0.092485600631217968 0.53553765284518473 -0.12030512697261238
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
+		0.039905742564613218 0.21735041418383072 -0.060590289026733204
+		-2.5377709641103249e-17 0.21000263206355951 -0.075396857201563749
+		-0.039905742564613274 0.21735041418383072 -0.060590289026733204
+		-0.056435242351445369 0.23508952943195199 -0.024844071326855399
+		-0.039905742564613274 0.25282864468007321 0.010902146373022413
+		-3.4486528410517244e-17 0.26017642680034442 0.025708714547852993
+		0.039905742564613218 0.25282864468007321 0.010902146373022406
+		0.056435242351445321 0.23508952943195199 -0.024844071326855385
+		0.039905742564613218 0.21735041418383072 -0.060590289026733204
+		-2.5377709641103249e-17 0.21000263206355951 -0.075396857201563749
+		-0.039905742564613274 0.21735041418383072 -0.060590289026733204
 		;
 createNode transform -n "L_Feather_Turn_Grp15";
 	rename -uid "F24AA474-4CD7-05C8-BB27-30A442B45825";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 3.7707371585532772 6.4084370780309365 3.9352791035179124 ;
 createNode transform -n "L_Feather_Turn_CNTL" -p "L_Feather_Turn_Grp15";
 	rename -uid "002442F7-4EB7-4C25-A712-91BCEBF9FBF3";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".s" -type "double3" 0.6102057181471765 0.6102057181471765 0.6102057181471765 ;
-	setAttr ".rp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
-	setAttr ".sp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
+	setAttr ".rp" -type "double3" -0.088082897513421354 0.26840615192439277 -0.038481364990537337 ;
+	setAttr ".sp" -type "double3" -0.088082897513421354 0.26840615192439277 -0.038481364990537337 ;
 createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp15|L_Feather_Turn_CNTL";
 	rename -uid "9B10F48D-45B2-D8FE-46FF-4D8CF70930D8";
 	setAttr -k off ".v";
@@ -23244,28 +23900,28 @@ createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp15|L_
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
-		-0.092485600631218051 0.53553765284518473 -0.12030512697261239
-		-0.065397195368445141 0.56460836575489681 -0.061724525977234435
-		-5.6516232780039894e-17 0.57664984930995422 -0.037459646552982034
-		0.065397195368445057 0.56460836575489681 -0.061724525977234448
-		0.092485600631217968 0.53553765284518473 -0.12030512697261238
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
+		-0.048177154948808192 0.2506670366762716 -0.074227582690414823
+		-0.088082897513421438 0.2433192545560004 -0.089034150865245368
+		-0.12798864007803468 0.2506670366762716 -0.074227582690414823
+		-0.14451813986486678 0.26840615192439288 -0.038481364990537018
+		-0.12798864007803468 0.2861452671725141 -0.0027351472906592053
+		-0.088082897513421438 0.2934930492927853 0.012071420884171374
+		-0.048177154948808192 0.2861452671725141 -0.0027351472906592122
+		-0.031647655161976089 0.26840615192439288 -0.038481364990537004
+		-0.048177154948808192 0.2506670366762716 -0.074227582690414823
+		-0.088082897513421438 0.2433192545560004 -0.089034150865245368
+		-0.12798864007803468 0.2506670366762716 -0.074227582690414823
 		;
 createNode transform -n "L_Feather_Turn_Grp16";
 	rename -uid "C0207BC8-457F-A777-9458-F28713128DE8";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 3.8085728149342035 6.4521365128709531 4.0399337573280309 ;
 createNode transform -n "L_Feather_Turn_CNTL" -p "L_Feather_Turn_Grp16";
 	rename -uid "88185BCB-4448-B9AE-74A8-05AF169B702E";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".s" -type "double3" 0.6102057181471765 0.6102057181471765 0.6102057181471765 ;
-	setAttr ".rp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
-	setAttr ".sp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
+	setAttr ".rp" -type "double3" -0.027100134684193478 0.27162460374271902 -0.12030512697261431 ;
+	setAttr ".sp" -type "double3" -0.027100134684193478 0.27162460374271902 -0.12030512697261431 ;
 createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp16|L_Feather_Turn_CNTL";
 	rename -uid "E1E17EA3-4C5E-A584-CF35-539F27FE3E22";
 	setAttr -k off ".v";
@@ -23273,28 +23929,28 @@ createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp16|L_
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
-		-0.092485600631218051 0.53553765284518473 -0.12030512697261239
-		-0.065397195368445141 0.56460836575489681 -0.061724525977234435
-		-5.6516232780039894e-17 0.57664984930995422 -0.037459646552982034
-		0.065397195368445057 0.56460836575489681 -0.061724525977234448
-		0.092485600631217968 0.53553765284518473 -0.12030512697261238
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
+		0.012805607880419907 0.25388548849459774 -0.15605134467249188
+		-0.027100134684193335 0.24653770637432654 -0.17085791284732244
+		-0.067005877248806578 0.25388548849459774 -0.15605134467249188
+		-0.08353537703563868 0.27162460374271902 -0.12030512697261407
+		-0.067005877248806578 0.28936371899084024 -0.084558909272736266
+		-0.027100134684193346 0.29671150111111144 -0.069752341097905679
+		0.012805607880419907 0.28936371899084024 -0.084558909272736266
+		0.02933510766725201 0.27162460374271902 -0.12030512697261406
+		0.012805607880419907 0.25388548849459774 -0.15605134467249188
+		-0.027100134684193335 0.24653770637432654 -0.17085791284732244
+		-0.067005877248806578 0.25388548849459774 -0.15605134467249188
 		;
 createNode transform -n "L_Feather_Turn_Grp17";
 	rename -uid "858A4FEC-4AE1-7EED-A205-2B98539ACA0F";
+	setAttr ".v" no;
 	setAttr ".t" -type "double3" 3.843309153732767 6.4774827343004544 4.0674774362418784 ;
 createNode transform -n "L_Feather_Turn_CNTL" -p "L_Feather_Turn_Grp17";
 	rename -uid "2E98C9CA-4E79-00D1-3E31-14AC0D0D55F7";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".s" -type "double3" 0.6102057181471765 0.6102057181471765 0.6102057181471765 ;
-	setAttr ".rp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
-	setAttr ".sp" -type "double3" 0 0.53553765284518473 -0.12030512697261253 ;
+	setAttr ".rp" -type "double3" 0.058445544272911487 0.27162460374271902 -0.12030512697261342 ;
+	setAttr ".sp" -type "double3" 0.058445544272911487 0.27162460374271902 -0.12030512697261342 ;
 createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp17|L_Feather_Turn_CNTL";
 	rename -uid "9F770B86-45BB-0D69-5E89-A0B421AD1E42";
 	setAttr -k off ".v";
@@ -23302,36 +23958,36 @@ createNode nurbsCurve -n "L_Feather_Turn_CNTLShape" -p "|L_Feather_Turn_Grp17|L_
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
-		-0.092485600631218051 0.53553765284518473 -0.12030512697261239
-		-0.065397195368445141 0.56460836575489681 -0.061724525977234435
-		-5.6516232780039894e-17 0.57664984930995422 -0.037459646552982034
-		0.065397195368445057 0.56460836575489681 -0.061724525977234448
-		0.092485600631217968 0.53553765284518473 -0.12030512697261238
-		0.065397195368445057 0.50646693993547265 -0.17888572796799035
-		-4.1588777172000146e-17 0.4944254563804153 -0.20315060739224269
-		-0.065397195368445141 0.50646693993547265 -0.17888572796799035
+		0.098351286837524865 0.25388548849459774 -0.15605134467249079
+		0.058445544272911626 0.24653770637432654 -0.17085791284732132
+		0.01853980170829838 0.25388548849459774 -0.15605134467249079
+		0.0020103019214662843 0.27162460374271902 -0.12030512697261299
+		0.01853980170829838 0.28936371899084024 -0.084558909272735183
+		0.058445544272911619 0.29671150111111144 -0.069752341097904597
+		0.098351286837524865 0.28936371899084024 -0.084558909272735183
+		0.11488078662435697 0.27162460374271902 -0.12030512697261297
+		0.098351286837524865 0.25388548849459774 -0.15605134467249079
+		0.058445544272911626 0.24653770637432654 -0.17085791284732132
+		0.01853980170829838 0.25388548849459774 -0.15605134467249079
 		;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "F1B26592-4B21-8136-3D87-49BC3D195CD0";
+	rename -uid "C669EEA1-423A-902C-90A2-EFA5CDE92B97";
 	setAttr -s 16 ".lnk";
 	setAttr -s 16 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "9BA52BF7-43C5-9B79-FE06-8D9E53E36A98";
+	rename -uid "072E350F-4E92-6CFF-C0D4-EC9311B44B66";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "6D34EB0B-4256-1871-2BC0-0088430E76BB";
+	rename -uid "BC5E84D1-431E-048A-9C53-36B5ED8736C3";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "BE5B0F45-4956-2C43-CEEB-07AE68E908E9";
-	setAttr ".cdl" 8;
+	rename -uid "101E7D42-401A-1E07-27BA-34BD5FC7A092";
+	setAttr ".cdl" 2;
 	setAttr -s 11 ".dli[1:10]"  5 2 1 3 4 6 7 8 
 		9 10;
-	setAttr -s 11 ".dli";
+	setAttr -s 4 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "1D369494-4E96-6148-77EA-D68CEEE905BB";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "D02EFA7D-40A8-1213-E918-F58CA13B83EB";
+	rename -uid "B84A8906-4FE7-1271-72BF-01BCE75E3A18";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "AF6FD67B-4747-DE19-F1CD-5688F6096AC8";
 	setAttr ".g" yes;
@@ -23359,19 +24015,19 @@ createNode script -n "uiConfigurationScriptNode";
 	rename -uid "7992949F-47E5-CEFD-FB3F-3EBA2F0306B4";
 	setAttr ".b" -type "string" (
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n"
-		+ "            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n"
+		+ "            -ignorePanZoom 0\n            -wireframeOnShaded 1\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n"
 		+ "            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n"
-		+ "            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 621\n            -height 355\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 276\n            -height 335\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 1\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 621\n            -height 355\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 275\n            -height 335\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
 		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 1\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n"
 		+ "            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n"
-		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 621\n            -height 355\n"
+		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 276\n            -height 335\n"
 		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 1\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n"
 		+ "            -xray 0\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
 		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
-		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1249\n            -height 754\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n"
+		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 558\n            -height 714\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n"
 		+ "            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n"
 		+ "            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n"
 		+ "\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n"
@@ -23395,10 +24051,10 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n"
 		+ "                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n"
 		+ "                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -highlightConnections 0\n                -copyConnectionsOnPaste 0\n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n"
-		+ "                -extendToShapes 1\n                -activeTab 0\n                -editorMode \"default\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1249\\n    -height 754\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1249\\n    -height 754\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -highlightConnections 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -connectionMinSegment 0.03\n                -connectionOffset 0.03\n                -connectionRoundness 0.8\n                -connectionTension -100\n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n"
+		+ "                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -activeTab 0\n                -editorMode \"default\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 558\\n    -height 714\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 558\\n    -height 714\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -23491,17 +24147,6 @@ createNode cameraView -n "GenericMesh_V10_1:cameraView1";
 	setAttr ".u" -type "double3" -0.15919129571138893 0.96438057080800976 -0.21125398461980896 ;
 	setAttr ".tp" -type "double3" 0 13.468028277252671 1 ;
 	setAttr ".fl" 34.999999999999979;
-createNode displayLayer -n "BasicVersion";
-	rename -uid "EEE9BAA9-4353-04C9-E3A5-FB97F9B2C491";
-	setAttr ".v" no;
-	setAttr ".c" 13;
-	setAttr ".do" 1;
-createNode displayLayer -n "GenericMesh";
-	rename -uid "64085ACF-4E6D-2568-FB9F-879C586C2123";
-	setAttr ".dt" 1;
-	setAttr ".v" no;
-	setAttr ".c" 6;
-	setAttr ".do" 2;
 createNode polyUnite -n "polyUnite3";
 	rename -uid "0F08FB27-4471-AF5B-0EEA-CEB128F10A4B";
 createNode polyUnite -n "polyUnite4";
@@ -23509,18 +24154,7 @@ createNode polyUnite -n "polyUnite4";
 createNode displayLayer -n "Quetzal_Skin";
 	rename -uid "37CE361B-4096-F218-0EE8-4F9756D4DA5E";
 	setAttr ".dt" 2;
-	setAttr ".do" 5;
-createNode displayLayer -n "bone_lyer";
-	rename -uid "089672D2-4868-01C4-9E6F-2CB4C8DDDC71";
-	setAttr ".dt" 2;
-	setAttr ".v" no;
-	setAttr ".c" 4;
-	setAttr ".do" 8;
-createNode displayLayer -n "images";
-	rename -uid "86F120BB-42FE-5D8B-750A-BBA6ED25DCD4";
-	setAttr ".dt" 2;
-	setAttr ".v" no;
-	setAttr ".do" 3;
+	setAttr ".do" 1;
 createNode lambert -n "Hair";
 	rename -uid "73E078F3-4199-6D12-271E-47860AF41811";
 createNode shadingEngine -n "lambert2SG";
@@ -23564,16 +24198,6 @@ createNode groupId -n "groupId429";
 createNode groupId -n "groupId430";
 	rename -uid "39E1EF44-4511-470E-13AD-46BF6BCA4F33";
 	setAttr ".ihi" 0;
-createNode displayLayer -n "layer1";
-	rename -uid "DB5F4816-49EA-A792-37E9-64BD943A5FEB";
-	setAttr ".dt" 2;
-	setAttr ".v" no;
-	setAttr ".do" 4;
-createNode displayLayer -n "Muscles";
-	rename -uid "BE606D21-4F5A-43A1-B876-E5AF2B3F0507";
-	setAttr ".dt" 2;
-	setAttr ".v" no;
-	setAttr ".do" 7;
 createNode lambert -n "Feather";
 	rename -uid "F2D76DFA-41F4-3331-E9BE-3691C5B6E562";
 createNode shadingEngine -n "lambert5SG";
@@ -23585,14 +24209,14 @@ createNode materialInfo -n "materialInfo4";
 	rename -uid "48D73A9D-4F05-8A03-68CA-AC95E84478DC";
 createNode file -n "file3";
 	rename -uid "3F4AE02A-4EEB-038E-2F11-14A563879594";
-	setAttr ".ftn" -type "string" "C:/Users/Zenrock/Desktop/M_work/CharacterDevelopment/Maya/images/Feather 2.png";
+	setAttr ".ftn" -type "string" "C:/Users/10721401/Desktop/CharacterDevelopment/Maya/images/Feather 2.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "place2dTexture3";
 	rename -uid "0DEF0C7A-473B-48E1-082A-E28C73FC4A65";
 createNode displayLayer -n "Feathers";
 	rename -uid "BAD22D8A-4E01-0B35-8268-589EE15165DD";
 	setAttr ".dt" 2;
-	setAttr ".do" 6;
+	setAttr ".do" 2;
 createNode groupId -n "groupId444";
 	rename -uid "7DAA1A85-453C-94C3-BC02-579EE3889330";
 	setAttr ".ihi" 0;
@@ -23625,7 +24249,7 @@ createNode lambert -n "FeatherGreen";
 createNode shadingEngine -n "lambert7SG";
 	rename -uid "3531BC7B-435B-680A-CBF4-2AB0BC06982B";
 	setAttr ".ihi" 0;
-	setAttr -s 39 ".dsm";
+	setAttr -s 38 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo6";
 	rename -uid "071FFCAA-4E25-D707-DA10-43B4E59F7916";
@@ -23955,16 +24579,11 @@ createNode polySplitRing -n "polySplitRing15";
 	setAttr ".div" 1;
 	setAttr ".p[0]"  0 0 1;
 	setAttr ".fq" yes;
-createNode displayLayer -n "Organs";
-	rename -uid "EEA88100-4CAB-A232-8379-88A1F3958DB8";
-	setAttr ".dt" 2;
-	setAttr ".v" no;
-	setAttr ".do" 9;
 createNode displayLayer -n "Rig";
 	rename -uid "3AF15F37-4EF7-030D-B606-DEA0A77CE585";
-	setAttr ".dt" 2;
+	setAttr ".dt" 1;
 	setAttr ".c" 12;
-	setAttr ".do" 10;
+	setAttr ".do" 3;
 createNode groupId -n "groupId457";
 	rename -uid "D3851069-403E-464F-7484-40A94EBF30D7";
 	setAttr ".ihi" 0;
@@ -24507,7 +25126,7 @@ createNode skinCluster -n "skinCluster1";
 		5 1 0.010640378916192557 5 0.057008183597111323 6 0.4627588488933887 
 		7 0.46275884889338892 8 0.0068337396999185495
 		5 1 3.6135512105854764e-05 5 0.0011166841874768068 6 0.55415080653597137 
-		7 0.44468316661880086 8 1.320714564522196e-05
+		7 0.44468316661880086 8 1.3207145645221961e-05
 		5 0 0.00016529565374458495 1 0.00084708707248541508 5 0.49821097567389711 
 		6 0.49821097567389699 7 0.002565665925975914
 		5 0 0.0046071046640801848 1 0.11203024792411899 5 0.8685019699586406 
@@ -24887,7 +25506,7 @@ createNode skinCluster -n "skinCluster1";
 		5 19 0.0018189621769709851 20 0.50104488422553495 21 0.49708995163634712 
 		22 2.4831826460225614e-05 24 2.1370134686851858e-05
 		5 19 0.004776880700775552 20 0.49753999557483453 21 0.49753999557483453 
-		22 8.2307392184989193e-05 24 6.082075737052404e-05
+		22 8.2307392184989193e-05 24 6.0820757370524034e-05
 		5 19 0.0019150622202393052 20 0.49901967468907005 21 0.49901967468906994 
 		22 2.1713203428698993e-05 24 2.3875198192004157e-05
 		5 19 0.0027459715067544182 20 0.49858780308070266 21 0.49858780308070288 
@@ -25159,7 +25778,7 @@ createNode skinCluster -n "skinCluster1";
 		23 0.034677386485686294 24 0.48179780076473583
 		5 19 9.0312443021886278e-05 20 0.69952449271454009 22 0.001411943927941023 
 		23 0.29507122407168457 24 0.0039020268428124772
-		5 19 1.4175305624683e-05 20 0.49959681501976072 22 0.00027653879083081614 
+		5 19 1.4175305624682999e-05 20 0.49959681501976072 22 0.00027653879083081614 
 		23 0.49959681501976072 24 0.00051565586402308047
 		5 19 0.00082696488083626918 20 0.46730322837283705 22 0.0035442586105732966 
 		23 0.061022319762916381 24 0.46730322837283705
@@ -27095,7 +27714,7 @@ createNode skinCluster -n "skinCluster1";
 		16 0.23009592901578907 17 0.010279364705815489
 		5 12 0.0020969207659969147 13 0.42352513298747912 15 0.013054781009371302 
 		16 0.21049342454900272 17 0.35082974068814998
-		5 12 2.023516142705766e-05 13 0.49968367425222115 15 0.49968367425222115 
+		5 12 2.0235161427057663e-05 13 0.49968367425222115 15 0.49968367425222115 
 		16 0.00057553691167215864 17 3.6879422458491919e-05
 		5 12 0.00056141006096820686 13 0.48998469860258442 15 0.4119775362623514 
 		16 0.095182215499413803 17 0.0022941395746823106
@@ -27909,94 +28528,94 @@ createNode skinCluster -n "skinCluster1";
 		16 0.00062834976452861224 17 0.49573672355631165;
 	setAttr -s 30 ".pm";
 	setAttr ".pm[0]" -type "matrix" -1.1724593854044932e-15 -1.8986899309219915e-15 -1.0000000000000004 0
-		 0.60746352254989666 0.79434757428424974 -2.0854647357956239e-15 0 0.79434757428424996 -0.60746352254989666 1.9716901644216071e-16 -0
+		 0.60746352254989666 0.79434757428424974 -2.0854647357956239e-15 0 0.79434757428424996 -0.60746352254989666 1.9716901644216071e-16 0
 		 -4.5398074138127722 -0.84323280432723846 6.1141666032721496e-15 1;
 	setAttr ".pm[1]" -type "matrix" -1.9589145916877621e-15 -1.068802173781663e-15 -1.0000000000000004 0
-		 0.92113987448843759 0.38923171970874348 -2.0854647357956243e-15 0 0.38923171970874371 -0.92113987448843782 1.9716901644216071e-16 -0
+		 0.92113987448843759 0.38923171970874348 -2.0854647357956243e-15 0 0.38923171970874371 -0.92113987448843782 1.9716901644216071e-16 0
 		 -5.6642290374374689 2.069826633487533 5.6533420480109252e-15 1;
-	setAttr ".pm[2]" -type "matrix" 1.0000000000000004 -4.6532490225312951e-15 -8.6621057107706258e-16 -0
-		 4.4724442387397109e-15 1 5.5511151231257423e-16 -0 9.1305400818299576e-16 -3.3306690738754888e-16 1.0000000000000004 -0
+	setAttr ".pm[2]" -type "matrix" 1.0000000000000004 -4.6532490225312951e-15 -8.6621057107706258e-16 0
+		 4.4724442387397109e-15 1 5.5511151231257423e-16 0 9.1305400818299576e-16 -3.3306690738754888e-16 1.0000000000000004 0
 		 -0.61023652322465061 -4.9657216201607364 -3.9539119714193021 1;
-	setAttr ".pm[3]" -type "matrix" 1.0000000000000004 -4.6532490225312951e-15 -8.6621057107706258e-16 -0
-		 4.4724442387397109e-15 1 5.5511151231257423e-16 -0 9.1305400818299576e-16 -3.3306690738754888e-16 1.0000000000000004 -0
+	setAttr ".pm[3]" -type "matrix" 1.0000000000000004 -4.6532490225312951e-15 -8.6621057107706258e-16 0
+		 4.4724442387397109e-15 1 5.5511151231257423e-16 0 9.1305400818299576e-16 -3.3306690738754888e-16 1.0000000000000004 0
 		 -1.8881070992558726 -5.2412856554343561 -3.9129922979044238 1;
-	setAttr ".pm[4]" -type "matrix" 1.0000000000000004 -4.6532490225312951e-15 -8.6621057107706258e-16 -0
-		 4.4724442387397109e-15 1 5.5511151231257423e-16 -0 9.1305400818299576e-16 -3.3306690738754888e-16 1.0000000000000004 -0
+	setAttr ".pm[4]" -type "matrix" 1.0000000000000004 -4.6532490225312951e-15 -8.6621057107706258e-16 0
+		 4.4724442387397109e-15 1 5.5511151231257423e-16 0 9.1305400818299576e-16 -3.3306690738754888e-16 1.0000000000000004 0
 		 -2.7859556124191127 -5.6797610447854243 -4.0563526633118911 1;
-	setAttr ".pm[5]" -type "matrix" 1.0000000000000004 4.6532490225312951e-15 8.6621057107706308e-16 -0
-		 4.4724442387397109e-15 -1 -6.6613381477508988e-16 0 9.1305400818299576e-16 3.3306690738754888e-16 -1.0000000000000004 -0
+	setAttr ".pm[5]" -type "matrix" 1.0000000000000004 4.6532490225312951e-15 8.6621057107706308e-16 0
+		 4.4724442387397109e-15 -1 -6.6613381477508988e-16 0 9.1305400818299576e-16 3.3306690738754888e-16 -1.0000000000000004 0
 		 0.61023699999997427 4.9657200000000072 3.9539100000000102 1;
-	setAttr ".pm[6]" -type "matrix" 1.0000000000000004 4.6532490225312951e-15 8.6621057107706308e-16 -0
-		 4.4724442387397109e-15 -1 -6.6613381477508988e-16 0 9.1305400818299576e-16 3.3306690738754888e-16 -1.0000000000000004 -0
+	setAttr ".pm[6]" -type "matrix" 1.0000000000000004 4.6532490225312951e-15 8.6621057107706308e-16 0
+		 4.4724442387397109e-15 -1 -6.6613381477508988e-16 0 9.1305400818299576e-16 3.3306690738754888e-16 -1.0000000000000004 0
 		 1.8881099999999749 5.2412900000000056 3.9129900000000126 1;
-	setAttr ".pm[7]" -type "matrix" 1.0000000000000004 4.6532490225312951e-15 8.6621057107706308e-16 -0
-		 4.4724442387397109e-15 -1 -6.6613381477508988e-16 0 9.1305400818299576e-16 3.3306690738754888e-16 -1.0000000000000004 -0
+	setAttr ".pm[7]" -type "matrix" 1.0000000000000004 4.6532490225312951e-15 8.6621057107706308e-16 0
+		 4.4724442387397109e-15 -1 -6.6613381477508988e-16 0 9.1305400818299576e-16 3.3306690738754888e-16 -1.0000000000000004 0
 		 2.7859599999999771 5.6797600000000052 4.0563500000000117 1;
 	setAttr ".pm[8]" -type "matrix" -1.6746840577123104e-15 -1.4748280479608014e-15 -1.0000000000000002 0
-		 0.81250594089105477 0.58295291063407662 -2.0854647357956235e-15 0 0.58295291063407684 -0.81250594089105499 1.9716901644216069e-16 -0
+		 0.81250594089105477 0.58295291063407662 -2.0854647357956235e-15 0 0.58295291063407684 -0.81250594089105499 1.9716901644216069e-16 0
 		 -7.3253095218262478 0.51413609159262319 5.8348162064116117e-15 1;
-	setAttr ".pm[9]" -type "matrix" 2.1819343160561443e-15 -4.678109710387766e-16 -1.0000000000000002 -0
-		 -0.95206685556953885 0.30589001704196034 -2.0854647357956235e-15 0 0.30589001704196039 0.95206685556953929 1.9716901644216078e-16 -0
+	setAttr ".pm[9]" -type "matrix" 2.1819343160561443e-15 -4.678109710387766e-16 -1.0000000000000002 0
+		 -0.95206685556953885 0.30589001704196034 -2.0854647357956235e-15 0 0.30589001704196039 0.95206685556953929 1.9716901644216078e-16 0
 		 4.2696560970242698 -6.6275866657539071 5.8411685282956341e-15 1;
-	setAttr ".pm[10]" -type "matrix" 7.3619695216294613e-16 1.9841198808930253e-15 1.0000000000000004 -0
-		 -0.23433811634896151 -0.97215515594272328 1.9664100657956387e-15 0 0.97215515594272361 -0.23433811634896168 -2.2586715885265849e-16 -0
+	setAttr ".pm[10]" -type "matrix" 7.3619695216294613e-16 1.9841198808930253e-15 1.0000000000000004 0
+		 -0.23433811634896151 -0.97215515594272328 1.9664100657956387e-15 0 0.97215515594272361 -0.23433811634896168 -2.2586715885265849e-16 0
 		 -3.7326798460033221 6.6099698449846089 -6.2780685890652071e-15 1;
-	setAttr ".pm[11]" -type "matrix" 0.056435840973569629 -4.3454823073219018e-16 0.99840622787200506 -0
-		 -0.99410082547873535 0.092768284652170685 0.056192474097431687 0 -0.092620433145730069 -0.99568772482274503 0.0052354561600203367 -0
+	setAttr ".pm[11]" -type "matrix" 0.056435840973569629 -4.3454823073219018e-16 0.99840622787200506 0
+		 -0.99410082547873535 0.092768284652170685 0.056192474097431687 0 -0.092620433145730069 -0.99568772482274503 0.0052354561600203367 0
 		 3.5839505602881814 3.073713106036418 -0.73165735898354833 1;
-	setAttr ".pm[12]" -type "matrix" -0.037806812669614588 3.2375144232155144e-14 0.99928506689320851 -0
-		 -0.94409443977002072 -0.3277344360017076 -0.035718738135225109 0 0.32750012780317345 -0.94476988704056519 0.012390594427328951 -0
+	setAttr ".pm[12]" -type "matrix" -0.037806812669614588 3.2375144232155144e-14 0.99928506689320851 0
+		 -0.94409443977002072 -0.3277344360017076 -0.035718738135225109 0 0.32750012780317345 -0.94476988704056519 0.012390594427328951 0
 		 1.3708479606019903 3.9906699100365621 -0.51850968920520746 1;
-	setAttr ".pm[13]" -type "matrix" 1.4191899355238814e-15 5.0831083003283902e-16 1 -0
-		 -0.3371936058512171 0.94143532553917564 -1.1886842610715549e-16 0 -0.94143532553917586 -0.33719360585121749 1.5407540380711614e-15 -0
+	setAttr ".pm[13]" -type "matrix" 1.4191899355238814e-15 5.0831083003283902e-16 1 0
+		 -0.3371936058512171 0.94143532553917564 -1.1886842610715549e-16 0 -0.94143532553917586 -0.33719360585121749 1.5407540380711614e-15 0
 		 3.999314839892298 -0.8418862964749525 -0.55224843390576595 1;
-	setAttr ".pm[14]" -type "matrix" 0.12803608656568169 3.6862873864507151e-18 0.99176950978387401 -0
-		 -0.0021197131379319827 0.99999771596277143 0.0002736520654700237 0 -0.99176724454539156 -0.0021373041992329717 0.12803579412649344 -0
+	setAttr ".pm[14]" -type "matrix" 0.12803608656568169 3.6862873864507151e-18 0.99176950978387401 0
+		 -0.0021197131379319827 0.99999771596277143 0.0002736520654700237 0 -0.99176724454539156 -0.0021373041992329717 0.12803579412649344 0
 		 3.2877377803766317 -2.0982923692052933 -0.98127387801163946 1;
-	setAttr ".pm[15]" -type "matrix" 0.25103854212413357 -2.60208521396521e-17 -0.96797709186126391 -0
-		 -0.036201197241268024 0.99930041957101245 -0.0093885442692879257 0 0.96729991403208992 0.037398816093528339 0.25086292047314201 -0
+	setAttr ".pm[15]" -type "matrix" 0.25103854212413357 -2.6020852139652103e-17 -0.96797709186126391 0
+		 -0.036201197241268024 0.99930041957101245 -0.0093885442692879257 0 0.96729991403208992 0.037398816093528339 0.25086292047314201 0
 		 -3.6591821359311645 -2.2795949567134133 -0.28168800101006247 1;
-	setAttr ".pm[16]" -type "matrix" -0.02818489306477066 1.8648277366750669e-16 -0.99960272698854091 -0
-		 0.12317315551458649 0.99237911708079485 -0.0034730019465707999 -0 0.99198487164044347 -0.1232221083326424 -0.027970099294633791 -0
+	setAttr ".pm[16]" -type "matrix" -0.02818489306477066 1.8648277366750669e-16 -0.99960272698854091 0
+		 0.12317315551458649 0.99237911708079485 -0.0034730019465707999 0 0.99198487164044347 -0.1232221083326424 -0.027970099294633791 0
 		 -3.9570530388639225 -1.6627122160847103 0.67296621694761527 1;
 	setAttr ".pm[17]" -type "matrix" -0.28889592702502653 -7.6327832942979475e-17 -0.95736050855900168 0
-		 -0.029341143730833429 0.99953024102812382 0.008854069958298608 0 0.95691077987078654 0.030647957032400377 -0.28876021557136816 -0
+		 -0.029341143730833429 0.99953024102812382 0.008854069958298608 0 0.95691077987078654 0.030647957032400377 -0.28876021557136816 0
 		 -3.3355319846248173 -2.2424935000351316 1.476656117238671 1;
-	setAttr ".pm[18]" -type "matrix" -0.056435276022829925 -4.3368086899420197e-16 0.998406259806211 -0
+	setAttr ".pm[18]" -type "matrix" -0.056435276022829925 -4.3368086899420197e-16 0.998406259806211 0
 		 -0.99410080226038922 0.092768876070547152 -0.056191908473181229 0 -0.092621026584020966 -0.99568766972008249 -0.0052354371273694343 0
 		 3.5839544028684611 3.0737148008847242 0.73165552479699658 1;
-	setAttr ".pm[19]" -type "matrix" 0.037806532690731282 8.2867740447412106e-15 0.99928507748585194 -0
-		 -0.94409642109801228 -0.3277287490963916 0.035718548201729081 0 0.32749444843512926 -0.94477185977129696 -0.012390287666397342 -0
+	setAttr ".pm[19]" -type "matrix" 0.037806532690731282 8.2867740447412106e-15 0.99928507748585194 0
+		 -0.94409642109801228 -0.3277287490963916 0.035718548201729081 0 0.32749444843512926 -0.94477185977129696 -0.012390287666397342 0
 		 1.3708712530322797 3.990665272938303 0.51850880477573802 1;
-	setAttr ".pm[20]" -type "matrix" 1.0218799218215451e-15 1.1529339576299709e-16 1.0000000000000002 -0
-		 -0.33709229794058798 0.94147160481298309 1.0295880500783045e-16 0 -0.94147160481298342 -0.33709229794058815 1.0285995083225564e-15 -0
+	setAttr ".pm[20]" -type "matrix" 1.0218799218215451e-15 1.1529339576299709e-16 1.0000000000000002 0
+		 -0.33709229794058798 0.94147160481298309 1.0295880500783045e-16 0 -0.94147160481298342 -0.33709229794058815 1.0285995083225564e-15 0
 		 3.9992248410736058 -0.84231123306043865 0.55224799999999741 1;
-	setAttr ".pm[21]" -type "matrix" -0.12803868005263877 -2.3033875154454552e-16 0.99176917496480932 -0
+	setAttr ".pm[21]" -type "matrix" -0.12803868005263877 -2.3033875154454552e-16 0.99176917496480932 0
 		 -0.0021470134396193211 0.99999765674891206 -0.0002771822050970587 0 -0.99176685100061124 -0.002164831791324439 -0.12803838002586246 0
 		 3.2877884682766987 -2.0982039947659992 0.98128891312332756 1;
-	setAttr ".pm[22]" -type "matrix" 0.34018627608714475 -2.8102520310824295e-16 -0.94035806880249728 -0
-		 -0.043023558600356296 0.99895281453621887 -0.015564309670794569 0 0.93937333950209789 0.0457523150252169 0.33983003796384853 -0
+	setAttr ".pm[22]" -type "matrix" 0.34018627608714475 -2.8102520310824295e-16 -0.94035806880249728 0
+		 -0.043023558600356296 0.99895281453621887 -0.015564309670794569 0 0.93937333950209789 0.0457523150252169 0.33983003796384853 0
 		 -3.2186340775475921 -2.2969545542053358 -1.6429976965004338 1;
-	setAttr ".pm[23]" -type "matrix" -0.011666576031814695 -1.1709383462843453e-16 -0.99993194318598222 -0
-		 0.1165076054143966 0.99318886929051642 -0.0013593373490208569 -0 0.99312127602035472 -0.11651553509049861 -0.011587113457529892 -0
+	setAttr ".pm[23]" -type "matrix" -0.011666576031814695 -1.1709383462843453e-16 -0.99993194318598222 0
+		 0.1165076054143966 0.99318886929051642 -0.0013593373490208569 0 0.99312127602035472 -0.11651553509049861 -0.011587113457529892 0
 		 -3.9824451494112072 -1.7001856489081686 -0.50203771476565162 1;
 	setAttr ".pm[24]" -type "matrix" -0.25105715302329634 -2.810252031082428e-16 -0.96797226505506728 0
-		 -0.03619422291388294 0.99930068221743673 0.0093874782250428623 0 0.96729534483708635 0.037391797493106733 -0.25088158429174751 -0
+		 -0.03619422291388294 0.99930068221743673 0.0093874782250428623 0 0.96729534483708635 0.037391797493106733 -0.25088158429174751 0
 		 -3.6591961884763116 -2.2795709569628229 0.28176362823478612 1;
-	setAttr ".pm[25]" -type "matrix" 3.5770687678884975e-16 -6.7660211319893708e-15 1.0000000000000002 -0
-		 -0.257718850813064 0.96621995111651138 6.4946710991633145e-15 0 -0.9662199511165116 -0.25771885081306395 -1.373232081225373e-15 -0
+	setAttr ".pm[25]" -type "matrix" 3.5770687678884975e-16 -6.7660211319893708e-15 1.0000000000000002 0
+		 -0.257718850813064 0.96621995111651138 6.4946710991633145e-15 0 -0.9662199511165116 -0.25771885081306395 -1.3732320812253732e-15 0
 		 2.2689642756248869 -2.4590156653995408 9.3866971079599014e-15 1;
-	setAttr ".pm[26]" -type "matrix" 3.5770687678884975e-16 -6.7660211319893708e-15 1.0000000000000002 -0
-		 -0.257718850813064 0.96621995111651138 6.4946710991633145e-15 0 -0.9662199511165116 -0.25771885081306395 -1.373232081225373e-15 -0
+	setAttr ".pm[26]" -type "matrix" 3.5770687678884975e-16 -6.7660211319893708e-15 1.0000000000000002 0
+		 -0.257718850813064 0.96621995111651138 6.4946710991633145e-15 0 -0.9662199511165116 -0.25771885081306395 -1.3732320812253732e-15 0
 		 0.63112942180752396 -2.4590115821474581 1.0777575017999208e-14 1;
-	setAttr ".pm[27]" -type "matrix" 2.559984710552894e-16 -6.7706322416038904e-15 1.0000000000000002 -0
-		 -0.24317107802283938 0.96998341574132607 6.4946710991633145e-15 0 -0.96998341574132629 -0.24317107802283933 -1.373232081225373e-15 -0
+	setAttr ".pm[27]" -type "matrix" 2.559984710552894e-16 -6.7706322416038904e-15 1.0000000000000002 0
+		 -0.24317107802283938 0.96998341574132607 6.4946710991633145e-15 0 -0.96998341574132629 -0.24317107802283933 -1.3732320812253732e-15 0
 		 -1.3970402127379153 -2.438298655790458 1.2468549804133112e-14 1;
-	setAttr ".pm[28]" -type "matrix" 2.559984710552894e-16 -6.7706322416038904e-15 1.0000000000000002 -0
-		 -0.24317107802283938 0.96998341574132607 6.4946710991633145e-15 0 -0.96998341574132629 -0.24317107802283933 -1.373232081225373e-15 -0
+	setAttr ".pm[28]" -type "matrix" 2.559984710552894e-16 -6.7706322416038904e-15 1.0000000000000002 0
+		 -0.24317107802283938 0.96998341574132607 6.4946710991633145e-15 0 -0.96998341574132629 -0.24317107802283933 -1.3732320812253732e-15 0
 		 -3.7891529274037596 -2.4383018964737593 1.2999721912560446e-14 1;
-	setAttr ".pm[29]" -type "matrix" 2.559984710552894e-16 -6.7706322416038904e-15 1.0000000000000002 -0
-		 -0.24317107802283938 0.96998341574132607 6.4946710991633145e-15 0 -0.96998341574132629 -0.24317107802283933 -1.373232081225373e-15 -0
+	setAttr ".pm[29]" -type "matrix" 2.559984710552894e-16 -6.7706322416038904e-15 1.0000000000000002 0
+		 -0.24317107802283938 0.96998341574132607 6.4946710991633145e-15 0 -0.96998341574132629 -0.24317107802283933 -1.3732320812253732e-15 0
 		 -5.3970402127379149 -2.4382986557904576 1.3356728223833242e-14 1;
 	setAttr ".gm" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 -1.3322676295501878e-15 1;
 	setAttr -s 27 ".ma";
@@ -28049,7 +28668,7 @@ createNode dagPose -n "bindPose1";
 	setAttr ".xm[2]" -type "matrix" "xform" 1 1 1 0 0 0 0 4.9303806576313238e-32
 		 0 -4.4408920985006262e-16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1 1 yes;
 	setAttr ".xm[3]" -type "matrix" "xform" 1 1 1 5.5511151231257827e-17 -1.540743955509789e-33
-		 5.5511151231257827e-17 0 -4.239144740801198e-16 3.4275873359670883 3.0939518372335759 0
+		 5.5511151231257827e-17 0 -4.2391447408011975e-16 3.4275873359670883 3.0939518372335759 0
 		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -0.22674458412261417 -0.66976629772709728 0.22674458412261567 0.66976629772709684 1
 		 1 1 yes;
 	setAttr ".xm[4]" -type "matrix" "xform" 1 1 1 0 0 1.1102230246251563e-16 0 1.4060631258189051
@@ -28085,7 +28704,7 @@ createNode dagPose -n "bindPose1";
 		 -2.2204460492503131e-16 0 0.56834617048661418 4.4408920985006262e-15 -1.2463879020816656e-15 0
 		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0.87191688560068437 0.48965390287876098 2.9982654242524177e-17 5.3389511153670351e-17 1
 		 1 1 yes;
-	setAttr ".xm[14]" -type "matrix" "xform" 1 1 1 2.7755575615628907e-17 -6.162975822039152e-33
+	setAttr ".xm[14]" -type "matrix" "xform" 1 1 1 2.7755575615628907e-17 -6.1629758220391513e-33
 		 4.4408920985006252e-16 0 0.17402146568972565 -0.27005844817631341 -0.52822800000000025 0
 		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -0.40075528308869068 0.91575013896395663 0.011317499470462488 0.025861173015420694 1
 		 1 1 yes;
@@ -28394,94 +29013,94 @@ createNode skinCluster -n "skinCluster2";
 		28 0.086632546599962473 29 0.017502177918188477;
 	setAttr -s 30 ".pm";
 	setAttr ".pm[0]" -type "matrix" -1.1724593854044932e-15 -1.8986899309219915e-15 -1.0000000000000004 0
-		 0.60746352254989666 0.79434757428424974 -2.0854647357956239e-15 0 0.79434757428424996 -0.60746352254989666 1.9716901644216071e-16 -0
+		 0.60746352254989666 0.79434757428424974 -2.0854647357956239e-15 0 0.79434757428424996 -0.60746352254989666 1.9716901644216071e-16 0
 		 -4.5398074138127722 -0.84323280432723846 6.1141666032721496e-15 1;
 	setAttr ".pm[1]" -type "matrix" -1.9589145916877621e-15 -1.068802173781663e-15 -1.0000000000000004 0
-		 0.92113987448843759 0.38923171970874348 -2.0854647357956243e-15 0 0.38923171970874371 -0.92113987448843782 1.9716901644216071e-16 -0
+		 0.92113987448843759 0.38923171970874348 -2.0854647357956243e-15 0 0.38923171970874371 -0.92113987448843782 1.9716901644216071e-16 0
 		 -5.6642290374374689 2.069826633487533 5.6533420480109252e-15 1;
-	setAttr ".pm[2]" -type "matrix" 1.0000000000000004 -4.6532490225312951e-15 -8.6621057107706258e-16 -0
-		 4.4724442387397109e-15 1 5.5511151231257423e-16 -0 9.1305400818299576e-16 -3.3306690738754888e-16 1.0000000000000004 -0
+	setAttr ".pm[2]" -type "matrix" 1.0000000000000004 -4.6532490225312951e-15 -8.6621057107706258e-16 0
+		 4.4724442387397109e-15 1 5.5511151231257423e-16 0 9.1305400818299576e-16 -3.3306690738754888e-16 1.0000000000000004 0
 		 -0.61023652322465061 -4.9657216201607364 -3.9539119714193021 1;
-	setAttr ".pm[3]" -type "matrix" 1.0000000000000004 -4.6532490225312951e-15 -8.6621057107706258e-16 -0
-		 4.4724442387397109e-15 1 5.5511151231257423e-16 -0 9.1305400818299576e-16 -3.3306690738754888e-16 1.0000000000000004 -0
+	setAttr ".pm[3]" -type "matrix" 1.0000000000000004 -4.6532490225312951e-15 -8.6621057107706258e-16 0
+		 4.4724442387397109e-15 1 5.5511151231257423e-16 0 9.1305400818299576e-16 -3.3306690738754888e-16 1.0000000000000004 0
 		 -1.8881070992558726 -5.2412856554343561 -3.9129922979044238 1;
-	setAttr ".pm[4]" -type "matrix" 1.0000000000000004 -4.6532490225312951e-15 -8.6621057107706258e-16 -0
-		 4.4724442387397109e-15 1 5.5511151231257423e-16 -0 9.1305400818299576e-16 -3.3306690738754888e-16 1.0000000000000004 -0
+	setAttr ".pm[4]" -type "matrix" 1.0000000000000004 -4.6532490225312951e-15 -8.6621057107706258e-16 0
+		 4.4724442387397109e-15 1 5.5511151231257423e-16 0 9.1305400818299576e-16 -3.3306690738754888e-16 1.0000000000000004 0
 		 -2.7859556124191127 -5.6797610447854243 -4.0563526633118911 1;
-	setAttr ".pm[5]" -type "matrix" 1.0000000000000004 4.6532490225312951e-15 8.6621057107706308e-16 -0
-		 4.4724442387397109e-15 -1 -6.6613381477508988e-16 0 9.1305400818299576e-16 3.3306690738754888e-16 -1.0000000000000004 -0
+	setAttr ".pm[5]" -type "matrix" 1.0000000000000004 4.6532490225312951e-15 8.6621057107706308e-16 0
+		 4.4724442387397109e-15 -1 -6.6613381477508988e-16 0 9.1305400818299576e-16 3.3306690738754888e-16 -1.0000000000000004 0
 		 0.61023699999997427 4.9657200000000072 3.9539100000000102 1;
-	setAttr ".pm[6]" -type "matrix" 1.0000000000000004 4.6532490225312951e-15 8.6621057107706308e-16 -0
-		 4.4724442387397109e-15 -1 -6.6613381477508988e-16 0 9.1305400818299576e-16 3.3306690738754888e-16 -1.0000000000000004 -0
+	setAttr ".pm[6]" -type "matrix" 1.0000000000000004 4.6532490225312951e-15 8.6621057107706308e-16 0
+		 4.4724442387397109e-15 -1 -6.6613381477508988e-16 0 9.1305400818299576e-16 3.3306690738754888e-16 -1.0000000000000004 0
 		 1.8881099999999749 5.2412900000000056 3.9129900000000126 1;
-	setAttr ".pm[7]" -type "matrix" 1.0000000000000004 4.6532490225312951e-15 8.6621057107706308e-16 -0
-		 4.4724442387397109e-15 -1 -6.6613381477508988e-16 0 9.1305400818299576e-16 3.3306690738754888e-16 -1.0000000000000004 -0
+	setAttr ".pm[7]" -type "matrix" 1.0000000000000004 4.6532490225312951e-15 8.6621057107706308e-16 0
+		 4.4724442387397109e-15 -1 -6.6613381477508988e-16 0 9.1305400818299576e-16 3.3306690738754888e-16 -1.0000000000000004 0
 		 2.7859599999999771 5.6797600000000052 4.0563500000000117 1;
 	setAttr ".pm[8]" -type "matrix" -1.6746840577123104e-15 -1.4748280479608014e-15 -1.0000000000000002 0
-		 0.81250594089105477 0.58295291063407662 -2.0854647357956235e-15 0 0.58295291063407684 -0.81250594089105499 1.9716901644216069e-16 -0
+		 0.81250594089105477 0.58295291063407662 -2.0854647357956235e-15 0 0.58295291063407684 -0.81250594089105499 1.9716901644216069e-16 0
 		 -7.3253095218262478 0.51413609159262319 5.8348162064116117e-15 1;
-	setAttr ".pm[9]" -type "matrix" 2.1819343160561443e-15 -4.678109710387766e-16 -1.0000000000000002 -0
-		 -0.95206685556953885 0.30589001704196034 -2.0854647357956235e-15 0 0.30589001704196039 0.95206685556953929 1.9716901644216078e-16 -0
+	setAttr ".pm[9]" -type "matrix" 2.1819343160561443e-15 -4.678109710387766e-16 -1.0000000000000002 0
+		 -0.95206685556953885 0.30589001704196034 -2.0854647357956235e-15 0 0.30589001704196039 0.95206685556953929 1.9716901644216078e-16 0
 		 4.2696560970242698 -6.6275866657539071 5.8411685282956341e-15 1;
-	setAttr ".pm[10]" -type "matrix" 7.3619695216294613e-16 1.9841198808930253e-15 1.0000000000000004 -0
-		 -0.23433811634896151 -0.97215515594272328 1.9664100657956387e-15 0 0.97215515594272361 -0.23433811634896168 -2.2586715885265849e-16 -0
+	setAttr ".pm[10]" -type "matrix" 7.3619695216294613e-16 1.9841198808930253e-15 1.0000000000000004 0
+		 -0.23433811634896151 -0.97215515594272328 1.9664100657956387e-15 0 0.97215515594272361 -0.23433811634896168 -2.2586715885265849e-16 0
 		 -3.7326798460033221 6.6099698449846089 -6.2780685890652071e-15 1;
-	setAttr ".pm[11]" -type "matrix" 0.056435840973569629 -4.3454823073219018e-16 0.99840622787200506 -0
-		 -0.99410082547873535 0.092768284652170685 0.056192474097431687 0 -0.092620433145730069 -0.99568772482274503 0.0052354561600203367 -0
+	setAttr ".pm[11]" -type "matrix" 0.056435840973569629 -4.3454823073219018e-16 0.99840622787200506 0
+		 -0.99410082547873535 0.092768284652170685 0.056192474097431687 0 -0.092620433145730069 -0.99568772482274503 0.0052354561600203367 0
 		 3.5839505602881814 3.073713106036418 -0.73165735898354833 1;
-	setAttr ".pm[12]" -type "matrix" -0.037806812669614588 3.2375144232155144e-14 0.99928506689320851 -0
-		 -0.94409443977002072 -0.3277344360017076 -0.035718738135225109 0 0.32750012780317345 -0.94476988704056519 0.012390594427328951 -0
+	setAttr ".pm[12]" -type "matrix" -0.037806812669614588 3.2375144232155144e-14 0.99928506689320851 0
+		 -0.94409443977002072 -0.3277344360017076 -0.035718738135225109 0 0.32750012780317345 -0.94476988704056519 0.012390594427328951 0
 		 1.3708479606019903 3.9906699100365621 -0.51850968920520746 1;
-	setAttr ".pm[13]" -type "matrix" 1.4191899355238814e-15 5.0831083003283902e-16 1 -0
-		 -0.3371936058512171 0.94143532553917564 -1.1886842610715549e-16 0 -0.94143532553917586 -0.33719360585121749 1.5407540380711614e-15 -0
+	setAttr ".pm[13]" -type "matrix" 1.4191899355238814e-15 5.0831083003283902e-16 1 0
+		 -0.3371936058512171 0.94143532553917564 -1.1886842610715549e-16 0 -0.94143532553917586 -0.33719360585121749 1.5407540380711614e-15 0
 		 3.999314839892298 -0.8418862964749525 -0.55224843390576595 1;
-	setAttr ".pm[14]" -type "matrix" 0.12803608656568169 3.6862873864507151e-18 0.99176950978387401 -0
-		 -0.0021197131379319827 0.99999771596277143 0.0002736520654700237 0 -0.99176724454539156 -0.0021373041992329717 0.12803579412649344 -0
+	setAttr ".pm[14]" -type "matrix" 0.12803608656568169 3.6862873864507151e-18 0.99176950978387401 0
+		 -0.0021197131379319827 0.99999771596277143 0.0002736520654700237 0 -0.99176724454539156 -0.0021373041992329717 0.12803579412649344 0
 		 3.2877377803766317 -2.0982923692052933 -0.98127387801163946 1;
-	setAttr ".pm[15]" -type "matrix" 0.25103854212413357 -2.60208521396521e-17 -0.96797709186126391 -0
-		 -0.036201197241268024 0.99930041957101245 -0.0093885442692879257 0 0.96729991403208992 0.037398816093528339 0.25086292047314201 -0
+	setAttr ".pm[15]" -type "matrix" 0.25103854212413357 -2.6020852139652103e-17 -0.96797709186126391 0
+		 -0.036201197241268024 0.99930041957101245 -0.0093885442692879257 0 0.96729991403208992 0.037398816093528339 0.25086292047314201 0
 		 -3.6591821359311645 -2.2795949567134133 -0.28168800101006247 1;
-	setAttr ".pm[16]" -type "matrix" -0.02818489306477066 1.8648277366750669e-16 -0.99960272698854091 -0
-		 0.12317315551458649 0.99237911708079485 -0.0034730019465707999 -0 0.99198487164044347 -0.1232221083326424 -0.027970099294633791 -0
+	setAttr ".pm[16]" -type "matrix" -0.02818489306477066 1.8648277366750669e-16 -0.99960272698854091 0
+		 0.12317315551458649 0.99237911708079485 -0.0034730019465707999 0 0.99198487164044347 -0.1232221083326424 -0.027970099294633791 0
 		 -3.9570530388639225 -1.6627122160847103 0.67296621694761527 1;
 	setAttr ".pm[17]" -type "matrix" -0.28889592702502653 -7.6327832942979475e-17 -0.95736050855900168 0
-		 -0.029341143730833429 0.99953024102812382 0.008854069958298608 0 0.95691077987078654 0.030647957032400377 -0.28876021557136816 -0
+		 -0.029341143730833429 0.99953024102812382 0.008854069958298608 0 0.95691077987078654 0.030647957032400377 -0.28876021557136816 0
 		 -3.3355319846248173 -2.2424935000351316 1.476656117238671 1;
-	setAttr ".pm[18]" -type "matrix" -0.056435276022829925 -4.3368086899420197e-16 0.998406259806211 -0
+	setAttr ".pm[18]" -type "matrix" -0.056435276022829925 -4.3368086899420197e-16 0.998406259806211 0
 		 -0.99410080226038922 0.092768876070547152 -0.056191908473181229 0 -0.092621026584020966 -0.99568766972008249 -0.0052354371273694343 0
 		 3.5839544028684611 3.0737148008847242 0.73165552479699658 1;
-	setAttr ".pm[19]" -type "matrix" 0.037806532690731282 8.2867740447412106e-15 0.99928507748585194 -0
-		 -0.94409642109801228 -0.3277287490963916 0.035718548201729081 0 0.32749444843512926 -0.94477185977129696 -0.012390287666397342 -0
+	setAttr ".pm[19]" -type "matrix" 0.037806532690731282 8.2867740447412106e-15 0.99928507748585194 0
+		 -0.94409642109801228 -0.3277287490963916 0.035718548201729081 0 0.32749444843512926 -0.94477185977129696 -0.012390287666397342 0
 		 1.3708712530322797 3.990665272938303 0.51850880477573802 1;
-	setAttr ".pm[20]" -type "matrix" 1.0218799218215451e-15 1.1529339576299709e-16 1.0000000000000002 -0
-		 -0.33709229794058798 0.94147160481298309 1.0295880500783045e-16 0 -0.94147160481298342 -0.33709229794058815 1.0285995083225564e-15 -0
+	setAttr ".pm[20]" -type "matrix" 1.0218799218215451e-15 1.1529339576299709e-16 1.0000000000000002 0
+		 -0.33709229794058798 0.94147160481298309 1.0295880500783045e-16 0 -0.94147160481298342 -0.33709229794058815 1.0285995083225564e-15 0
 		 3.9992248410736058 -0.84231123306043865 0.55224799999999741 1;
-	setAttr ".pm[21]" -type "matrix" -0.12803868005263877 -2.3033875154454552e-16 0.99176917496480932 -0
+	setAttr ".pm[21]" -type "matrix" -0.12803868005263877 -2.3033875154454552e-16 0.99176917496480932 0
 		 -0.0021470134396193211 0.99999765674891206 -0.0002771822050970587 0 -0.99176685100061124 -0.002164831791324439 -0.12803838002586246 0
 		 3.2877884682766987 -2.0982039947659992 0.98128891312332756 1;
-	setAttr ".pm[22]" -type "matrix" 0.34018627608714475 -2.8102520310824295e-16 -0.94035806880249728 -0
-		 -0.043023558600356296 0.99895281453621887 -0.015564309670794569 0 0.93937333950209789 0.0457523150252169 0.33983003796384853 -0
+	setAttr ".pm[22]" -type "matrix" 0.34018627608714475 -2.8102520310824295e-16 -0.94035806880249728 0
+		 -0.043023558600356296 0.99895281453621887 -0.015564309670794569 0 0.93937333950209789 0.0457523150252169 0.33983003796384853 0
 		 -3.2186340775475921 -2.2969545542053358 -1.6429976965004338 1;
-	setAttr ".pm[23]" -type "matrix" -0.011666576031814695 -1.1709383462843453e-16 -0.99993194318598222 -0
-		 0.1165076054143966 0.99318886929051642 -0.0013593373490208569 -0 0.99312127602035472 -0.11651553509049861 -0.011587113457529892 -0
+	setAttr ".pm[23]" -type "matrix" -0.011666576031814695 -1.1709383462843453e-16 -0.99993194318598222 0
+		 0.1165076054143966 0.99318886929051642 -0.0013593373490208569 0 0.99312127602035472 -0.11651553509049861 -0.011587113457529892 0
 		 -3.9824451494112072 -1.7001856489081686 -0.50203771476565162 1;
 	setAttr ".pm[24]" -type "matrix" -0.25105715302329634 -2.810252031082428e-16 -0.96797226505506728 0
-		 -0.03619422291388294 0.99930068221743673 0.0093874782250428623 0 0.96729534483708635 0.037391797493106733 -0.25088158429174751 -0
+		 -0.03619422291388294 0.99930068221743673 0.0093874782250428623 0 0.96729534483708635 0.037391797493106733 -0.25088158429174751 0
 		 -3.6591961884763116 -2.2795709569628229 0.28176362823478612 1;
-	setAttr ".pm[25]" -type "matrix" 3.5770687678884975e-16 -6.7660211319893708e-15 1.0000000000000002 -0
-		 -0.257718850813064 0.96621995111651138 6.4946710991633145e-15 0 -0.9662199511165116 -0.25771885081306395 -1.373232081225373e-15 -0
+	setAttr ".pm[25]" -type "matrix" 3.5770687678884975e-16 -6.7660211319893708e-15 1.0000000000000002 0
+		 -0.257718850813064 0.96621995111651138 6.4946710991633145e-15 0 -0.9662199511165116 -0.25771885081306395 -1.3732320812253732e-15 0
 		 2.2689642756248869 -2.4590156653995408 9.3866971079599014e-15 1;
-	setAttr ".pm[26]" -type "matrix" 3.5770687678884975e-16 -6.7660211319893708e-15 1.0000000000000002 -0
-		 -0.257718850813064 0.96621995111651138 6.4946710991633145e-15 0 -0.9662199511165116 -0.25771885081306395 -1.373232081225373e-15 -0
+	setAttr ".pm[26]" -type "matrix" 3.5770687678884975e-16 -6.7660211319893708e-15 1.0000000000000002 0
+		 -0.257718850813064 0.96621995111651138 6.4946710991633145e-15 0 -0.9662199511165116 -0.25771885081306395 -1.3732320812253732e-15 0
 		 0.63112942180752396 -2.4590115821474581 1.0777575017999208e-14 1;
-	setAttr ".pm[27]" -type "matrix" 2.559984710552894e-16 -6.7706322416038904e-15 1.0000000000000002 -0
-		 -0.24317107802283938 0.96998341574132607 6.4946710991633145e-15 0 -0.96998341574132629 -0.24317107802283933 -1.373232081225373e-15 -0
+	setAttr ".pm[27]" -type "matrix" 2.559984710552894e-16 -6.7706322416038904e-15 1.0000000000000002 0
+		 -0.24317107802283938 0.96998341574132607 6.4946710991633145e-15 0 -0.96998341574132629 -0.24317107802283933 -1.3732320812253732e-15 0
 		 -1.3970402127379153 -2.438298655790458 1.2468549804133112e-14 1;
-	setAttr ".pm[28]" -type "matrix" 2.559984710552894e-16 -6.7706322416038904e-15 1.0000000000000002 -0
-		 -0.24317107802283938 0.96998341574132607 6.4946710991633145e-15 0 -0.96998341574132629 -0.24317107802283933 -1.373232081225373e-15 -0
+	setAttr ".pm[28]" -type "matrix" 2.559984710552894e-16 -6.7706322416038904e-15 1.0000000000000002 0
+		 -0.24317107802283938 0.96998341574132607 6.4946710991633145e-15 0 -0.96998341574132629 -0.24317107802283933 -1.3732320812253732e-15 0
 		 -3.7891529274037596 -2.4383018964737593 1.2999721912560446e-14 1;
-	setAttr ".pm[29]" -type "matrix" 2.559984710552894e-16 -6.7706322416038904e-15 1.0000000000000002 -0
-		 -0.24317107802283938 0.96998341574132607 6.4946710991633145e-15 0 -0.96998341574132629 -0.24317107802283933 -1.373232081225373e-15 -0
+	setAttr ".pm[29]" -type "matrix" 2.559984710552894e-16 -6.7706322416038904e-15 1.0000000000000002 0
+		 -0.24317107802283938 0.96998341574132607 6.4946710991633145e-15 0 -0.96998341574132629 -0.24317107802283933 -1.3732320812253732e-15 0
 		 -5.3970402127379149 -2.4382986557904576 1.3356728223833242e-14 1;
 	setAttr ".gm" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 -1.3322676295501878e-15 1;
 	setAttr -s 12 ".ma";
@@ -28516,350 +29135,27 @@ createNode groupParts -n "groupParts118";
 	rename -uid "1CD8BC16-467E-DC6C-228D-0CA7769E0B3E";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 1 "vtx[*]";
-createNode nodeGraphEditorInfo -n "MayaNodeEditorSavedTabsInfo";
-	rename -uid "A9C5572D-40C0-5E2F-5624-E482C75F1F6D";
-	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -3283.1934527892718 -1739.4107024093996 ;
-	setAttr ".tgi[0].vh" -type "double2" 3127.9077752144826 1392.0620612689049 ;
-	setAttr -s 111 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" -2864.28564453125;
-	setAttr ".tgi[0].ni[0].y" 594.28570556640625;
-	setAttr ".tgi[0].ni[0].nvs" 18304;
-	setAttr ".tgi[0].ni[1].x" -2864.28564453125;
-	setAttr ".tgi[0].ni[1].y" 724.28570556640625;
-	setAttr ".tgi[0].ni[1].nvs" 18304;
-	setAttr ".tgi[0].ni[2].x" 1087.142822265625;
-	setAttr ".tgi[0].ni[2].y" -788.5714111328125;
-	setAttr ".tgi[0].ni[2].nvs" 18304;
-	setAttr ".tgi[0].ni[3].x" -1820;
-	setAttr ".tgi[0].ni[3].y" 1040;
-	setAttr ".tgi[0].ni[3].nvs" 18304;
-	setAttr ".tgi[0].ni[4].x" 1087.142822265625;
-	setAttr ".tgi[0].ni[4].y" -658.5714111328125;
-	setAttr ".tgi[0].ni[4].nvs" 18304;
-	setAttr ".tgi[0].ni[5].x" 1087.142822265625;
-	setAttr ".tgi[0].ni[5].y" -528.5714111328125;
-	setAttr ".tgi[0].ni[5].nvs" 18304;
-	setAttr ".tgi[0].ni[6].x" 2685.71435546875;
-	setAttr ".tgi[0].ni[6].y" -788.5714111328125;
-	setAttr ".tgi[0].ni[6].nvs" 18304;
-	setAttr ".tgi[0].ni[7].x" 2685.71435546875;
-	setAttr ".tgi[0].ni[7].y" -658.5714111328125;
-	setAttr ".tgi[0].ni[7].nvs" 18304;
-	setAttr ".tgi[0].ni[8].x" 2685.71435546875;
-	setAttr ".tgi[0].ni[8].y" -528.5714111328125;
-	setAttr ".tgi[0].ni[8].nvs" 18304;
-	setAttr ".tgi[0].ni[9].x" -2255.71435546875;
-	setAttr ".tgi[0].ni[9].y" 618.5714111328125;
-	setAttr ".tgi[0].ni[9].nvs" 18304;
-	setAttr ".tgi[0].ni[10].x" 1468.5714111328125;
-	setAttr ".tgi[0].ni[10].y" -788.5714111328125;
-	setAttr ".tgi[0].ni[10].nvs" 18304;
-	setAttr ".tgi[0].ni[11].x" 1468.5714111328125;
-	setAttr ".tgi[0].ni[11].y" -658.5714111328125;
-	setAttr ".tgi[0].ni[11].nvs" 18304;
-	setAttr ".tgi[0].ni[12].x" 1468.5714111328125;
-	setAttr ".tgi[0].ni[12].y" -528.5714111328125;
-	setAttr ".tgi[0].ni[12].nvs" 18304;
-	setAttr ".tgi[0].ni[13].x" -2255.71435546875;
-	setAttr ".tgi[0].ni[13].y" 748.5714111328125;
-	setAttr ".tgi[0].ni[13].nvs" 18304;
-	setAttr ".tgi[0].ni[14].x" -165.71427917480469;
-	setAttr ".tgi[0].ni[14].y" -1661.4285888671875;
-	setAttr ".tgi[0].ni[14].nvs" 18304;
-	setAttr ".tgi[0].ni[15].x" -165.71427917480469;
-	setAttr ".tgi[0].ni[15].y" -1531.4285888671875;
-	setAttr ".tgi[0].ni[15].nvs" 18304;
-	setAttr ".tgi[0].ni[16].x" -165.71427917480469;
-	setAttr ".tgi[0].ni[16].y" -1401.4285888671875;
-	setAttr ".tgi[0].ni[16].nvs" 18304;
-	setAttr ".tgi[0].ni[17].x" -2255.71435546875;
-	setAttr ".tgi[0].ni[17].y" 878.5714111328125;
-	setAttr ".tgi[0].ni[17].nvs" 18304;
-	setAttr ".tgi[0].ni[18].x" 3581.428466796875;
-	setAttr ".tgi[0].ni[18].y" -3368.571533203125;
-	setAttr ".tgi[0].ni[18].nvs" 18304;
-	setAttr ".tgi[0].ni[19].x" 705.71429443359375;
-	setAttr ".tgi[0].ni[19].y" -401.42855834960938;
-	setAttr ".tgi[0].ni[19].nvs" 18304;
-	setAttr ".tgi[0].ni[20].x" 3581.428466796875;
-	setAttr ".tgi[0].ni[20].y" -3238.571533203125;
-	setAttr ".tgi[0].ni[20].nvs" 18304;
-	setAttr ".tgi[0].ni[21].x" 705.71429443359375;
-	setAttr ".tgi[0].ni[21].y" -198.57142639160156;
-	setAttr ".tgi[0].ni[21].nvs" 18304;
-	setAttr ".tgi[0].ni[22].x" 8984.5234375;
-	setAttr ".tgi[0].ni[22].y" 435.71426391601563;
-	setAttr ".tgi[0].ni[22].nvs" 18304;
-	setAttr ".tgi[0].ni[23].x" 705.71429443359375;
-	setAttr ".tgi[0].ni[23].y" 511.42855834960938;
-	setAttr ".tgi[0].ni[23].nvs" 18304;
-	setAttr ".tgi[0].ni[24].x" 705.71429443359375;
-	setAttr ".tgi[0].ni[24].y" 815.71429443359375;
-	setAttr ".tgi[0].ni[24].nvs" 18304;
-	setAttr ".tgi[0].ni[25].x" 705.71429443359375;
-	setAttr ".tgi[0].ni[25].y" -97.142860412597656;
-	setAttr ".tgi[0].ni[25].nvs" 18304;
-	setAttr ".tgi[0].ni[26].x" 348.80953979492188;
-	setAttr ".tgi[0].ni[26].y" 435.71426391601563;
-	setAttr ".tgi[0].ni[26].nvs" 18304;
-	setAttr ".tgi[0].ni[27].x" 705.71429443359375;
-	setAttr ".tgi[0].ni[27].y" 308.57144165039063;
-	setAttr ".tgi[0].ni[27].nvs" 18304;
-	setAttr ".tgi[0].ni[28].x" 705.71429443359375;
-	setAttr ".tgi[0].ni[28].y" 612.85711669921875;
-	setAttr ".tgi[0].ni[28].nvs" 18304;
-	setAttr ".tgi[0].ni[29].x" 11198.8095703125;
-	setAttr ".tgi[0].ni[29].y" 435.71426391601563;
-	setAttr ".tgi[0].ni[29].nvs" 18304;
-	setAttr ".tgi[0].ni[30].x" 8320.23828125;
-	setAttr ".tgi[0].ni[30].y" 435.71426391601563;
-	setAttr ".tgi[0].ni[30].nvs" 18304;
-	setAttr ".tgi[0].ni[31].x" 3581.428466796875;
-	setAttr ".tgi[0].ni[31].y" -3108.571533203125;
-	setAttr ".tgi[0].ni[31].nvs" 18304;
-	setAttr ".tgi[0].ni[32].x" 10313.095703125;
-	setAttr ".tgi[0].ni[32].y" 435.71426391601563;
-	setAttr ".tgi[0].ni[32].nvs" 18304;
-	setAttr ".tgi[0].ni[33].x" 398.57144165039063;
-	setAttr ".tgi[0].ni[33].y" -1310;
-	setAttr ".tgi[0].ni[33].nvs" 18304;
-	setAttr ".tgi[0].ni[34].x" 4334.52392578125;
-	setAttr ".tgi[0].ni[34].y" 435.71426391601563;
-	setAttr ".tgi[0].ni[34].nvs" 18304;
-	setAttr ".tgi[0].ni[35].x" 10977.380859375;
-	setAttr ".tgi[0].ni[35].y" 435.71426391601563;
-	setAttr ".tgi[0].ni[35].nvs" 18304;
-	setAttr ".tgi[0].ni[36].x" 398.57144165039063;
-	setAttr ".tgi[0].ni[36].y" -927.14288330078125;
-	setAttr ".tgi[0].ni[36].nvs" 18304;
-	setAttr ".tgi[0].ni[37].x" 7655.95263671875;
-	setAttr ".tgi[0].ni[37].y" 435.71426391601563;
-	setAttr ".tgi[0].ni[37].nvs" 18304;
-	setAttr ".tgi[0].ni[38].x" 9648.8095703125;
-	setAttr ".tgi[0].ni[38].y" 435.71426391601563;
-	setAttr ".tgi[0].ni[38].nvs" 18304;
-	setAttr ".tgi[0].ni[39].x" 398.57144165039063;
-	setAttr ".tgi[0].ni[39].y" -654.28570556640625;
-	setAttr ".tgi[0].ni[39].nvs" 18304;
-	setAttr ".tgi[0].ni[40].x" 705.71429443359375;
-	setAttr ".tgi[0].ni[40].y" -300;
-	setAttr ".tgi[0].ni[40].nvs" 18304;
-	setAttr ".tgi[0].ni[41].x" 3581.428466796875;
-	setAttr ".tgi[0].ni[41].y" -2978.571533203125;
-	setAttr ".tgi[0].ni[41].nvs" 18304;
-	setAttr ".tgi[0].ni[42].x" 3581.428466796875;
-	setAttr ".tgi[0].ni[42].y" -2848.571533203125;
-	setAttr ".tgi[0].ni[42].nvs" 18304;
-	setAttr ".tgi[0].ni[43].x" 5663.09521484375;
-	setAttr ".tgi[0].ni[43].y" 435.71426391601563;
-	setAttr ".tgi[0].ni[43].nvs" 18304;
-	setAttr ".tgi[0].ni[44].x" 3670.238037109375;
-	setAttr ".tgi[0].ni[44].y" 435.71426391601563;
-	setAttr ".tgi[0].ni[44].nvs" 18304;
-	setAttr ".tgi[0].ni[45].x" 705.71429443359375;
-	setAttr ".tgi[0].ni[45].y" 917.14288330078125;
-	setAttr ".tgi[0].ni[45].nvs" 18304;
-	setAttr ".tgi[0].ni[46].x" 4998.8095703125;
-	setAttr ".tgi[0].ni[46].y" 435.71426391601563;
-	setAttr ".tgi[0].ni[46].nvs" 18304;
-	setAttr ".tgi[0].ni[47].x" 3581.428466796875;
-	setAttr ".tgi[0].ni[47].y" -2718.571533203125;
-	setAttr ".tgi[0].ni[47].nvs" 18304;
-	setAttr ".tgi[0].ni[48].x" 3581.428466796875;
-	setAttr ".tgi[0].ni[48].y" -2588.571533203125;
-	setAttr ".tgi[0].ni[48].nvs" 18304;
-	setAttr ".tgi[0].ni[49].x" 3581.428466796875;
-	setAttr ".tgi[0].ni[49].y" -2458.571533203125;
-	setAttr ".tgi[0].ni[49].nvs" 18304;
-	setAttr ".tgi[0].ni[50].x" 3581.428466796875;
-	setAttr ".tgi[0].ni[50].y" -2328.571533203125;
-	setAttr ".tgi[0].ni[50].nvs" 18304;
-	setAttr ".tgi[0].ni[51].x" 6327.380859375;
-	setAttr ".tgi[0].ni[51].y" 435.71426391601563;
-	setAttr ".tgi[0].ni[51].nvs" 18304;
-	setAttr ".tgi[0].ni[52].x" 705.71429443359375;
-	setAttr ".tgi[0].ni[52].y" 105.71428680419922;
-	setAttr ".tgi[0].ni[52].nvs" 18304;
-	setAttr ".tgi[0].ni[53].x" -808.5714111328125;
-	setAttr ".tgi[0].ni[53].y" -1215.7142333984375;
-	setAttr ".tgi[0].ni[53].nvs" 18304;
-	setAttr ".tgi[0].ni[54].x" 705.71429443359375;
-	setAttr ".tgi[0].ni[54].y" 410;
-	setAttr ".tgi[0].ni[54].nvs" 18304;
-	setAttr ".tgi[0].ni[55].x" 6991.66650390625;
-	setAttr ".tgi[0].ni[55].y" 435.71426391601563;
-	setAttr ".tgi[0].ni[55].nvs" 18304;
-	setAttr ".tgi[0].ni[56].x" 3581.428466796875;
-	setAttr ".tgi[0].ni[56].y" -2198.571533203125;
-	setAttr ".tgi[0].ni[56].nvs" 18304;
-	setAttr ".tgi[0].ni[57].x" 3581.428466796875;
-	setAttr ".tgi[0].ni[57].y" -2068.571533203125;
-	setAttr ".tgi[0].ni[57].nvs" 18304;
-	setAttr ".tgi[0].ni[58].x" 705.71429443359375;
-	setAttr ".tgi[0].ni[58].y" 714.28570556640625;
-	setAttr ".tgi[0].ni[58].nvs" 18304;
-	setAttr ".tgi[0].ni[59].x" 705.71429443359375;
-	setAttr ".tgi[0].ni[59].y" 4.2857141494750977;
-	setAttr ".tgi[0].ni[59].nvs" 18304;
-	setAttr ".tgi[0].ni[60].x" 3581.428466796875;
-	setAttr ".tgi[0].ni[60].y" -1938.5714111328125;
-	setAttr ".tgi[0].ni[60].nvs" 18304;
-	setAttr ".tgi[0].ni[61].x" 3005.952392578125;
-	setAttr ".tgi[0].ni[61].y" 435.71426391601563;
-	setAttr ".tgi[0].ni[61].nvs" 18304;
-	setAttr ".tgi[0].ni[62].x" 705.71429443359375;
-	setAttr ".tgi[0].ni[62].y" 207.14285278320313;
-	setAttr ".tgi[0].ni[62].nvs" 18304;
-	setAttr ".tgi[0].ni[63].x" 2341.666748046875;
-	setAttr ".tgi[0].ni[63].y" 435.71426391601563;
-	setAttr ".tgi[0].ni[63].nvs" 18304;
-	setAttr ".tgi[0].ni[64].x" 3581.428466796875;
-	setAttr ".tgi[0].ni[64].y" -1808.5714111328125;
-	setAttr ".tgi[0].ni[64].nvs" 18304;
-	setAttr ".tgi[0].ni[65].x" 3581.428466796875;
-	setAttr ".tgi[0].ni[65].y" -1678.5714111328125;
-	setAttr ".tgi[0].ni[65].nvs" 18304;
-	setAttr ".tgi[0].ni[66].x" 1677.3809814453125;
-	setAttr ".tgi[0].ni[66].y" 435.71426391601563;
-	setAttr ".tgi[0].ni[66].nvs" 18304;
-	setAttr ".tgi[0].ni[67].x" 3581.428466796875;
-	setAttr ".tgi[0].ni[67].y" -1548.5714111328125;
-	setAttr ".tgi[0].ni[67].nvs" 18304;
-	setAttr ".tgi[0].ni[68].x" 1013.0952758789063;
-	setAttr ".tgi[0].ni[68].y" 435.71426391601563;
-	setAttr ".tgi[0].ni[68].nvs" 18304;
-	setAttr ".tgi[0].ni[69].x" 3581.428466796875;
-	setAttr ".tgi[0].ni[69].y" -1418.5714111328125;
-	setAttr ".tgi[0].ni[69].nvs" 18304;
-	setAttr ".tgi[0].ni[70].x" -841.6666259765625;
-	setAttr ".tgi[0].ni[70].y" 733.33331298828125;
-	setAttr ".tgi[0].ni[70].nvs" 18306;
-	setAttr ".tgi[0].ni[71].x" 3581.428466796875;
-	setAttr ".tgi[0].ni[71].y" -1288.5714111328125;
-	setAttr ".tgi[0].ni[71].nvs" 18304;
-	setAttr ".tgi[0].ni[72].x" 1922.857177734375;
-	setAttr ".tgi[0].ni[72].y" -177.14285278320313;
-	setAttr ".tgi[0].ni[72].nvs" 18304;
-	setAttr ".tgi[0].ni[73].x" -1537.142822265625;
-	setAttr ".tgi[0].ni[73].y" -677.14288330078125;
-	setAttr ".tgi[0].ni[73].nvs" 18304;
-	setAttr ".tgi[0].ni[74].x" 2230;
-	setAttr ".tgi[0].ni[74].y" -658.5714111328125;
-	setAttr ".tgi[0].ni[74].nvs" 18304;
-	setAttr ".tgi[0].ni[75].x" -1537.142822265625;
-	setAttr ".tgi[0].ni[75].y" -547.14288330078125;
-	setAttr ".tgi[0].ni[75].nvs" 18304;
-	setAttr ".tgi[0].ni[76].x" -1537.142822265625;
-	setAttr ".tgi[0].ni[76].y" -417.14285278320313;
-	setAttr ".tgi[0].ni[76].nvs" 18304;
-	setAttr ".tgi[0].ni[77].x" -1111.4285888671875;
-	setAttr ".tgi[0].ni[77].y" -1215.7142333984375;
-	setAttr ".tgi[0].ni[77].nvs" 18304;
-	setAttr ".tgi[0].ni[78].x" -2582.857177734375;
-	setAttr ".tgi[0].ni[78].y" -144.28572082519531;
-	setAttr ".tgi[0].ni[78].nvs" 18304;
-	setAttr ".tgi[0].ni[79].x" 1922.857177734375;
-	setAttr ".tgi[0].ni[79].y" -47.142856597900391;
-	setAttr ".tgi[0].ni[79].nvs" 18304;
-	setAttr ".tgi[0].ni[80].x" 1922.857177734375;
-	setAttr ".tgi[0].ni[80].y" 82.857139587402344;
-	setAttr ".tgi[0].ni[80].nvs" 18304;
-	setAttr ".tgi[0].ni[81].x" -165.71427917480469;
-	setAttr ".tgi[0].ni[81].y" 1110;
-	setAttr ".tgi[0].ni[81].nvs" 18304;
-	setAttr ".tgi[0].ni[82].x" -165.71427917480469;
-	setAttr ".tgi[0].ni[82].y" 1240;
-	setAttr ".tgi[0].ni[82].nvs" 18304;
-	setAttr ".tgi[0].ni[83].x" -165.71427917480469;
-	setAttr ".tgi[0].ni[83].y" 1370;
-	setAttr ".tgi[0].ni[83].nvs" 18304;
-	setAttr ".tgi[0].ni[84].x" -2864.28564453125;
-	setAttr ".tgi[0].ni[84].y" 854.28570556640625;
-	setAttr ".tgi[0].ni[84].nvs" 18304;
-	setAttr ".tgi[0].ni[85].x" -3028.571533203125;
-	setAttr ".tgi[0].ni[85].y" -274.28570556640625;
-	setAttr ".tgi[0].ni[85].nvs" 18304;
-	setAttr ".tgi[0].ni[86].x" -245.71427917480469;
-	setAttr ".tgi[0].ni[86].y" -274.28570556640625;
-	setAttr ".tgi[0].ni[86].nvs" 18304;
-	setAttr ".tgi[0].ni[87].x" -1820;
-	setAttr ".tgi[0].ni[87].y" -1545.7142333984375;
-	setAttr ".tgi[0].ni[87].nvs" 18304;
-	setAttr ".tgi[0].ni[88].x" -245.71427917480469;
-	setAttr ".tgi[0].ni[88].y" -144.28572082519531;
-	setAttr ".tgi[0].ni[88].nvs" 18304;
-	setAttr ".tgi[0].ni[89].x" -3028.571533203125;
-	setAttr ".tgi[0].ni[89].y" -144.28572082519531;
-	setAttr ".tgi[0].ni[89].nvs" 18304;
-	setAttr ".tgi[0].ni[90].x" -491.42855834960938;
-	setAttr ".tgi[0].ni[90].y" -968.5714111328125;
-	setAttr ".tgi[0].ni[90].nvs" 18304;
-	setAttr ".tgi[0].ni[91].x" -245.71427917480469;
-	setAttr ".tgi[0].ni[91].y" -14.285714149475098;
-	setAttr ".tgi[0].ni[91].nvs" 18304;
-	setAttr ".tgi[0].ni[92].x" -3028.571533203125;
-	setAttr ".tgi[0].ni[92].y" -14.285714149475098;
-	setAttr ".tgi[0].ni[92].nvs" 18304;
-	setAttr ".tgi[0].ni[93].x" -2428.571533203125;
-	setAttr ".tgi[0].ni[93].y" -1078.5714111328125;
-	setAttr ".tgi[0].ni[93].nvs" 18304;
-	setAttr ".tgi[0].ni[94].x" -2428.571533203125;
-	setAttr ".tgi[0].ni[94].y" -948.5714111328125;
-	setAttr ".tgi[0].ni[94].nvs" 18304;
-	setAttr ".tgi[0].ni[95].x" -2428.571533203125;
-	setAttr ".tgi[0].ni[95].y" -818.5714111328125;
-	setAttr ".tgi[0].ni[95].nvs" 18304;
-	setAttr ".tgi[0].ni[96].x" -491.42855834960938;
-	setAttr ".tgi[0].ni[96].y" -838.5714111328125;
-	setAttr ".tgi[0].ni[96].nvs" 18304;
-	setAttr ".tgi[0].ni[97].x" -491.42855834960938;
-	setAttr ".tgi[0].ni[97].y" -708.5714111328125;
-	setAttr ".tgi[0].ni[97].nvs" 18304;
-	setAttr ".tgi[0].ni[98].x" -1820;
-	setAttr ".tgi[0].ni[98].y" -1415.7142333984375;
-	setAttr ".tgi[0].ni[98].nvs" 18304;
-	setAttr ".tgi[0].ni[99].x" -1820;
-	setAttr ".tgi[0].ni[99].y" -1285.7142333984375;
-	setAttr ".tgi[0].ni[99].nvs" 18304;
-	setAttr ".tgi[0].ni[100].x" 1922.857177734375;
-	setAttr ".tgi[0].ni[100].y" 818.5714111328125;
-	setAttr ".tgi[0].ni[100].nvs" 18304;
-	setAttr ".tgi[0].ni[101].x" 1770;
-	setAttr ".tgi[0].ni[101].y" -1401.4285888671875;
-	setAttr ".tgi[0].ni[101].nvs" 18304;
-	setAttr ".tgi[0].ni[102].x" 1922.857177734375;
-	setAttr ".tgi[0].ni[102].y" 948.5714111328125;
-	setAttr ".tgi[0].ni[102].nvs" 18304;
-	setAttr ".tgi[0].ni[103].x" 1922.857177734375;
-	setAttr ".tgi[0].ni[103].y" 1078.5714111328125;
-	setAttr ".tgi[0].ni[103].nvs" 18304;
-	setAttr ".tgi[0].ni[104].x" 1770;
-	setAttr ".tgi[0].ni[104].y" -1271.4285888671875;
-	setAttr ".tgi[0].ni[104].nvs" 18304;
-	setAttr ".tgi[0].ni[105].x" 1770;
-	setAttr ".tgi[0].ni[105].y" -1141.4285888671875;
-	setAttr ".tgi[0].ni[105].nvs" 18304;
-	setAttr ".tgi[0].ni[106].x" -1820;
-	setAttr ".tgi[0].ni[106].y" 1170;
-	setAttr ".tgi[0].ni[106].nvs" 18304;
-	setAttr ".tgi[0].ni[107].x" -1820;
-	setAttr ".tgi[0].ni[107].y" 1300;
-	setAttr ".tgi[0].ni[107].nvs" 18304;
-	setAttr ".tgi[0].ni[108].x" -1657.142822265625;
-	setAttr ".tgi[0].ni[108].y" 34.523807525634766;
-	setAttr ".tgi[0].ni[108].nvs" 18304;
-	setAttr ".tgi[0].ni[109].x" -1038.5714111328125;
-	setAttr ".tgi[0].ni[109].y" 340;
-	setAttr ".tgi[0].ni[109].nvs" 18306;
-	setAttr ".tgi[0].ni[110].x" 398.57144165039063;
-	setAttr ".tgi[0].ni[110].y" 1038.5714111328125;
-	setAttr ".tgi[0].ni[110].nvs" 18304;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "CB71F478-4DC5-EB2E-6C15-EFAE8EB41328";
+	rename -uid "6D1EEA07-45C9-2BAD-F66C-4A88CD31D637";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -57.142854872204104 -15.476189861221945 ;
-	setAttr ".tgi[0].vh" -type "double2" 57.142854872204104 15.476189861221945 ;
+	setAttr ".tgi[0].vl" -type "double2" -96.726190499843128 -99.880952357299748 ;
+	setAttr ".tgi[0].vh" -type "double2" 97.916666643014025 98.690476214128836 ;
+createNode nodeGraphEditorInfo -n "MayaNodeEditorSavedTabsInfo";
+	rename -uid "12D8C267-4401-26B6-0AF3-9D953F999859";
+	setAttr ".pee" yes;
+	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
+	setAttr ".tgi[0].vl" -type "double2" -1987.5527240712076 -8972.9526662109893 ;
+	setAttr ".tgi[0].vh" -type "double2" 3185.7863472230515 -4190.4565192590162 ;
+	setAttr -s 3 ".tgi[0].ni";
+	setAttr ".tgi[0].ni[0].x" 479.23123168945313;
+	setAttr ".tgi[0].ni[0].y" -8139.7802734375;
+	setAttr ".tgi[0].ni[0].nvs" 1923;
+	setAttr ".tgi[0].ni[1].x" 929.69781494140625;
+	setAttr ".tgi[0].ni[1].y" -8104.71826171875;
+	setAttr ".tgi[0].ni[1].nvs" 18306;
+	setAttr ".tgi[0].ni[2].x" 497.14285278320313;
+	setAttr ".tgi[0].ni[2].y" -6111.4287109375;
+	setAttr ".tgi[0].ni[2].nvs" 18304;
 select -ne :time1;
 	setAttr ".o" 87;
 	setAttr ".unw" 87;
@@ -28914,20 +29210,665 @@ connectAttr "Feathers.di" "pPlane36.do";
 connectAttr "polySplitRing15.out" "pPlane36Shape.i";
 connectAttr "Feathers.di" "pPlane39.do";
 connectAttr "Feathers.di" "|GEO|FeatherCards|L_Feather_Grp|pPlane46.do";
+connectAttr "pPlane46_parentConstraint1.ctx" "|GEO|FeatherCards|L_Feather_Grp|pPlane46.tx"
+		;
+connectAttr "pPlane46_parentConstraint1.cty" "|GEO|FeatherCards|L_Feather_Grp|pPlane46.ty"
+		;
+connectAttr "pPlane46_parentConstraint1.ctz" "|GEO|FeatherCards|L_Feather_Grp|pPlane46.tz"
+		;
+connectAttr "pPlane46_orientConstraint1.crx" "|GEO|FeatherCards|L_Feather_Grp|pPlane46.rx"
+		;
+connectAttr "pPlane46_orientConstraint1.cry" "|GEO|FeatherCards|L_Feather_Grp|pPlane46.ry"
+		;
+connectAttr "pPlane46_orientConstraint1.crz" "|GEO|FeatherCards|L_Feather_Grp|pPlane46.rz"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane46.ro" "pPlane46_parentConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane46.pim" "pPlane46_parentConstraint1.cpim"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane46.rp" "pPlane46_parentConstraint1.crp"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane46.rpt" "pPlane46_parentConstraint1.crt"
+		;
+connectAttr "L_Wing_2_JNT.t" "pPlane46_parentConstraint1.tg[0].tt";
+connectAttr "L_Wing_2_JNT.rp" "pPlane46_parentConstraint1.tg[0].trp";
+connectAttr "L_Wing_2_JNT.rpt" "pPlane46_parentConstraint1.tg[0].trt";
+connectAttr "L_Wing_2_JNT.r" "pPlane46_parentConstraint1.tg[0].tr";
+connectAttr "L_Wing_2_JNT.ro" "pPlane46_parentConstraint1.tg[0].tro";
+connectAttr "L_Wing_2_JNT.s" "pPlane46_parentConstraint1.tg[0].ts";
+connectAttr "L_Wing_2_JNT.pm" "pPlane46_parentConstraint1.tg[0].tpm";
+connectAttr "L_Wing_2_JNT.jo" "pPlane46_parentConstraint1.tg[0].tjo";
+connectAttr "L_Wing_2_JNT.ssc" "pPlane46_parentConstraint1.tg[0].tsc";
+connectAttr "L_Wing_2_JNT.is" "pPlane46_parentConstraint1.tg[0].tis";
+connectAttr "pPlane46_parentConstraint1.w0" "pPlane46_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane46.ro" "pPlane46_orientConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane46.pim" "pPlane46_orientConstraint1.cpim"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.r" "pPlane46_orientConstraint1.tg[0].tr";
+connectAttr "L_FeatherBunch_Turn_CNTL.ro" "pPlane46_orientConstraint1.tg[0].tro"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.pm" "pPlane46_orientConstraint1.tg[0].tpm"
+		;
+connectAttr "pPlane46_orientConstraint1.w0" "pPlane46_orientConstraint1.tg[0].tw"
+		;
 connectAttr "Feathers.di" "|GEO|FeatherCards|L_Feather_Grp|pPlane45.do";
+connectAttr "pPlane45_parentConstraint1.ctx" "|GEO|FeatherCards|L_Feather_Grp|pPlane45.tx"
+		;
+connectAttr "pPlane45_parentConstraint1.cty" "|GEO|FeatherCards|L_Feather_Grp|pPlane45.ty"
+		;
+connectAttr "pPlane45_parentConstraint1.ctz" "|GEO|FeatherCards|L_Feather_Grp|pPlane45.tz"
+		;
+connectAttr "pPlane45_orientConstraint1.crx" "|GEO|FeatherCards|L_Feather_Grp|pPlane45.rx"
+		;
+connectAttr "pPlane45_orientConstraint1.cry" "|GEO|FeatherCards|L_Feather_Grp|pPlane45.ry"
+		;
+connectAttr "pPlane45_orientConstraint1.crz" "|GEO|FeatherCards|L_Feather_Grp|pPlane45.rz"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane45.ro" "pPlane45_parentConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane45.pim" "pPlane45_parentConstraint1.cpim"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane45.rp" "pPlane45_parentConstraint1.crp"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane45.rpt" "pPlane45_parentConstraint1.crt"
+		;
+connectAttr "L_Wing_2_JNT.t" "pPlane45_parentConstraint1.tg[0].tt";
+connectAttr "L_Wing_2_JNT.rp" "pPlane45_parentConstraint1.tg[0].trp";
+connectAttr "L_Wing_2_JNT.rpt" "pPlane45_parentConstraint1.tg[0].trt";
+connectAttr "L_Wing_2_JNT.r" "pPlane45_parentConstraint1.tg[0].tr";
+connectAttr "L_Wing_2_JNT.ro" "pPlane45_parentConstraint1.tg[0].tro";
+connectAttr "L_Wing_2_JNT.s" "pPlane45_parentConstraint1.tg[0].ts";
+connectAttr "L_Wing_2_JNT.pm" "pPlane45_parentConstraint1.tg[0].tpm";
+connectAttr "L_Wing_2_JNT.jo" "pPlane45_parentConstraint1.tg[0].tjo";
+connectAttr "L_Wing_2_JNT.ssc" "pPlane45_parentConstraint1.tg[0].tsc";
+connectAttr "L_Wing_2_JNT.is" "pPlane45_parentConstraint1.tg[0].tis";
+connectAttr "pPlane45_parentConstraint1.w0" "pPlane45_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane45.ro" "pPlane45_orientConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane45.pim" "pPlane45_orientConstraint1.cpim"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.r" "pPlane45_orientConstraint1.tg[0].tr";
+connectAttr "L_FeatherBunch_Turn_CNTL.ro" "pPlane45_orientConstraint1.tg[0].tro"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.pm" "pPlane45_orientConstraint1.tg[0].tpm"
+		;
+connectAttr "pPlane45_orientConstraint1.w0" "pPlane45_orientConstraint1.tg[0].tw"
+		;
 connectAttr "Feathers.di" "|GEO|FeatherCards|L_Feather_Grp|pPlane42.do";
+connectAttr "pPlane42_parentConstraint1.ctx" "|GEO|FeatherCards|L_Feather_Grp|pPlane42.tx"
+		;
+connectAttr "pPlane42_parentConstraint1.cty" "|GEO|FeatherCards|L_Feather_Grp|pPlane42.ty"
+		;
+connectAttr "pPlane42_parentConstraint1.ctz" "|GEO|FeatherCards|L_Feather_Grp|pPlane42.tz"
+		;
+connectAttr "pPlane42_orientConstraint1.crx" "|GEO|FeatherCards|L_Feather_Grp|pPlane42.rx"
+		;
+connectAttr "pPlane42_orientConstraint1.cry" "|GEO|FeatherCards|L_Feather_Grp|pPlane42.ry"
+		;
+connectAttr "pPlane42_orientConstraint1.crz" "|GEO|FeatherCards|L_Feather_Grp|pPlane42.rz"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane42.ro" "pPlane42_parentConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane42.pim" "pPlane42_parentConstraint1.cpim"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane42.rp" "pPlane42_parentConstraint1.crp"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane42.rpt" "pPlane42_parentConstraint1.crt"
+		;
+connectAttr "L_Wing_2_JNT.t" "pPlane42_parentConstraint1.tg[0].tt";
+connectAttr "L_Wing_2_JNT.rp" "pPlane42_parentConstraint1.tg[0].trp";
+connectAttr "L_Wing_2_JNT.rpt" "pPlane42_parentConstraint1.tg[0].trt";
+connectAttr "L_Wing_2_JNT.r" "pPlane42_parentConstraint1.tg[0].tr";
+connectAttr "L_Wing_2_JNT.ro" "pPlane42_parentConstraint1.tg[0].tro";
+connectAttr "L_Wing_2_JNT.s" "pPlane42_parentConstraint1.tg[0].ts";
+connectAttr "L_Wing_2_JNT.pm" "pPlane42_parentConstraint1.tg[0].tpm";
+connectAttr "L_Wing_2_JNT.jo" "pPlane42_parentConstraint1.tg[0].tjo";
+connectAttr "L_Wing_2_JNT.ssc" "pPlane42_parentConstraint1.tg[0].tsc";
+connectAttr "L_Wing_2_JNT.is" "pPlane42_parentConstraint1.tg[0].tis";
+connectAttr "pPlane42_parentConstraint1.w0" "pPlane42_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane42.ro" "pPlane42_orientConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane42.pim" "pPlane42_orientConstraint1.cpim"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.r" "pPlane42_orientConstraint1.tg[0].tr";
+connectAttr "L_FeatherBunch_Turn_CNTL.ro" "pPlane42_orientConstraint1.tg[0].tro"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.pm" "pPlane42_orientConstraint1.tg[0].tpm"
+		;
+connectAttr "pPlane42_orientConstraint1.w0" "pPlane42_orientConstraint1.tg[0].tw"
+		;
 connectAttr "Feathers.di" "|GEO|FeatherCards|L_Feather_Grp|pPlane41.do";
+connectAttr "pPlane41_parentConstraint1.ctx" "|GEO|FeatherCards|L_Feather_Grp|pPlane41.tx"
+		;
+connectAttr "pPlane41_parentConstraint1.cty" "|GEO|FeatherCards|L_Feather_Grp|pPlane41.ty"
+		;
+connectAttr "pPlane41_parentConstraint1.ctz" "|GEO|FeatherCards|L_Feather_Grp|pPlane41.tz"
+		;
+connectAttr "pPlane41_orientConstraint1.crx" "|GEO|FeatherCards|L_Feather_Grp|pPlane41.rx"
+		;
+connectAttr "pPlane41_orientConstraint1.cry" "|GEO|FeatherCards|L_Feather_Grp|pPlane41.ry"
+		;
+connectAttr "pPlane41_orientConstraint1.crz" "|GEO|FeatherCards|L_Feather_Grp|pPlane41.rz"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane41.ro" "pPlane41_parentConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane41.pim" "pPlane41_parentConstraint1.cpim"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane41.rp" "pPlane41_parentConstraint1.crp"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane41.rpt" "pPlane41_parentConstraint1.crt"
+		;
+connectAttr "L_Wing_2_JNT.t" "pPlane41_parentConstraint1.tg[0].tt";
+connectAttr "L_Wing_2_JNT.rp" "pPlane41_parentConstraint1.tg[0].trp";
+connectAttr "L_Wing_2_JNT.rpt" "pPlane41_parentConstraint1.tg[0].trt";
+connectAttr "L_Wing_2_JNT.r" "pPlane41_parentConstraint1.tg[0].tr";
+connectAttr "L_Wing_2_JNT.ro" "pPlane41_parentConstraint1.tg[0].tro";
+connectAttr "L_Wing_2_JNT.s" "pPlane41_parentConstraint1.tg[0].ts";
+connectAttr "L_Wing_2_JNT.pm" "pPlane41_parentConstraint1.tg[0].tpm";
+connectAttr "L_Wing_2_JNT.jo" "pPlane41_parentConstraint1.tg[0].tjo";
+connectAttr "L_Wing_2_JNT.ssc" "pPlane41_parentConstraint1.tg[0].tsc";
+connectAttr "L_Wing_2_JNT.is" "pPlane41_parentConstraint1.tg[0].tis";
+connectAttr "pPlane41_parentConstraint1.w0" "pPlane41_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane41.ro" "pPlane41_orientConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane41.pim" "pPlane41_orientConstraint1.cpim"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.r" "pPlane41_orientConstraint1.tg[0].tr";
+connectAttr "L_FeatherBunch_Turn_CNTL.ro" "pPlane41_orientConstraint1.tg[0].tro"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.pm" "pPlane41_orientConstraint1.tg[0].tpm"
+		;
+connectAttr "pPlane41_orientConstraint1.w0" "pPlane41_orientConstraint1.tg[0].tw"
+		;
 connectAttr "Feathers.di" "|GEO|FeatherCards|L_Feather_Grp|pPlane44.do";
+connectAttr "pPlane44_parentConstraint1.ctx" "|GEO|FeatherCards|L_Feather_Grp|pPlane44.tx"
+		;
+connectAttr "pPlane44_parentConstraint1.cty" "|GEO|FeatherCards|L_Feather_Grp|pPlane44.ty"
+		;
+connectAttr "pPlane44_parentConstraint1.ctz" "|GEO|FeatherCards|L_Feather_Grp|pPlane44.tz"
+		;
+connectAttr "pPlane44_orientConstraint1.crx" "|GEO|FeatherCards|L_Feather_Grp|pPlane44.rx"
+		;
+connectAttr "pPlane44_orientConstraint1.cry" "|GEO|FeatherCards|L_Feather_Grp|pPlane44.ry"
+		;
+connectAttr "pPlane44_orientConstraint1.crz" "|GEO|FeatherCards|L_Feather_Grp|pPlane44.rz"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane44.ro" "pPlane44_parentConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane44.pim" "pPlane44_parentConstraint1.cpim"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane44.rp" "pPlane44_parentConstraint1.crp"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane44.rpt" "pPlane44_parentConstraint1.crt"
+		;
+connectAttr "L_Wing_2_JNT.t" "pPlane44_parentConstraint1.tg[0].tt";
+connectAttr "L_Wing_2_JNT.rp" "pPlane44_parentConstraint1.tg[0].trp";
+connectAttr "L_Wing_2_JNT.rpt" "pPlane44_parentConstraint1.tg[0].trt";
+connectAttr "L_Wing_2_JNT.r" "pPlane44_parentConstraint1.tg[0].tr";
+connectAttr "L_Wing_2_JNT.ro" "pPlane44_parentConstraint1.tg[0].tro";
+connectAttr "L_Wing_2_JNT.s" "pPlane44_parentConstraint1.tg[0].ts";
+connectAttr "L_Wing_2_JNT.pm" "pPlane44_parentConstraint1.tg[0].tpm";
+connectAttr "L_Wing_2_JNT.jo" "pPlane44_parentConstraint1.tg[0].tjo";
+connectAttr "L_Wing_2_JNT.ssc" "pPlane44_parentConstraint1.tg[0].tsc";
+connectAttr "L_Wing_2_JNT.is" "pPlane44_parentConstraint1.tg[0].tis";
+connectAttr "pPlane44_parentConstraint1.w0" "pPlane44_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane44.ro" "pPlane44_orientConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane44.pim" "pPlane44_orientConstraint1.cpim"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.r" "pPlane44_orientConstraint1.tg[0].tr";
+connectAttr "L_FeatherBunch_Turn_CNTL.ro" "pPlane44_orientConstraint1.tg[0].tro"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.pm" "pPlane44_orientConstraint1.tg[0].tpm"
+		;
+connectAttr "pPlane44_orientConstraint1.w0" "pPlane44_orientConstraint1.tg[0].tw"
+		;
 connectAttr "Feathers.di" "|GEO|FeatherCards|L_Feather_Grp|pPlane43.do";
+connectAttr "pPlane43_parentConstraint1.ctx" "|GEO|FeatherCards|L_Feather_Grp|pPlane43.tx"
+		;
+connectAttr "pPlane43_parentConstraint1.cty" "|GEO|FeatherCards|L_Feather_Grp|pPlane43.ty"
+		;
+connectAttr "pPlane43_parentConstraint1.ctz" "|GEO|FeatherCards|L_Feather_Grp|pPlane43.tz"
+		;
+connectAttr "pPlane43_orientConstraint1.crx" "|GEO|FeatherCards|L_Feather_Grp|pPlane43.rx"
+		;
+connectAttr "pPlane43_orientConstraint1.cry" "|GEO|FeatherCards|L_Feather_Grp|pPlane43.ry"
+		;
+connectAttr "pPlane43_orientConstraint1.crz" "|GEO|FeatherCards|L_Feather_Grp|pPlane43.rz"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane43.ro" "pPlane43_parentConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane43.pim" "pPlane43_parentConstraint1.cpim"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane43.rp" "pPlane43_parentConstraint1.crp"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane43.rpt" "pPlane43_parentConstraint1.crt"
+		;
+connectAttr "L_Wing_2_JNT.t" "pPlane43_parentConstraint1.tg[0].tt";
+connectAttr "L_Wing_2_JNT.rp" "pPlane43_parentConstraint1.tg[0].trp";
+connectAttr "L_Wing_2_JNT.rpt" "pPlane43_parentConstraint1.tg[0].trt";
+connectAttr "L_Wing_2_JNT.r" "pPlane43_parentConstraint1.tg[0].tr";
+connectAttr "L_Wing_2_JNT.ro" "pPlane43_parentConstraint1.tg[0].tro";
+connectAttr "L_Wing_2_JNT.s" "pPlane43_parentConstraint1.tg[0].ts";
+connectAttr "L_Wing_2_JNT.pm" "pPlane43_parentConstraint1.tg[0].tpm";
+connectAttr "L_Wing_2_JNT.jo" "pPlane43_parentConstraint1.tg[0].tjo";
+connectAttr "L_Wing_2_JNT.ssc" "pPlane43_parentConstraint1.tg[0].tsc";
+connectAttr "L_Wing_2_JNT.is" "pPlane43_parentConstraint1.tg[0].tis";
+connectAttr "pPlane43_parentConstraint1.w0" "pPlane43_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane43.ro" "pPlane43_orientConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane43.pim" "pPlane43_orientConstraint1.cpim"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.r" "pPlane43_orientConstraint1.tg[0].tr";
+connectAttr "L_FeatherBunch_Turn_CNTL.ro" "pPlane43_orientConstraint1.tg[0].tro"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.pm" "pPlane43_orientConstraint1.tg[0].tpm"
+		;
+connectAttr "pPlane43_orientConstraint1.w0" "pPlane43_orientConstraint1.tg[0].tw"
+		;
 connectAttr "Feathers.di" "|GEO|FeatherCards|L_Feather_Grp|pPlane47.do";
+connectAttr "pPlane47_parentConstraint1.ctx" "|GEO|FeatherCards|L_Feather_Grp|pPlane47.tx"
+		;
+connectAttr "pPlane47_parentConstraint1.cty" "|GEO|FeatherCards|L_Feather_Grp|pPlane47.ty"
+		;
+connectAttr "pPlane47_parentConstraint1.ctz" "|GEO|FeatherCards|L_Feather_Grp|pPlane47.tz"
+		;
+connectAttr "pPlane47_orientConstraint1.crx" "|GEO|FeatherCards|L_Feather_Grp|pPlane47.rx"
+		;
+connectAttr "pPlane47_orientConstraint1.cry" "|GEO|FeatherCards|L_Feather_Grp|pPlane47.ry"
+		;
+connectAttr "pPlane47_orientConstraint1.crz" "|GEO|FeatherCards|L_Feather_Grp|pPlane47.rz"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane47.ro" "pPlane47_parentConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane47.pim" "pPlane47_parentConstraint1.cpim"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane47.rp" "pPlane47_parentConstraint1.crp"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane47.rpt" "pPlane47_parentConstraint1.crt"
+		;
+connectAttr "L_Wing_2_JNT.t" "pPlane47_parentConstraint1.tg[0].tt";
+connectAttr "L_Wing_2_JNT.rp" "pPlane47_parentConstraint1.tg[0].trp";
+connectAttr "L_Wing_2_JNT.rpt" "pPlane47_parentConstraint1.tg[0].trt";
+connectAttr "L_Wing_2_JNT.r" "pPlane47_parentConstraint1.tg[0].tr";
+connectAttr "L_Wing_2_JNT.ro" "pPlane47_parentConstraint1.tg[0].tro";
+connectAttr "L_Wing_2_JNT.s" "pPlane47_parentConstraint1.tg[0].ts";
+connectAttr "L_Wing_2_JNT.pm" "pPlane47_parentConstraint1.tg[0].tpm";
+connectAttr "L_Wing_2_JNT.jo" "pPlane47_parentConstraint1.tg[0].tjo";
+connectAttr "L_Wing_2_JNT.ssc" "pPlane47_parentConstraint1.tg[0].tsc";
+connectAttr "L_Wing_2_JNT.is" "pPlane47_parentConstraint1.tg[0].tis";
+connectAttr "pPlane47_parentConstraint1.w0" "pPlane47_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane47.ro" "pPlane47_orientConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane47.pim" "pPlane47_orientConstraint1.cpim"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.r" "pPlane47_orientConstraint1.tg[0].tr";
+connectAttr "L_FeatherBunch_Turn_CNTL.ro" "pPlane47_orientConstraint1.tg[0].tro"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.pm" "pPlane47_orientConstraint1.tg[0].tpm"
+		;
+connectAttr "pPlane47_orientConstraint1.w0" "pPlane47_orientConstraint1.tg[0].tw"
+		;
 connectAttr "Feathers.di" "|GEO|FeatherCards|L_Feather_Grp|pPlane50.do";
+connectAttr "pPlane50_parentConstraint1.ctx" "|GEO|FeatherCards|L_Feather_Grp|pPlane50.tx"
+		;
+connectAttr "pPlane50_parentConstraint1.cty" "|GEO|FeatherCards|L_Feather_Grp|pPlane50.ty"
+		;
+connectAttr "pPlane50_parentConstraint1.ctz" "|GEO|FeatherCards|L_Feather_Grp|pPlane50.tz"
+		;
+connectAttr "pPlane50_orientConstraint1.crx" "|GEO|FeatherCards|L_Feather_Grp|pPlane50.rx"
+		;
+connectAttr "pPlane50_orientConstraint1.cry" "|GEO|FeatherCards|L_Feather_Grp|pPlane50.ry"
+		;
+connectAttr "pPlane50_orientConstraint1.crz" "|GEO|FeatherCards|L_Feather_Grp|pPlane50.rz"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane50.ro" "pPlane50_parentConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane50.pim" "pPlane50_parentConstraint1.cpim"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane50.rp" "pPlane50_parentConstraint1.crp"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane50.rpt" "pPlane50_parentConstraint1.crt"
+		;
+connectAttr "L_Wing_2_JNT.t" "pPlane50_parentConstraint1.tg[0].tt";
+connectAttr "L_Wing_2_JNT.rp" "pPlane50_parentConstraint1.tg[0].trp";
+connectAttr "L_Wing_2_JNT.rpt" "pPlane50_parentConstraint1.tg[0].trt";
+connectAttr "L_Wing_2_JNT.r" "pPlane50_parentConstraint1.tg[0].tr";
+connectAttr "L_Wing_2_JNT.ro" "pPlane50_parentConstraint1.tg[0].tro";
+connectAttr "L_Wing_2_JNT.s" "pPlane50_parentConstraint1.tg[0].ts";
+connectAttr "L_Wing_2_JNT.pm" "pPlane50_parentConstraint1.tg[0].tpm";
+connectAttr "L_Wing_2_JNT.jo" "pPlane50_parentConstraint1.tg[0].tjo";
+connectAttr "L_Wing_2_JNT.ssc" "pPlane50_parentConstraint1.tg[0].tsc";
+connectAttr "L_Wing_2_JNT.is" "pPlane50_parentConstraint1.tg[0].tis";
+connectAttr "pPlane50_parentConstraint1.w0" "pPlane50_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane50.ro" "pPlane50_orientConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane50.pim" "pPlane50_orientConstraint1.cpim"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.r" "pPlane50_orientConstraint1.tg[0].tr";
+connectAttr "L_FeatherBunch_Turn_CNTL.ro" "pPlane50_orientConstraint1.tg[0].tro"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.pm" "pPlane50_orientConstraint1.tg[0].tpm"
+		;
+connectAttr "pPlane50_orientConstraint1.w0" "pPlane50_orientConstraint1.tg[0].tw"
+		;
 connectAttr "Feathers.di" "|GEO|FeatherCards|L_Feather_Grp|pPlane51.do";
+connectAttr "pPlane51_parentConstraint1.ctx" "|GEO|FeatherCards|L_Feather_Grp|pPlane51.tx"
+		;
+connectAttr "pPlane51_parentConstraint1.cty" "|GEO|FeatherCards|L_Feather_Grp|pPlane51.ty"
+		;
+connectAttr "pPlane51_parentConstraint1.ctz" "|GEO|FeatherCards|L_Feather_Grp|pPlane51.tz"
+		;
+connectAttr "pPlane51_orientConstraint1.crx" "|GEO|FeatherCards|L_Feather_Grp|pPlane51.rx"
+		;
+connectAttr "pPlane51_orientConstraint1.cry" "|GEO|FeatherCards|L_Feather_Grp|pPlane51.ry"
+		;
+connectAttr "pPlane51_orientConstraint1.crz" "|GEO|FeatherCards|L_Feather_Grp|pPlane51.rz"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane51.ro" "pPlane51_parentConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane51.pim" "pPlane51_parentConstraint1.cpim"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane51.rp" "pPlane51_parentConstraint1.crp"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane51.rpt" "pPlane51_parentConstraint1.crt"
+		;
+connectAttr "L_Wing_2_JNT.t" "pPlane51_parentConstraint1.tg[0].tt";
+connectAttr "L_Wing_2_JNT.rp" "pPlane51_parentConstraint1.tg[0].trp";
+connectAttr "L_Wing_2_JNT.rpt" "pPlane51_parentConstraint1.tg[0].trt";
+connectAttr "L_Wing_2_JNT.r" "pPlane51_parentConstraint1.tg[0].tr";
+connectAttr "L_Wing_2_JNT.ro" "pPlane51_parentConstraint1.tg[0].tro";
+connectAttr "L_Wing_2_JNT.s" "pPlane51_parentConstraint1.tg[0].ts";
+connectAttr "L_Wing_2_JNT.pm" "pPlane51_parentConstraint1.tg[0].tpm";
+connectAttr "L_Wing_2_JNT.jo" "pPlane51_parentConstraint1.tg[0].tjo";
+connectAttr "L_Wing_2_JNT.ssc" "pPlane51_parentConstraint1.tg[0].tsc";
+connectAttr "L_Wing_2_JNT.is" "pPlane51_parentConstraint1.tg[0].tis";
+connectAttr "pPlane51_parentConstraint1.w0" "pPlane51_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane51.ro" "pPlane51_orientConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane51.pim" "pPlane51_orientConstraint1.cpim"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.r" "pPlane51_orientConstraint1.tg[0].tr";
+connectAttr "L_FeatherBunch_Turn_CNTL.ro" "pPlane51_orientConstraint1.tg[0].tro"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.pm" "pPlane51_orientConstraint1.tg[0].tpm"
+		;
+connectAttr "pPlane51_orientConstraint1.w0" "pPlane51_orientConstraint1.tg[0].tw"
+		;
 connectAttr "Feathers.di" "|GEO|FeatherCards|L_Feather_Grp|pPlane48.do";
+connectAttr "pPlane48_parentConstraint1.ctx" "|GEO|FeatherCards|L_Feather_Grp|pPlane48.tx"
+		;
+connectAttr "pPlane48_parentConstraint1.cty" "|GEO|FeatherCards|L_Feather_Grp|pPlane48.ty"
+		;
+connectAttr "pPlane48_parentConstraint1.ctz" "|GEO|FeatherCards|L_Feather_Grp|pPlane48.tz"
+		;
+connectAttr "pPlane48_orientConstraint1.crx" "|GEO|FeatherCards|L_Feather_Grp|pPlane48.rx"
+		;
+connectAttr "pPlane48_orientConstraint1.cry" "|GEO|FeatherCards|L_Feather_Grp|pPlane48.ry"
+		;
+connectAttr "pPlane48_orientConstraint1.crz" "|GEO|FeatherCards|L_Feather_Grp|pPlane48.rz"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane48.ro" "pPlane48_parentConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane48.pim" "pPlane48_parentConstraint1.cpim"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane48.rp" "pPlane48_parentConstraint1.crp"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane48.rpt" "pPlane48_parentConstraint1.crt"
+		;
+connectAttr "L_Wing_2_JNT.t" "pPlane48_parentConstraint1.tg[0].tt";
+connectAttr "L_Wing_2_JNT.rp" "pPlane48_parentConstraint1.tg[0].trp";
+connectAttr "L_Wing_2_JNT.rpt" "pPlane48_parentConstraint1.tg[0].trt";
+connectAttr "L_Wing_2_JNT.r" "pPlane48_parentConstraint1.tg[0].tr";
+connectAttr "L_Wing_2_JNT.ro" "pPlane48_parentConstraint1.tg[0].tro";
+connectAttr "L_Wing_2_JNT.s" "pPlane48_parentConstraint1.tg[0].ts";
+connectAttr "L_Wing_2_JNT.pm" "pPlane48_parentConstraint1.tg[0].tpm";
+connectAttr "L_Wing_2_JNT.jo" "pPlane48_parentConstraint1.tg[0].tjo";
+connectAttr "L_Wing_2_JNT.ssc" "pPlane48_parentConstraint1.tg[0].tsc";
+connectAttr "L_Wing_2_JNT.is" "pPlane48_parentConstraint1.tg[0].tis";
+connectAttr "pPlane48_parentConstraint1.w0" "pPlane48_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane48.ro" "pPlane48_orientConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane48.pim" "pPlane48_orientConstraint1.cpim"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.r" "pPlane48_orientConstraint1.tg[0].tr";
+connectAttr "L_FeatherBunch_Turn_CNTL.ro" "pPlane48_orientConstraint1.tg[0].tro"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.pm" "pPlane48_orientConstraint1.tg[0].tpm"
+		;
+connectAttr "pPlane48_orientConstraint1.w0" "pPlane48_orientConstraint1.tg[0].tw"
+		;
 connectAttr "Feathers.di" "|GEO|FeatherCards|L_Feather_Grp|pPlane49.do";
+connectAttr "pPlane49_parentConstraint1.ctx" "|GEO|FeatherCards|L_Feather_Grp|pPlane49.tx"
+		;
+connectAttr "pPlane49_parentConstraint1.cty" "|GEO|FeatherCards|L_Feather_Grp|pPlane49.ty"
+		;
+connectAttr "pPlane49_parentConstraint1.ctz" "|GEO|FeatherCards|L_Feather_Grp|pPlane49.tz"
+		;
+connectAttr "pPlane49_orientConstraint1.crx" "|GEO|FeatherCards|L_Feather_Grp|pPlane49.rx"
+		;
+connectAttr "pPlane49_orientConstraint1.cry" "|GEO|FeatherCards|L_Feather_Grp|pPlane49.ry"
+		;
+connectAttr "pPlane49_orientConstraint1.crz" "|GEO|FeatherCards|L_Feather_Grp|pPlane49.rz"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane49.ro" "pPlane49_parentConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane49.pim" "pPlane49_parentConstraint1.cpim"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane49.rp" "pPlane49_parentConstraint1.crp"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane49.rpt" "pPlane49_parentConstraint1.crt"
+		;
+connectAttr "L_Wing_2_JNT.t" "pPlane49_parentConstraint1.tg[0].tt";
+connectAttr "L_Wing_2_JNT.rp" "pPlane49_parentConstraint1.tg[0].trp";
+connectAttr "L_Wing_2_JNT.rpt" "pPlane49_parentConstraint1.tg[0].trt";
+connectAttr "L_Wing_2_JNT.r" "pPlane49_parentConstraint1.tg[0].tr";
+connectAttr "L_Wing_2_JNT.ro" "pPlane49_parentConstraint1.tg[0].tro";
+connectAttr "L_Wing_2_JNT.s" "pPlane49_parentConstraint1.tg[0].ts";
+connectAttr "L_Wing_2_JNT.pm" "pPlane49_parentConstraint1.tg[0].tpm";
+connectAttr "L_Wing_2_JNT.jo" "pPlane49_parentConstraint1.tg[0].tjo";
+connectAttr "L_Wing_2_JNT.ssc" "pPlane49_parentConstraint1.tg[0].tsc";
+connectAttr "L_Wing_2_JNT.is" "pPlane49_parentConstraint1.tg[0].tis";
+connectAttr "pPlane49_parentConstraint1.w0" "pPlane49_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane49.ro" "pPlane49_orientConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane49.pim" "pPlane49_orientConstraint1.cpim"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.r" "pPlane49_orientConstraint1.tg[0].tr";
+connectAttr "L_FeatherBunch_Turn_CNTL.ro" "pPlane49_orientConstraint1.tg[0].tro"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.pm" "pPlane49_orientConstraint1.tg[0].tpm"
+		;
+connectAttr "pPlane49_orientConstraint1.w0" "pPlane49_orientConstraint1.tg[0].tw"
+		;
 connectAttr "Feathers.di" "|GEO|FeatherCards|L_Feather_Grp|pPlane52.do";
+connectAttr "pPlane52_parentConstraint1.ctx" "|GEO|FeatherCards|L_Feather_Grp|pPlane52.tx"
+		;
+connectAttr "pPlane52_parentConstraint1.cty" "|GEO|FeatherCards|L_Feather_Grp|pPlane52.ty"
+		;
+connectAttr "pPlane52_parentConstraint1.ctz" "|GEO|FeatherCards|L_Feather_Grp|pPlane52.tz"
+		;
+connectAttr "pPlane52_orientConstraint1.crx" "|GEO|FeatherCards|L_Feather_Grp|pPlane52.rx"
+		;
+connectAttr "pPlane52_orientConstraint1.cry" "|GEO|FeatherCards|L_Feather_Grp|pPlane52.ry"
+		;
+connectAttr "pPlane52_orientConstraint1.crz" "|GEO|FeatherCards|L_Feather_Grp|pPlane52.rz"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane52.ro" "pPlane52_parentConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane52.pim" "pPlane52_parentConstraint1.cpim"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane52.rp" "pPlane52_parentConstraint1.crp"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane52.rpt" "pPlane52_parentConstraint1.crt"
+		;
+connectAttr "L_Wing_2_JNT.t" "pPlane52_parentConstraint1.tg[0].tt";
+connectAttr "L_Wing_2_JNT.rp" "pPlane52_parentConstraint1.tg[0].trp";
+connectAttr "L_Wing_2_JNT.rpt" "pPlane52_parentConstraint1.tg[0].trt";
+connectAttr "L_Wing_2_JNT.r" "pPlane52_parentConstraint1.tg[0].tr";
+connectAttr "L_Wing_2_JNT.ro" "pPlane52_parentConstraint1.tg[0].tro";
+connectAttr "L_Wing_2_JNT.s" "pPlane52_parentConstraint1.tg[0].ts";
+connectAttr "L_Wing_2_JNT.pm" "pPlane52_parentConstraint1.tg[0].tpm";
+connectAttr "L_Wing_2_JNT.jo" "pPlane52_parentConstraint1.tg[0].tjo";
+connectAttr "L_Wing_2_JNT.ssc" "pPlane52_parentConstraint1.tg[0].tsc";
+connectAttr "L_Wing_2_JNT.is" "pPlane52_parentConstraint1.tg[0].tis";
+connectAttr "pPlane52_parentConstraint1.w0" "pPlane52_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane52.ro" "pPlane52_orientConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane52.pim" "pPlane52_orientConstraint1.cpim"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.r" "pPlane52_orientConstraint1.tg[0].tr";
+connectAttr "L_FeatherBunch_Turn_CNTL.ro" "pPlane52_orientConstraint1.tg[0].tro"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.pm" "pPlane52_orientConstraint1.tg[0].tpm"
+		;
+connectAttr "pPlane52_orientConstraint1.w0" "pPlane52_orientConstraint1.tg[0].tw"
+		;
 connectAttr "Feathers.di" "|GEO|FeatherCards|L_Feather_Grp|pPlane55.do";
+connectAttr "pPlane55_parentConstraint1.ctx" "|GEO|FeatherCards|L_Feather_Grp|pPlane55.tx"
+		;
+connectAttr "pPlane55_parentConstraint1.cty" "|GEO|FeatherCards|L_Feather_Grp|pPlane55.ty"
+		;
+connectAttr "pPlane55_parentConstraint1.ctz" "|GEO|FeatherCards|L_Feather_Grp|pPlane55.tz"
+		;
+connectAttr "pPlane55_orientConstraint1.crx" "|GEO|FeatherCards|L_Feather_Grp|pPlane55.rx"
+		;
+connectAttr "pPlane55_orientConstraint1.cry" "|GEO|FeatherCards|L_Feather_Grp|pPlane55.ry"
+		;
+connectAttr "pPlane55_orientConstraint1.crz" "|GEO|FeatherCards|L_Feather_Grp|pPlane55.rz"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane55.ro" "pPlane55_parentConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane55.pim" "pPlane55_parentConstraint1.cpim"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane55.rp" "pPlane55_parentConstraint1.crp"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane55.rpt" "pPlane55_parentConstraint1.crt"
+		;
+connectAttr "L_Wing_2_JNT.t" "pPlane55_parentConstraint1.tg[0].tt";
+connectAttr "L_Wing_2_JNT.rp" "pPlane55_parentConstraint1.tg[0].trp";
+connectAttr "L_Wing_2_JNT.rpt" "pPlane55_parentConstraint1.tg[0].trt";
+connectAttr "L_Wing_2_JNT.r" "pPlane55_parentConstraint1.tg[0].tr";
+connectAttr "L_Wing_2_JNT.ro" "pPlane55_parentConstraint1.tg[0].tro";
+connectAttr "L_Wing_2_JNT.s" "pPlane55_parentConstraint1.tg[0].ts";
+connectAttr "L_Wing_2_JNT.pm" "pPlane55_parentConstraint1.tg[0].tpm";
+connectAttr "L_Wing_2_JNT.jo" "pPlane55_parentConstraint1.tg[0].tjo";
+connectAttr "L_Wing_2_JNT.ssc" "pPlane55_parentConstraint1.tg[0].tsc";
+connectAttr "L_Wing_2_JNT.is" "pPlane55_parentConstraint1.tg[0].tis";
+connectAttr "pPlane55_parentConstraint1.w0" "pPlane55_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane55.ro" "pPlane55_orientConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane55.pim" "pPlane55_orientConstraint1.cpim"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.r" "pPlane55_orientConstraint1.tg[0].tr";
+connectAttr "L_FeatherBunch_Turn_CNTL.ro" "pPlane55_orientConstraint1.tg[0].tro"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.pm" "pPlane55_orientConstraint1.tg[0].tpm"
+		;
+connectAttr "pPlane55_orientConstraint1.w0" "pPlane55_orientConstraint1.tg[0].tw"
+		;
 connectAttr "Feathers.di" "|GEO|FeatherCards|L_Feather_Grp|pPlane54.do";
+connectAttr "pPlane54_parentConstraint1.ctx" "|GEO|FeatherCards|L_Feather_Grp|pPlane54.tx"
+		;
+connectAttr "pPlane54_parentConstraint1.cty" "|GEO|FeatherCards|L_Feather_Grp|pPlane54.ty"
+		;
+connectAttr "pPlane54_parentConstraint1.ctz" "|GEO|FeatherCards|L_Feather_Grp|pPlane54.tz"
+		;
+connectAttr "pPlane54_orientConstraint1.crx" "|GEO|FeatherCards|L_Feather_Grp|pPlane54.rx"
+		;
+connectAttr "pPlane54_orientConstraint1.cry" "|GEO|FeatherCards|L_Feather_Grp|pPlane54.ry"
+		;
+connectAttr "pPlane54_orientConstraint1.crz" "|GEO|FeatherCards|L_Feather_Grp|pPlane54.rz"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane54.ro" "pPlane54_parentConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane54.pim" "pPlane54_parentConstraint1.cpim"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane54.rp" "pPlane54_parentConstraint1.crp"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane54.rpt" "pPlane54_parentConstraint1.crt"
+		;
+connectAttr "L_Wing_2_JNT.t" "pPlane54_parentConstraint1.tg[0].tt";
+connectAttr "L_Wing_2_JNT.rp" "pPlane54_parentConstraint1.tg[0].trp";
+connectAttr "L_Wing_2_JNT.rpt" "pPlane54_parentConstraint1.tg[0].trt";
+connectAttr "L_Wing_2_JNT.r" "pPlane54_parentConstraint1.tg[0].tr";
+connectAttr "L_Wing_2_JNT.ro" "pPlane54_parentConstraint1.tg[0].tro";
+connectAttr "L_Wing_2_JNT.s" "pPlane54_parentConstraint1.tg[0].ts";
+connectAttr "L_Wing_2_JNT.pm" "pPlane54_parentConstraint1.tg[0].tpm";
+connectAttr "L_Wing_2_JNT.jo" "pPlane54_parentConstraint1.tg[0].tjo";
+connectAttr "L_Wing_2_JNT.ssc" "pPlane54_parentConstraint1.tg[0].tsc";
+connectAttr "L_Wing_2_JNT.is" "pPlane54_parentConstraint1.tg[0].tis";
+connectAttr "pPlane54_parentConstraint1.w0" "pPlane54_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane54.ro" "pPlane54_orientConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane54.pim" "pPlane54_orientConstraint1.cpim"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.r" "pPlane54_orientConstraint1.tg[0].tr";
+connectAttr "L_FeatherBunch_Turn_CNTL.ro" "pPlane54_orientConstraint1.tg[0].tro"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.pm" "pPlane54_orientConstraint1.tg[0].tpm"
+		;
+connectAttr "pPlane54_orientConstraint1.w0" "pPlane54_orientConstraint1.tg[0].tw"
+		;
 connectAttr "Feathers.di" "|GEO|FeatherCards|L_Feather_Grp|pPlane53.do";
+connectAttr "pPlane53_parentConstraint1.ctx" "|GEO|FeatherCards|L_Feather_Grp|pPlane53.tx"
+		;
+connectAttr "pPlane53_parentConstraint1.cty" "|GEO|FeatherCards|L_Feather_Grp|pPlane53.ty"
+		;
+connectAttr "pPlane53_parentConstraint1.ctz" "|GEO|FeatherCards|L_Feather_Grp|pPlane53.tz"
+		;
+connectAttr "pPlane53_orientConstraint1.crx" "|GEO|FeatherCards|L_Feather_Grp|pPlane53.rx"
+		;
+connectAttr "pPlane53_orientConstraint1.cry" "|GEO|FeatherCards|L_Feather_Grp|pPlane53.ry"
+		;
+connectAttr "pPlane53_orientConstraint1.crz" "|GEO|FeatherCards|L_Feather_Grp|pPlane53.rz"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane53.ro" "pPlane53_parentConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane53.pim" "pPlane53_parentConstraint1.cpim"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane53.rp" "pPlane53_parentConstraint1.crp"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane53.rpt" "pPlane53_parentConstraint1.crt"
+		;
+connectAttr "L_Wing_2_JNT.t" "pPlane53_parentConstraint1.tg[0].tt";
+connectAttr "L_Wing_2_JNT.rp" "pPlane53_parentConstraint1.tg[0].trp";
+connectAttr "L_Wing_2_JNT.rpt" "pPlane53_parentConstraint1.tg[0].trt";
+connectAttr "L_Wing_2_JNT.r" "pPlane53_parentConstraint1.tg[0].tr";
+connectAttr "L_Wing_2_JNT.ro" "pPlane53_parentConstraint1.tg[0].tro";
+connectAttr "L_Wing_2_JNT.s" "pPlane53_parentConstraint1.tg[0].ts";
+connectAttr "L_Wing_2_JNT.pm" "pPlane53_parentConstraint1.tg[0].tpm";
+connectAttr "L_Wing_2_JNT.jo" "pPlane53_parentConstraint1.tg[0].tjo";
+connectAttr "L_Wing_2_JNT.ssc" "pPlane53_parentConstraint1.tg[0].tsc";
+connectAttr "L_Wing_2_JNT.is" "pPlane53_parentConstraint1.tg[0].tis";
+connectAttr "pPlane53_parentConstraint1.w0" "pPlane53_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane53.ro" "pPlane53_orientConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane53.pim" "pPlane53_orientConstraint1.cpim"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.r" "pPlane53_orientConstraint1.tg[0].tr";
+connectAttr "L_FeatherBunch_Turn_CNTL.ro" "pPlane53_orientConstraint1.tg[0].tro"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.pm" "pPlane53_orientConstraint1.tg[0].tpm"
+		;
+connectAttr "pPlane53_orientConstraint1.w0" "pPlane53_orientConstraint1.tg[0].tw"
+		;
 connectAttr "Feathers.di" "|GEO|FeatherCards|L_Feather_Grp|pPlane37.do";
 connectAttr "pPlane37_orientConstraint1.crx" "|GEO|FeatherCards|L_Feather_Grp|pPlane37.rx"
 		;
@@ -28935,20 +29876,131 @@ connectAttr "pPlane37_orientConstraint1.cry" "|GEO|FeatherCards|L_Feather_Grp|pP
 		;
 connectAttr "pPlane37_orientConstraint1.crz" "|GEO|FeatherCards|L_Feather_Grp|pPlane37.rz"
 		;
+connectAttr "pPlane37_parentConstraint1.ctx" "|GEO|FeatherCards|L_Feather_Grp|pPlane37.tx"
+		;
+connectAttr "pPlane37_parentConstraint1.cty" "|GEO|FeatherCards|L_Feather_Grp|pPlane37.ty"
+		;
+connectAttr "pPlane37_parentConstraint1.ctz" "|GEO|FeatherCards|L_Feather_Grp|pPlane37.tz"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane37.ro" "pPlane37_parentConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane37.pim" "pPlane37_parentConstraint1.cpim"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane37.rp" "pPlane37_parentConstraint1.crp"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane37.rpt" "pPlane37_parentConstraint1.crt"
+		;
+connectAttr "L_Wing_2_JNT.t" "pPlane37_parentConstraint1.tg[0].tt";
+connectAttr "L_Wing_2_JNT.rp" "pPlane37_parentConstraint1.tg[0].trp";
+connectAttr "L_Wing_2_JNT.rpt" "pPlane37_parentConstraint1.tg[0].trt";
+connectAttr "L_Wing_2_JNT.r" "pPlane37_parentConstraint1.tg[0].tr";
+connectAttr "L_Wing_2_JNT.ro" "pPlane37_parentConstraint1.tg[0].tro";
+connectAttr "L_Wing_2_JNT.s" "pPlane37_parentConstraint1.tg[0].ts";
+connectAttr "L_Wing_2_JNT.pm" "pPlane37_parentConstraint1.tg[0].tpm";
+connectAttr "L_Wing_2_JNT.jo" "pPlane37_parentConstraint1.tg[0].tjo";
+connectAttr "L_Wing_2_JNT.ssc" "pPlane37_parentConstraint1.tg[0].tsc";
+connectAttr "L_Wing_2_JNT.is" "pPlane37_parentConstraint1.tg[0].tis";
+connectAttr "pPlane37_parentConstraint1.w0" "pPlane37_parentConstraint1.tg[0].tw"
+		;
 connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane37.ro" "pPlane37_orientConstraint1.cro"
 		;
 connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane37.pim" "pPlane37_orientConstraint1.cpim"
 		;
-connectAttr "|L_Feather_Turn_Grp|L_Feather_Turn_CNTL.r" "pPlane37_orientConstraint1.tg[0].tr"
+connectAttr "L_FeatherBunch_Turn_CNTL.r" "pPlane37_orientConstraint1.tg[0].tr";
+connectAttr "L_FeatherBunch_Turn_CNTL.ro" "pPlane37_orientConstraint1.tg[0].tro"
 		;
-connectAttr "|L_Feather_Turn_Grp|L_Feather_Turn_CNTL.ro" "pPlane37_orientConstraint1.tg[0].tro"
-		;
-connectAttr "|L_Feather_Turn_Grp|L_Feather_Turn_CNTL.pm" "pPlane37_orientConstraint1.tg[0].tpm"
+connectAttr "L_FeatherBunch_Turn_CNTL.pm" "pPlane37_orientConstraint1.tg[0].tpm"
 		;
 connectAttr "pPlane37_orientConstraint1.w0" "pPlane37_orientConstraint1.tg[0].tw"
 		;
 connectAttr "Feathers.di" "|GEO|FeatherCards|L_Feather_Grp|pPlane40.do";
+connectAttr "pPlane40_parentConstraint1.ctx" "|GEO|FeatherCards|L_Feather_Grp|pPlane40.tx"
+		;
+connectAttr "pPlane40_parentConstraint1.cty" "|GEO|FeatherCards|L_Feather_Grp|pPlane40.ty"
+		;
+connectAttr "pPlane40_parentConstraint1.ctz" "|GEO|FeatherCards|L_Feather_Grp|pPlane40.tz"
+		;
+connectAttr "pPlane40_orientConstraint1.crx" "|GEO|FeatherCards|L_Feather_Grp|pPlane40.rx"
+		;
+connectAttr "pPlane40_orientConstraint1.cry" "|GEO|FeatherCards|L_Feather_Grp|pPlane40.ry"
+		;
+connectAttr "pPlane40_orientConstraint1.crz" "|GEO|FeatherCards|L_Feather_Grp|pPlane40.rz"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane40.ro" "pPlane40_parentConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane40.pim" "pPlane40_parentConstraint1.cpim"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane40.rp" "pPlane40_parentConstraint1.crp"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane40.rpt" "pPlane40_parentConstraint1.crt"
+		;
+connectAttr "L_Wing_2_JNT.t" "pPlane40_parentConstraint1.tg[0].tt";
+connectAttr "L_Wing_2_JNT.rp" "pPlane40_parentConstraint1.tg[0].trp";
+connectAttr "L_Wing_2_JNT.rpt" "pPlane40_parentConstraint1.tg[0].trt";
+connectAttr "L_Wing_2_JNT.r" "pPlane40_parentConstraint1.tg[0].tr";
+connectAttr "L_Wing_2_JNT.ro" "pPlane40_parentConstraint1.tg[0].tro";
+connectAttr "L_Wing_2_JNT.s" "pPlane40_parentConstraint1.tg[0].ts";
+connectAttr "L_Wing_2_JNT.pm" "pPlane40_parentConstraint1.tg[0].tpm";
+connectAttr "L_Wing_2_JNT.jo" "pPlane40_parentConstraint1.tg[0].tjo";
+connectAttr "L_Wing_2_JNT.ssc" "pPlane40_parentConstraint1.tg[0].tsc";
+connectAttr "L_Wing_2_JNT.is" "pPlane40_parentConstraint1.tg[0].tis";
+connectAttr "pPlane40_parentConstraint1.w0" "pPlane40_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane40.ro" "pPlane40_orientConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane40.pim" "pPlane40_orientConstraint1.cpim"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.r" "pPlane40_orientConstraint1.tg[0].tr";
+connectAttr "L_FeatherBunch_Turn_CNTL.ro" "pPlane40_orientConstraint1.tg[0].tro"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.pm" "pPlane40_orientConstraint1.tg[0].tpm"
+		;
+connectAttr "pPlane40_orientConstraint1.w0" "pPlane40_orientConstraint1.tg[0].tw"
+		;
 connectAttr "Feathers.di" "|GEO|FeatherCards|L_Feather_Grp|pPlane38.do";
+connectAttr "pPlane38_parentConstraint1.ctx" "|GEO|FeatherCards|L_Feather_Grp|pPlane38.tx"
+		;
+connectAttr "pPlane38_parentConstraint1.cty" "|GEO|FeatherCards|L_Feather_Grp|pPlane38.ty"
+		;
+connectAttr "pPlane38_parentConstraint1.ctz" "|GEO|FeatherCards|L_Feather_Grp|pPlane38.tz"
+		;
+connectAttr "pPlane38_orientConstraint1.crx" "|GEO|FeatherCards|L_Feather_Grp|pPlane38.rx"
+		;
+connectAttr "pPlane38_orientConstraint1.cry" "|GEO|FeatherCards|L_Feather_Grp|pPlane38.ry"
+		;
+connectAttr "pPlane38_orientConstraint1.crz" "|GEO|FeatherCards|L_Feather_Grp|pPlane38.rz"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane38.ro" "pPlane38_parentConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane38.pim" "pPlane38_parentConstraint1.cpim"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane38.rp" "pPlane38_parentConstraint1.crp"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane38.rpt" "pPlane38_parentConstraint1.crt"
+		;
+connectAttr "L_Wing_2_JNT.t" "pPlane38_parentConstraint1.tg[0].tt";
+connectAttr "L_Wing_2_JNT.rp" "pPlane38_parentConstraint1.tg[0].trp";
+connectAttr "L_Wing_2_JNT.rpt" "pPlane38_parentConstraint1.tg[0].trt";
+connectAttr "L_Wing_2_JNT.r" "pPlane38_parentConstraint1.tg[0].tr";
+connectAttr "L_Wing_2_JNT.ro" "pPlane38_parentConstraint1.tg[0].tro";
+connectAttr "L_Wing_2_JNT.s" "pPlane38_parentConstraint1.tg[0].ts";
+connectAttr "L_Wing_2_JNT.pm" "pPlane38_parentConstraint1.tg[0].tpm";
+connectAttr "L_Wing_2_JNT.jo" "pPlane38_parentConstraint1.tg[0].tjo";
+connectAttr "L_Wing_2_JNT.ssc" "pPlane38_parentConstraint1.tg[0].tsc";
+connectAttr "L_Wing_2_JNT.is" "pPlane38_parentConstraint1.tg[0].tis";
+connectAttr "pPlane38_parentConstraint1.w0" "pPlane38_parentConstraint1.tg[0].tw"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane38.ro" "pPlane38_orientConstraint1.cro"
+		;
+connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane38.pim" "pPlane38_orientConstraint1.cpim"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.r" "pPlane38_orientConstraint1.tg[0].tr";
+connectAttr "L_FeatherBunch_Turn_CNTL.ro" "pPlane38_orientConstraint1.tg[0].tro"
+		;
+connectAttr "L_FeatherBunch_Turn_CNTL.pm" "pPlane38_orientConstraint1.tg[0].tpm"
+		;
+connectAttr "pPlane38_orientConstraint1.w0" "pPlane38_orientConstraint1.tg[0].tw"
+		;
 connectAttr "Feathers.di" "|GEO|FeatherCards|R_Feather_Grp|pPlane46.do";
 connectAttr "Feathers.di" "|GEO|FeatherCards|R_Feather_Grp|pPlane45.do";
 connectAttr "Feathers.di" "|GEO|FeatherCards|R_Feather_Grp|pPlane42.do";
@@ -29689,11 +30741,7 @@ connectAttr "White.oc" "GenericMesh_V10_1:PS_1:Quadra_defaultMat.ss";
 connectAttr "GenericMesh_V10_1:PS_1:Quadra_defaultMat.msg" "GenericMesh_V10_1:PS_1:Quadra_materialInfo1.sg"
 		;
 connectAttr "White.msg" "GenericMesh_V10_1:PS_1:Quadra_materialInfo1.m";
-connectAttr "layerManager.dli[1]" "BasicVersion.id";
-connectAttr "layerManager.dli[2]" "GenericMesh.id";
 connectAttr "layerManager.dli[3]" "Quetzal_Skin.id";
-connectAttr "layerManager.dli[4]" "bone_lyer.id";
-connectAttr "layerManager.dli[5]" "images.id";
 connectAttr "file1.oc" "Hair.c";
 connectAttr "file1.ot" "Hair.it";
 connectAttr "Hair.oc" "lambert2SG.ss";
@@ -29755,8 +30803,6 @@ connectAttr "pSphereShape1.iog" "lambert4SG.dsm" -na;
 connectAttr "pSphereShape2.iog" "lambert4SG.dsm" -na;
 connectAttr "lambert4SG.msg" "materialInfo3.sg";
 connectAttr "Body1.msg" "materialInfo3.m";
-connectAttr "layerManager.dli[6]" "layer1.id";
-connectAttr "layerManager.dli[7]" "Muscles.id";
 connectAttr "file3.oc" "Feather.c";
 connectAttr "file3.ot" "Feather.it";
 connectAttr "Feather.oc" "lambert5SG.ss";
@@ -29976,7 +31022,6 @@ connectAttr "pPlane36Shape.wm" "polySplitRing14.mp";
 connectAttr "polyDelEdge2.out" "polyTweak120.ip";
 connectAttr "polySplitRing14.out" "polySplitRing15.ip";
 connectAttr "pPlane36Shape.wm" "polySplitRing15.mp";
-connectAttr "layerManager.dli[9]" "Organs.id";
 connectAttr "layerManager.dli[10]" "Rig.id";
 connectAttr "TailShapeOrig.w" "groupParts114.ig";
 connectAttr "groupId457.id" "groupParts114.gi";
@@ -30221,227 +31266,10 @@ connectAttr "TailShape.iog.og[10]" "tweakSet2.dsm" -na;
 connectAttr "tweak2.msg" "tweakSet2.ub[0]";
 connectAttr "groupParts114.og" "groupParts118.ig";
 connectAttr "groupId461.id" "groupParts118.gi";
-connectAttr "|L_Feather_Turn_Grp16|L_Feather_Turn_CNTL|L_Feather_Turn_CNTLShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+connectAttr "L_FeatherBunch_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
 		;
-connectAttr "|L_Feather_Turn_Grp16|L_Feather_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
-		;
-connectAttr "L_Feather_Turn_Grp17.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
-		;
-connectAttr "L_Feather_Turn_Grp14.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp17|L_Feather_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp17|L_Feather_Turn_CNTL|L_Feather_Turn_CNTLShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
-		;
-connectAttr "L_Feather_Turn_Grp15.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp15|L_Feather_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp15|L_Feather_Turn_CNTL|L_Feather_Turn_CNTLShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[8].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp2|L_Feather_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[9].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp4|L_Feather_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[10].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp4|L_Feather_Turn_CNTL|L_Feather_Turn_CNTLShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[11].dn"
-		;
-connectAttr "L_Feather_Turn_Grp4.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[12].dn"
-		;
-connectAttr "L_Feather_Turn_Grp2.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[13].dn"
-		;
-connectAttr "L_Feather_Turn_Grp6.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[14].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp6|L_Feather_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[15].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp6|L_Feather_Turn_CNTL|L_Feather_Turn_CNTLShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[16].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp2|L_Feather_Turn_CNTL|L_Feather_Turn_CNTLShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[17].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane48|polySurfaceShape96.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[18].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane51.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[19].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane53|polySurfaceShape96.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[20].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane48.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[21].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane53|pPlane53Shape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[22].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane41.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[23].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane42.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[24].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane45.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[25].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane45|pPlane45Shape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[26].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane46.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[27].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane40.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[28].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane38|polySurfaceShape96.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[29].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane54|pPlane54Shape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[30].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane49|polySurfaceShape96.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[31].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane40|pPlane40Shape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[32].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane53.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[33].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane50|pPlane50Shape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[34].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane38|pPlane38Shape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[35].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane54.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[36].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane55|pPlane55Shape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[37].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane37|pPlane37Shape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[38].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane55.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[39].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane49.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[40].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane47|polySurfaceShape96.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[41].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane37|polySurfaceShape96.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[42].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane48|pPlane48Shape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[43].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane47|pPlane47Shape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[44].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane43.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[45].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane51|pPlane51Shape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[46].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane55|polySurfaceShape96.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[47].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane40|polySurfaceShape96.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[48].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane54|polySurfaceShape96.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[49].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane52|polySurfaceShape96.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[50].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane49|pPlane49Shape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[51].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane52.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[52].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane37.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[53].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane38.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[54].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane52|pPlane52Shape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[55].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane50|polySurfaceShape96.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[56].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane43|polySurfaceShape96.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[57].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane44.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[58].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane47.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[59].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane44|polySurfaceShape96.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[60].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane43|pPlane43Shape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[61].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane50.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[62].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane44|pPlane44Shape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[63].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane51|polySurfaceShape96.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[64].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane41|polySurfaceShape96.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[65].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane41|pPlane41Shape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[66].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane42|polySurfaceShape96.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[67].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane42|pPlane42Shape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[68].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane45|polySurfaceShape96.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[69].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane46|pPlane46Shape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[70].dn"
-		;
-connectAttr "|GEO|FeatherCards|L_Feather_Grp|pPlane46|polySurfaceShape96.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[71].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp10|L_Feather_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[72].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp12|L_Feather_Turn_CNTL|L_Feather_Turn_CNTLShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[73].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp|L_Feather_Turn_CNTL|L_Feather_Turn_CNTLShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[74].dn"
-		;
-connectAttr "L_Feather_Turn_Grp12.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[75].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp12|L_Feather_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[76].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp|L_Feather_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[77].dn"
-		;
-connectAttr "L_Feather_Turn_Grp.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[78].dn"
-		;
-connectAttr "L_Feather_Turn_Grp10.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[79].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp10|L_Feather_Turn_CNTL|L_Feather_Turn_CNTLShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[80].dn"
-		;
-connectAttr "L_Feather_Turn_Grp5.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[81].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp5|L_Feather_Turn_CNTL|L_Feather_Turn_CNTLShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[82].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp5|L_Feather_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[83].dn"
-		;
-connectAttr "L_Feather_Turn_Grp16.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[84].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp8|L_Feather_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[85].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp1|L_Feather_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[86].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp11|L_Feather_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[87].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp1|L_Feather_Turn_CNTL|L_Feather_Turn_CNTLShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[88].dn"
-		;
-connectAttr "L_Feather_Turn_Grp8.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[89].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp13|L_Feather_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[90].dn"
-		;
-connectAttr "L_Feather_Turn_Grp1.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[91].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp8|L_Feather_Turn_CNTL|L_Feather_Turn_CNTLShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[92].dn"
-		;
-connectAttr "L_Feather_Turn_Grp3.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[93].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp3|L_Feather_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[94].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp3|L_Feather_Turn_CNTL|L_Feather_Turn_CNTLShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[95].dn"
-		;
-connectAttr "L_Feather_Turn_Grp13.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[96].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp13|L_Feather_Turn_CNTL|L_Feather_Turn_CNTLShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[97].dn"
-		;
-connectAttr "L_Feather_Turn_Grp11.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[98].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp11|L_Feather_Turn_CNTL|L_Feather_Turn_CNTLShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[99].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp9|L_Feather_Turn_CNTL|L_Feather_Turn_CNTLShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[100].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp7|L_Feather_Turn_CNTL|L_Feather_Turn_CNTLShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[101].dn"
-		;
-connectAttr "L_Feather_Turn_Grp9.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[102].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp9|L_Feather_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[103].dn"
-		;
-connectAttr "L_Feather_Turn_Grp7.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[104].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp7|L_Feather_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[105].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp14|L_Feather_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[106].dn"
-		;
-connectAttr "|L_Feather_Turn_Grp14|L_Feather_Turn_CNTL|L_Feather_Turn_CNTLShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[107].dn"
-		;
-connectAttr "L_FeatherBunch_Turn_CNTLShape.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[108].dn"
-		;
-connectAttr "L_FeatherBunch_Turn_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[109].dn"
-		;
-connectAttr "pPlane37_orientConstraint1.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[110].dn"
+connectAttr "L_Wing_CNTL.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[1].dn";
+connectAttr "R_Wing_1_JNT_parentConstraint1.msg" "MayaNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
 		;
 connectAttr "GenericMesh_V10_1:AR__GenericMeshv3a_lambert4SG.pa" ":renderPartition.st"
 		 -na;
