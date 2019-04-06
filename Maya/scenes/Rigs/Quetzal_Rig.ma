@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Quetzal_Rig.ma
-//Last modified: Sat, Apr 06, 2019 04:28:05 PM
+//Last modified: Sat, Apr 06, 2019 04:33:58 PM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -15,15 +15,15 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "D7B7ED26-475F-BAB1-CE5C-6AA66B056119";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.0900828340683328 6.7933780051490711 11.157815479368827 ;
-	setAttr ".r" -type "double3" -20.942559348688491 -1418.1970207225488 -360.42077060476134 ;
+	setAttr ".t" -type "double3" -0.5850042576688983 7.9172341968861124 8.6528098885407747 ;
+	setAttr ".r" -type "double3" -36.884540254637024 -1454.5961410678849 -360.40370009612826 ;
 	setAttr ".rp" -type "double3" 2.2204460492503131e-16 -8.8817841970012523e-16 0 ;
 	setAttr ".rpt" -type "double3" 1.5951013221627229e-14 -2.9554970715294286e-16 -2.3167569343818505e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "7DE3BFD7-4980-4BE7-2D29-A29503DE20DF";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 7.9248128318447559;
+	setAttr ".coi" 6.3950323282426194;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -27716,7 +27716,7 @@ createNode animCurveTU -n "R_Wing_CNTL2_scaleZ";
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  1 1 10 1 20 1;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "B20C29AF-44CF-16EB-45A5-4B9389A50465";
+	rename -uid "82FA8B53-44C3-A106-06D3-43A41F23E73A";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -147.02380368160848 -101.78571024111358 ;
 	setAttr ".tgi[0].vh" -type "double2" 145.83332753843754 100.59523409794264 ;
