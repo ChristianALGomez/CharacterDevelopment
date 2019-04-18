@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Quetzal_Anim.ma
-//Last modified: Thu, Apr 18, 2019 12:05:27 PM
+//Last modified: Thu, Apr 18, 2019 12:58:04 PM
 //Codeset: 1252
 file -rdi 1 -ns "Quetzal_Rig" -rfn "Quetzal_RigRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/10721401/Desktop/CharacterDevelopment/Maya/scenes/Rigs/Quetzal_Rig.ma";
@@ -19,13 +19,13 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "34A583E8-4551-27FB-9ECC-9DAF29091958";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 14.519103430845639 5.1909028699282249 5.6606825301381587 ;
-	setAttr ".r" -type "double3" -20.138352729429201 -1012.6000000000257 0 ;
+	setAttr ".t" -type "double3" -1.5419281177280961 2.6638754588640694 55.048363612259287 ;
+	setAttr ".r" -type "double3" -1.5383527295357453 -1443.0000000000748 1.8661637712609442e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3E284AC6-47B9-ED20-FF82-07A77AB8F923";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 15.617364459989615;
+	setAttr ".coi" 56.55686953648641;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -51,13 +51,13 @@ createNode camera -s -n "topShape" -p "top";
 createNode transform -s -n "front";
 	rename -uid "4161E9EC-4F0D-AA0A-CA57-72B55045FC6F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.8861746526164076 2.0965647213608647 1000.1 ;
+	setAttr ".t" -type "double3" 1.5995236154065895 2.1662873513840575 1000.1 ;
 createNode camera -s -n "frontShape" -p "front";
 	rename -uid "647A41E2-4327-E095-56DE-77ACA8346FA6";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 33.873104645457765;
+	setAttr ".ow" 26.090694800383677;
 	setAttr ".imn" -type "string" "front";
 	setAttr ".den" -type "string" "front_depth";
 	setAttr ".man" -type "string" "front_mask";
@@ -67,14 +67,14 @@ createNode camera -s -n "frontShape" -p "front";
 createNode transform -s -n "side";
 	rename -uid "11A6B00F-453F-7F92-3332-A5B30777C5D4";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1000.1 0.36639085412560546 -0.97332023576306437 ;
+	setAttr ".t" -type "double3" 1000.1 0.43121261272829292 -0.96030267946653014 ;
 	setAttr ".r" -type "double3" 0 89.999999999999986 0 ;
 createNode camera -s -n "sideShape" -p "side";
 	rename -uid "A9CA2DD4-4F03-FF8E-65DA-6EA01E976FD3";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 14.986823811505024;
+	setAttr ".ow" 6.2504073816846804;
 	setAttr ".imn" -type "string" "side";
 	setAttr ".den" -type "string" "side_depth";
 	setAttr ".man" -type "string" "side_mask";
@@ -82,19 +82,19 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "1EC49683-45A2-3E11-473F-4AB180F55665";
+	rename -uid "076B6F3F-40BE-5F1F-9541-598F96F1B89B";
 	setAttr -s 16 ".lnk";
 	setAttr -s 16 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "3606B272-4A56-4450-93DB-E59F9CE8DC5B";
+	rename -uid "925F8E46-4503-EA2B-2250-0B944A84ADBD";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "78E2A84E-47FB-028F-6074-D79D09B44F3A";
+	rename -uid "5065C17D-4AB3-16BC-7971-F4B2AB302FB4";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "5A53C1CF-49C9-A412-607B-FF88BF571987";
+	rename -uid "1322347E-4EC4-2EAC-2394-68B9C19AF406";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "FF0F9FDD-4479-0DC8-E781-B29ED4686C82";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "DA9A12EB-47A2-A67D-4F1F-3D8179BF4538";
+	rename -uid "66A46A10-4E79-29AA-E19D-219F3AA26A6C";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "E5D26384-48C7-0EE9-2F7B-758DAA4C369E";
 	setAttr ".g" yes;
@@ -184,13 +184,181 @@ createNode reference -n "Quetzal_RigRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Quetzal_RigRN"
 		"Quetzal_RigRN" 0
-		"Quetzal_RigRN" 205
+		"Quetzal_RigRN" 295
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:Body|Quetzal_Rig:pSphere1|Quetzal_Rig:pSphereShape1" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:Body|Quetzal_Rig:polySurface85|Quetzal_Rig:polySurface85Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:Body|Quetzal_Rig:polySurface85|Quetzal_Rig:polySurface85ShapeOrig" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:Body|Quetzal_Rig:pSphere2|Quetzal_Rig:pSphereShape2" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:pPlane32|Quetzal_Rig:pPlane32Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:pPlane25|Quetzal_Rig:pPlane25Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:pPlane36|Quetzal_Rig:pPlane36Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:pPlane36|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:pPlane39|Quetzal_Rig:pPlane39Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:pPlane39|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane46|Quetzal_Rig:pPlane46Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane46|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane45|Quetzal_Rig:pPlane45Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane45|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane42|Quetzal_Rig:pPlane42Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane42|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane41|Quetzal_Rig:pPlane41Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane41|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane44|Quetzal_Rig:pPlane44Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane44|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane43|Quetzal_Rig:pPlane43Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane43|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane47|Quetzal_Rig:pPlane47Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane47|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane50|Quetzal_Rig:pPlane50Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane50|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane51|Quetzal_Rig:pPlane51Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane51|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane48|Quetzal_Rig:pPlane48Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane48|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane49|Quetzal_Rig:pPlane49Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane49|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane52|Quetzal_Rig:pPlane52Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane52|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane55|Quetzal_Rig:pPlane55Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane55|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane54|Quetzal_Rig:pPlane54Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane54|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane53|Quetzal_Rig:pPlane53Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane53|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane37|Quetzal_Rig:pPlane37Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane37|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane40|Quetzal_Rig:pPlane40Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane40|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane38|Quetzal_Rig:pPlane38Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:L_Feather_Grp|Quetzal_Rig:pPlane38|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane46|Quetzal_Rig:pPlane46Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane46|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane45|Quetzal_Rig:pPlane45Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane45|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane42|Quetzal_Rig:pPlane42Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane42|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane41|Quetzal_Rig:pPlane41Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane41|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane44|Quetzal_Rig:pPlane44Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane44|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane43|Quetzal_Rig:pPlane43Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane43|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane47|Quetzal_Rig:pPlane47Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane47|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane50|Quetzal_Rig:pPlane50Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane50|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane51|Quetzal_Rig:pPlane51Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane51|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane48|Quetzal_Rig:pPlane48Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane48|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane49|Quetzal_Rig:pPlane49Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane49|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane52|Quetzal_Rig:pPlane52Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane52|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane55|Quetzal_Rig:pPlane55Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane55|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane54|Quetzal_Rig:pPlane54Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane54|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane53|Quetzal_Rig:pPlane53Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane53|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane37|Quetzal_Rig:pPlane37Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane37|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane40|Quetzal_Rig:pPlane40Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane40|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane38|Quetzal_Rig:pPlane38Shape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:R_Feather_Grp|Quetzal_Rig:pPlane38|Quetzal_Rig:polySurfaceShape96" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:Tail|Quetzal_Rig:TailShape" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
+		2 "|Quetzal_Rig:GEO|Quetzal_Rig:FeatherCards|Quetzal_Rig:Tail|Quetzal_Rig:TailShapeOrig" 
+		"aiTranslator" " -type \"string\" \"polymesh\""
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL" "translate" " -type \"double3\" 0 0 0"
 		
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL" "rotate" " -type \"double3\" 0 0 0"
 		
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL" 
-		"translate" " -type \"double3\" 0 -0.19843711387659058 0"
+		"translate" " -type \"double3\" 0 0.30057691728528596 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL" 
 		"translateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL" 
@@ -204,27 +372,27 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL" 
 		"rotate" " -type \"double3\" 0 0 -37.97619267530332365"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL" 
-		"rotateZ" " -av"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL" 
 		"rotateY" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL" 
+		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL" 
-		"rotate" " -type \"double3\" 0 0 -0.83245014775067216"
+		"rotate" " -type \"double3\" 0 0 -12.44132417017634928"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL" 
 		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL" 
-		"rotate" " -type \"double3\" 0 0 23.21402756269070622"
+		"rotate" " -type \"double3\" 0 0 29.53334737119494591"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL" 
 		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL" 
-		"rotate" " -type \"double3\" 0 0 12.24123047423013944"
+		"rotate" " -type \"double3\" 0 0 17.69752926047265618"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL" 
 		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL|Quetzal_Rig:Lower_Jaw_Grp|Quetzal_Rig:Lower_Jaw_CNTL" 
@@ -236,19 +404,23 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL" 
-		"rotate" " -type \"double3\" -37.73726851851851904 0 0"
+		"rotate" " -type \"double3\" 66.48148148148148096 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL" 
 		"rotateX" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL" 
+		"rotateY" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL" 
+		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1" 
-		"rotate" " -type \"double3\" -19.13425925925925952 0 0"
+		"rotate" " -type \"double3\" 35.55555555555555713 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1|Quetzal_Rig:R_Wing_Grp2|Quetzal_Rig:R_Wing_CNTL2" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1|Quetzal_Rig:R_Wing_Grp2|Quetzal_Rig:R_Wing_CNTL2" 
-		"rotate" " -type \"double3\" -8.671875 0 0"
+		"rotate" " -type \"double3\" 29.99999999999999645 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1|Quetzal_Rig:R_Wing_Grp2|Quetzal_Rig:R_Wing_CNTL2" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1|Quetzal_Rig:R_Wing_Grp2|Quetzal_Rig:R_Wing_CNTL2" 
@@ -258,78 +430,82 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_FeatherBunch_Turn_Grp|Quetzal_Rig:R_FeatherBunch_Turn_Grp" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_FeatherBunch_Turn_Grp|Quetzal_Rig:R_FeatherBunch_Turn_Grp" 
-		"rotate" " -type \"double3\" -35.18749999999997868 1.25000000000000422 1.50000000000000222"
+		"rotate" " -type \"double3\" 63.12500000000000711 0.12499999999999988 23.25"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_FeatherBunch_Turn_Grp|Quetzal_Rig:R_FeatherBunch_Turn_Grp" 
+		"rotateX" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_FeatherBunch_Turn_Grp|Quetzal_Rig:R_FeatherBunch_Turn_Grp" 
+		"rotateY" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_FeatherBunch_Turn_Grp|Quetzal_Rig:R_FeatherBunch_Turn_Grp" 
+		"rotateZ" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL" 
+		"rotate" " -type \"double3\" -66.48148148148148096 0 0"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL" 
+		"rotateX" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL" 
+		"rotateY" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL" 
+		"rotateZ" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1" 
+		"rotate" " -type \"double3\" -35.55555555555555713 0 0"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1" 
+		"rotateX" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1" 
+		"rotateY" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1" 
+		"rotateZ" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2" 
+		"rotate" " -type \"double3\" -29.99999999999999645 0 0"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2" 
+		"rotateX" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2" 
+		"rotateY" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2" 
+		"rotateZ" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL" 
+		"rotate" " -type \"double3\" -57.43810463153078416 0.50000000000000244 12.3435768275528801"
 		
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_FeatherBunch_Turn_Grp|Quetzal_Rig:R_FeatherBunch_Turn_Grp" 
-		"rotateX" " -av"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_FeatherBunch_Turn_Grp|Quetzal_Rig:R_FeatherBunch_Turn_Grp" 
-		"rotateY" " -av"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_FeatherBunch_Turn_Grp|Quetzal_Rig:R_FeatherBunch_Turn_Grp" 
-		"rotateZ" " -av"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL" 
-		"rotate" " -type \"double3\" 37.73726851851851904 0 0"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL" 
-		"rotateX" " -av"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL" 
-		"rotateY" " -av"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL" 
-		"rotateZ" " -av"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1" 
-		"rotate" " -type \"double3\" 19.13425925925925952 0 0"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1" 
-		"rotateX" " -av"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1" 
-		"rotateY" " -av"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1" 
-		"rotateZ" " -av"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2" 
-		"rotate" " -type \"double3\" 8.671875 0 0"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2" 
-		"rotateX" " -av"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2" 
-		"rotateY" " -av"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2" 
-		"rotateZ" " -av"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL" 
-		"rotate" " -type \"double3\" 37.375 1.25000000000000422 1.71093750000000022"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL" 
-		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL" 
 		"rotateY" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL" 
+		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL" 
-		"rotate" " -type \"double3\" 0 0 109.73924267862511783"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL" 
-		"rotateZ" " -av"
+		"rotate" " -type \"double3\" 0 0 107.70437922252118312"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL" 
 		"rotateY" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL" 
+		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL" 
-		"rotate" " -type \"double3\" 0 0 -152.00041734714562836"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL" 
-		"rotateZ" " -av"
+		"rotate" " -type \"double3\" 0 0 -156.64804426875159038"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL" 
 		"rotateY" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL" 
+		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL" 
-		"rotate" " -type \"double3\" 0 0 61.00228591755255536"
+		"rotate" " -type \"double3\" 0 0 72.78513730377973445"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL" 
+		"rotateX" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL" 
+		"rotateY" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL" 
 		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL|Quetzal_Rig:L_R_Claw_Grp|Quetzal_Rig:L_R_Claw_CNTL" 
@@ -351,27 +527,31 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL" 
-		"rotate" " -type \"double3\" 0 0 109.73924267862511783"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL" 
-		"rotateZ" " -av"
+		"rotate" " -type \"double3\" 0 0 107.70437922252118312"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL" 
 		"rotateY" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL" 
+		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL" 
-		"rotate" " -type \"double3\" 0 0 -152.00041734714562836"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL" 
-		"rotateZ" " -av"
+		"rotate" " -type \"double3\" 0 0 -156.64804426875159038"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL" 
 		"rotateY" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL" 
+		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL" 
-		"rotate" " -type \"double3\" 0 0 61.00228591755255536"
+		"rotate" " -type \"double3\" 0 0 72.78513730377973445"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL" 
+		"rotateX" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL" 
+		"rotateY" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL" 
 		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL|Quetzal_Rig:R_B_Claw_Grp|Quetzal_Rig:R_B_Claw_CNTL" 
@@ -393,85 +573,85 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL" 
-		"rotate" " -type \"double3\" 0 0 -35.00678291811543374"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL" 
-		"rotateZ" " -av"
+		"rotate" " -type \"double3\" 0 0 -26.77207410273953414"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL" 
 		"rotateY" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL" 
+		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1" 
-		"rotate" " -type \"double3\" 0 0 -6.19916533813084492"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1" 
-		"rotateZ" " -av"
+		"rotate" " -type \"double3\" 0 0 -3.51643352273758181"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1" 
 		"rotateY" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1" 
+		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2" 
-		"rotate" " -type \"double3\" 0 0 -9.05899266455842422"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2" 
-		"rotateZ" " -av"
+		"rotate" " -type \"double3\" 0 0 1.82321157358788821"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2" 
 		"rotateY" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2" 
+		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3" 
-		"rotate" " -type \"double3\" 0 0 -7.21495076843122884"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3" 
-		"rotateZ" " -av"
+		"rotate" " -type \"double3\" 0 0 8.78992516401552493"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3" 
 		"rotateY" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3" 
+		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3|Quetzal_Rig:Tail_Grp4|Quetzal_Rig:Tail_CNTL4" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3|Quetzal_Rig:Tail_Grp4|Quetzal_Rig:Tail_CNTL4" 
-		"rotate" " -type \"double3\" 0 0 -8.58321181031574199"
-		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3|Quetzal_Rig:Tail_Grp4|Quetzal_Rig:Tail_CNTL4" 
-		"rotateZ" " -av"
+		"rotate" " -type \"double3\" 0 0 9.37337657381763734"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3|Quetzal_Rig:Tail_Grp4|Quetzal_Rig:Tail_CNTL4" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3|Quetzal_Rig:Tail_Grp4|Quetzal_Rig:Tail_CNTL4" 
 		"rotateY" " -av"
+		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3|Quetzal_Rig:Tail_Grp4|Quetzal_Rig:Tail_CNTL4" 
+		"rotateZ" " -av"
 		2 "Quetzal_Rig:Feathers" "visibility" " 1"
 		2 "Quetzal_Rig:Rig" "visibility" " 0"
-		2 "Quetzal_Rig:CNTL_Layer" "visibility" " 0"
+		2 "Quetzal_Rig:CNTL_Layer" "visibility" " 1"
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL.translateX" 
 		"Quetzal_RigRN.placeHolderList[1]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL.translateY" 
 		"Quetzal_RigRN.placeHolderList[2]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL.translateZ" 
 		"Quetzal_RigRN.placeHolderList[3]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL.rotateZ" 
-		"Quetzal_RigRN.placeHolderList[4]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL.rotateX" 
-		"Quetzal_RigRN.placeHolderList[5]" ""
+		"Quetzal_RigRN.placeHolderList[4]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL.rotateY" 
+		"Quetzal_RigRN.placeHolderList[5]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[6]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL.rotateZ" 
-		"Quetzal_RigRN.placeHolderList[7]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL.rotateX" 
-		"Quetzal_RigRN.placeHolderList[8]" ""
+		"Quetzal_RigRN.placeHolderList[7]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL.rotateY" 
+		"Quetzal_RigRN.placeHolderList[8]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[9]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL.rotateZ" 
-		"Quetzal_RigRN.placeHolderList[10]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL.rotateX" 
-		"Quetzal_RigRN.placeHolderList[11]" ""
+		"Quetzal_RigRN.placeHolderList[10]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL.rotateY" 
+		"Quetzal_RigRN.placeHolderList[11]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[12]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL.rotateZ" 
-		"Quetzal_RigRN.placeHolderList[13]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL.rotateX" 
-		"Quetzal_RigRN.placeHolderList[14]" ""
+		"Quetzal_RigRN.placeHolderList[13]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL.rotateY" 
+		"Quetzal_RigRN.placeHolderList[14]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[15]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL|Quetzal_Rig:Lower_Jaw_Grp|Quetzal_Rig:Lower_Jaw_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[16]" ""
@@ -521,77 +701,77 @@ createNode reference -n "Quetzal_RigRN";
 		"Quetzal_RigRN.placeHolderList[38]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[39]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL.rotateZ" 
-		"Quetzal_RigRN.placeHolderList[40]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL.rotateX" 
-		"Quetzal_RigRN.placeHolderList[41]" ""
+		"Quetzal_RigRN.placeHolderList[40]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL.rotateY" 
+		"Quetzal_RigRN.placeHolderList[41]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[42]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL.rotateZ" 
-		"Quetzal_RigRN.placeHolderList[43]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL.rotateX" 
-		"Quetzal_RigRN.placeHolderList[44]" ""
+		"Quetzal_RigRN.placeHolderList[43]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL.rotateY" 
+		"Quetzal_RigRN.placeHolderList[44]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[45]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL.rotateZ" 
-		"Quetzal_RigRN.placeHolderList[46]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL.rotateX" 
-		"Quetzal_RigRN.placeHolderList[47]" ""
+		"Quetzal_RigRN.placeHolderList[46]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL.rotateY" 
+		"Quetzal_RigRN.placeHolderList[47]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[48]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL.rotateZ" 
-		"Quetzal_RigRN.placeHolderList[49]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL.rotateX" 
-		"Quetzal_RigRN.placeHolderList[50]" ""
+		"Quetzal_RigRN.placeHolderList[49]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL.rotateY" 
+		"Quetzal_RigRN.placeHolderList[50]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[51]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL.rotateZ" 
-		"Quetzal_RigRN.placeHolderList[52]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL.rotateX" 
-		"Quetzal_RigRN.placeHolderList[53]" ""
+		"Quetzal_RigRN.placeHolderList[52]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL.rotateY" 
+		"Quetzal_RigRN.placeHolderList[53]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[54]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL.rotateZ" 
-		"Quetzal_RigRN.placeHolderList[55]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL.rotateX" 
-		"Quetzal_RigRN.placeHolderList[56]" ""
+		"Quetzal_RigRN.placeHolderList[55]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL.rotateY" 
+		"Quetzal_RigRN.placeHolderList[56]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[57]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL.rotateZ" 
-		"Quetzal_RigRN.placeHolderList[58]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL.rotateX" 
-		"Quetzal_RigRN.placeHolderList[59]" ""
+		"Quetzal_RigRN.placeHolderList[58]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL.rotateY" 
+		"Quetzal_RigRN.placeHolderList[59]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[60]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL.rotateZ" 
-		"Quetzal_RigRN.placeHolderList[61]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL.rotateX" 
-		"Quetzal_RigRN.placeHolderList[62]" ""
+		"Quetzal_RigRN.placeHolderList[61]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL.rotateY" 
+		"Quetzal_RigRN.placeHolderList[62]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[63]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1.rotateZ" 
-		"Quetzal_RigRN.placeHolderList[64]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1.rotateX" 
-		"Quetzal_RigRN.placeHolderList[65]" ""
+		"Quetzal_RigRN.placeHolderList[64]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1.rotateY" 
+		"Quetzal_RigRN.placeHolderList[65]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[66]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2.rotateZ" 
-		"Quetzal_RigRN.placeHolderList[67]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2.rotateX" 
-		"Quetzal_RigRN.placeHolderList[68]" ""
+		"Quetzal_RigRN.placeHolderList[67]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2.rotateY" 
+		"Quetzal_RigRN.placeHolderList[68]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[69]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3.rotateZ" 
-		"Quetzal_RigRN.placeHolderList[70]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3.rotateX" 
-		"Quetzal_RigRN.placeHolderList[71]" ""
+		"Quetzal_RigRN.placeHolderList[70]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3.rotateY" 
+		"Quetzal_RigRN.placeHolderList[71]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[72]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3|Quetzal_Rig:Tail_Grp4|Quetzal_Rig:Tail_CNTL4.rotateZ" 
-		"Quetzal_RigRN.placeHolderList[73]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3|Quetzal_Rig:Tail_Grp4|Quetzal_Rig:Tail_CNTL4.rotateX" 
-		"Quetzal_RigRN.placeHolderList[74]" ""
+		"Quetzal_RigRN.placeHolderList[73]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3|Quetzal_Rig:Tail_Grp4|Quetzal_Rig:Tail_CNTL4.rotateY" 
+		"Quetzal_RigRN.placeHolderList[74]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3|Quetzal_Rig:Tail_Grp4|Quetzal_Rig:Tail_CNTL4.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[75]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
@@ -601,17 +781,17 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n"
 		+ "            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n"
 		+ "            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n"
-		+ "            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 656\n            -height 243\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 556\n            -height 243\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 655\n            -height 242\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 556\n            -height 242\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
 		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n"
 		+ "            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n"
-		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 656\n            -height 242\n"
+		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 556\n            -height 242\n"
 		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n"
 		+ "            -xray 0\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
 		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
-		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1318\n            -height 529\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n"
+		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1119\n            -height 529\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n"
 		+ "            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n"
 		+ "            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n"
 		+ "\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n"
@@ -626,24 +806,24 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n"
-		+ "                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
-		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -highlightConnections 0\n                -copyConnectionsOnPaste 0\n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n"
-		+ "                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -activeTab -1\n                -editorMode \"default\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n"
-		+ "\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\nstring $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n"
-		+ "                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n"
-		+ "                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n"
-		+ "                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n"
-		+ "                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1318\\n    -height 529\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1318\\n    -height 529\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
+		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
+		+ "\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
+		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\nstring $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n"
+		+ "                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n"
+		+ "                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n"
+		+ "                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -highlightConnections 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n"
+		+ "                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -activeTab -1\n                -editorMode \"default\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1119\\n    -height 529\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1119\\n    -height 529\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "45FC66C1-415F-EB30-5A12-3992C2ECA309";
-	setAttr ".b" -type "string" "playbackOptions -min 1 -max 24 -ast -1 -aet 200 ";
+	setAttr ".b" -type "string" "playbackOptions -min 1 -max 23 -ast -1 -aet 200 ";
 	setAttr ".st" 6;
 createNode animCurveTA -n "Root_CNTL_rotateX";
 	rename -uid "B4CED240-4535-1B0A-581C-9281E208860C";
@@ -660,138 +840,74 @@ createNode animCurveTA -n "Root_CNTL_rotateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 -37.976192675303324;
-createNode animCurveTA -n "R_Thigh_CNTL_rotateX";
-	rename -uid "1635970F-442B-05E4-B0E2-56B3E7559616";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 5 0 13 0 17 0 25 0;
-	setAttr -s 5 ".kit[4]"  1;
-	setAttr -s 5 ".kot[4]"  1;
-	setAttr -s 5 ".kix[4]"  1;
-	setAttr -s 5 ".kiy[4]"  0;
-	setAttr -s 5 ".kox[4]"  1;
-	setAttr -s 5 ".koy[4]"  0;
-createNode animCurveTA -n "R_Thigh_CNTL_rotateY";
-	rename -uid "821A478B-4BF6-AE7D-6012-E49BDD383944";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 5 0 13 0 17 0 25 0;
-	setAttr -s 5 ".kit[4]"  1;
-	setAttr -s 5 ".kot[4]"  1;
-	setAttr -s 5 ".kix[4]"  1;
-	setAttr -s 5 ".kiy[4]"  0;
-	setAttr -s 5 ".kox[4]"  1;
-	setAttr -s 5 ".koy[4]"  0;
-createNode animCurveTA -n "R_Thigh_CNTL_rotateZ";
-	rename -uid "CBF9BEF4-4F5C-99A5-CA23-84BF9B4D3A21";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 109.77633853031178 5 96.855361797093494
-		 13 113.85335422277767 17 108.91301689105875 25 109.77633853031178;
-	setAttr -s 5 ".kit[4]"  1;
-	setAttr -s 5 ".kot[4]"  1;
-	setAttr -s 5 ".kix[4]"  1;
-	setAttr -s 5 ".kiy[4]"  0;
-	setAttr -s 5 ".kox[4]"  1;
-	setAttr -s 5 ".koy[4]"  0;
-createNode animCurveTA -n "L_Thigh_CNTL_rotateX";
-	rename -uid "DB3AF11F-4F67-2A38-A94D-32BB58D9CDA4";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 5 0 13 0 17 0 25 0;
-	setAttr -s 5 ".kit[4]"  1;
-	setAttr -s 5 ".kot[4]"  1;
-	setAttr -s 5 ".kix[4]"  1;
-	setAttr -s 5 ".kiy[4]"  0;
-	setAttr -s 5 ".kox[4]"  1;
-	setAttr -s 5 ".koy[4]"  0;
-createNode animCurveTA -n "L_Thigh_CNTL_rotateY";
-	rename -uid "CD28997A-4529-004F-754A-2D8008E76BA6";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 5 0 13 0 17 0 25 0;
-	setAttr -s 5 ".kit[4]"  1;
-	setAttr -s 5 ".kot[4]"  1;
-	setAttr -s 5 ".kix[4]"  1;
-	setAttr -s 5 ".kiy[4]"  0;
-	setAttr -s 5 ".kox[4]"  1;
-	setAttr -s 5 ".koy[4]"  0;
-createNode animCurveTA -n "L_Thigh_CNTL_rotateZ";
-	rename -uid "92246B4A-4615-1AC9-712E-12A475CB744E";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 109.77633853031178 5 96.855361797093494
-		 13 113.85335422277767 17 108.91301689105875 25 109.77633853031178;
-	setAttr -s 5 ".kit[4]"  1;
-	setAttr -s 5 ".kot[4]"  1;
-	setAttr -s 5 ".kix[4]"  1;
-	setAttr -s 5 ".kiy[4]"  0;
-	setAttr -s 5 ".kox[4]"  1;
-	setAttr -s 5 ".koy[4]"  0;
 createNode animCurveTA -n "L_Knee_CNTL_rotateX";
 	rename -uid "20AAE31C-4387-4071-E0AE-EC95A13197CD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 5 0 13 0 17 0 25 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 9 0 13 0 17 0 25 0;
+	setAttr -s 6 ".kit[5]"  1;
+	setAttr -s 6 ".kot[5]"  1;
+	setAttr -s 6 ".kix[5]"  1;
+	setAttr -s 6 ".kiy[5]"  0;
+	setAttr -s 6 ".kox[5]"  1;
+	setAttr -s 6 ".koy[5]"  0;
 createNode animCurveTA -n "L_Knee_CNTL_rotateY";
 	rename -uid "C17A587F-4198-B4C6-ACFB-578173A0B2CF";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 5 0 13 0 17 0 25 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 9 0 13 0 17 0 25 0;
+	setAttr -s 6 ".kit[5]"  1;
+	setAttr -s 6 ".kot[5]"  1;
+	setAttr -s 6 ".kix[5]"  1;
+	setAttr -s 6 ".kiy[5]"  0;
+	setAttr -s 6 ".kox[5]"  1;
+	setAttr -s 6 ".koy[5]"  0;
 createNode animCurveTA -n "L_Knee_CNTL_rotateZ";
 	rename -uid "8139C470-4A62-D206-388B-5A9D65131102";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 -152 5 -152.53165748906889 13 -160.66944297946361
-		 17 -152.21368173856504 25 -152;
+	setAttr -s 6 ".ktv[0:5]"  1 -162.29718523195882 5 -153.59972126564625
+		 9 -149.20356513205024 13 -154.64846901636463 17 -158.1648517160987 25 -162.29718523195882;
+	setAttr -s 6 ".kit[5]"  1;
+	setAttr -s 6 ".kot[5]"  1;
+	setAttr -s 6 ".kix[5]"  1;
+	setAttr -s 6 ".kiy[5]"  0;
+	setAttr -s 6 ".kox[5]"  1;
+	setAttr -s 6 ".koy[5]"  0;
 createNode animCurveTA -n "R_Knee_CNTL_rotateX";
 	rename -uid "54CF1121-4B05-C3B9-84DD-69B8CAFBA921";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 5 0 13 0 17 0 25 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 9 0 13 0 17 0 25 0;
+	setAttr -s 6 ".kit[5]"  1;
+	setAttr -s 6 ".kot[5]"  1;
+	setAttr -s 6 ".kix[5]"  1;
+	setAttr -s 6 ".kiy[5]"  0;
+	setAttr -s 6 ".kox[5]"  1;
+	setAttr -s 6 ".koy[5]"  0;
 createNode animCurveTA -n "R_Knee_CNTL_rotateY";
 	rename -uid "6A4F1DD1-47F2-057A-7F76-2EB57EA92231";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 5 0 13 0 17 0 25 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 9 0 13 0 17 0 25 0;
+	setAttr -s 6 ".kit[5]"  1;
+	setAttr -s 6 ".kot[5]"  1;
+	setAttr -s 6 ".kix[5]"  1;
+	setAttr -s 6 ".kiy[5]"  0;
+	setAttr -s 6 ".kox[5]"  1;
+	setAttr -s 6 ".koy[5]"  0;
 createNode animCurveTA -n "R_Knee_CNTL_rotateZ";
 	rename -uid "3BB962D8-4FBC-510A-DB09-6981CF2D8890";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 -152 5 -152.53165748906889 13 -160.66944297946361
-		 17 -152.21368173856504 25 -152;
-createNode animCurveTA -n "L_Ankle_CNTL_rotateX";
-	rename -uid "4A64485E-40AF-1336-6D2F-1283FD9FC6DA";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 5 0 13 0 17 0 25 0;
-createNode animCurveTA -n "L_Ankle_CNTL_rotateY";
-	rename -uid "5E78DE66-4CF3-73D4-1DD7-8DB73AD7297A";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 5 0 13 0 17 0 25 0;
-createNode animCurveTA -n "L_Ankle_CNTL_rotateZ";
-	rename -uid "B528DF50-40C4-5C21-CE7F-79BAB8AC1373";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 61 5 63.394066424533818 13 69.974659077413804
-		 17 62.170389786911798 25 61;
-createNode animCurveTA -n "R_ankle_CNTL_rotateX";
-	rename -uid "09D575FA-4774-50AA-EA5C-F28F25CD7ADC";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 5 0 13 0 17 0 25 0;
-createNode animCurveTA -n "R_ankle_CNTL_rotateY";
-	rename -uid "92879474-40CF-896C-18E6-98AF519936E7";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 5 0 13 0 17 0 25 0;
-createNode animCurveTA -n "R_ankle_CNTL_rotateZ";
-	rename -uid "19BC7D44-43C2-E687-8DBA-669FFFA45C2C";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 61 5 63.394066424533818 13 69.974659077413804
-		 17 62.170389786911798 25 61;
+	setAttr -s 6 ".ktv[0:5]"  1 -162.29718523195882 5 -153.59972126564625
+		 9 -149.20356513205024 13 -154.64846901636463 17 -158.1648517160987 25 -162.29718523195882;
+	setAttr -s 6 ".kit[5]"  1;
+	setAttr -s 6 ".kot[5]"  1;
+	setAttr -s 6 ".kix[5]"  1;
+	setAttr -s 6 ".kiy[5]"  0;
+	setAttr -s 6 ".kox[5]"  1;
+	setAttr -s 6 ".koy[5]"  0;
 createNode animCurveTA -n "Chest_CNTL_rotateX";
 	rename -uid "745BFE39-4F70-0633-37ED-9CBCFBCBE6D0";
 	setAttr ".tan" 18;
@@ -886,7 +1002,7 @@ createNode animCurveTA -n "Head_CNTL_rotateZ";
 	rename -uid "15E8AD40-4041-FB9C-859A-3D987B9C5C04";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 12.122766771335984 13 18.143510259603591
+	setAttr -s 3 ".ktv[0:2]"  1 12.122766771335984 13 18.143510259603595
 		 25 12.122766771335984;
 	setAttr -s 3 ".kit[2]"  1;
 	setAttr -s 3 ".kot[2]"  1;
@@ -913,7 +1029,7 @@ createNode animCurveTA -n "L_Wing_CNTL_rotateX";
 	rename -uid "C0267862-4A5B-60F6-D1CD-49B42E37745E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 40 5 59.999999999999993 13 -75 25 40;
+	setAttr -s 4 ".ktv[0:3]"  1 40 5 40 13 -75 25 40;
 	setAttr -s 4 ".kit[3]"  1;
 	setAttr -s 4 ".kot[3]"  1;
 	setAttr -s 4 ".kix[3]"  1;
@@ -946,7 +1062,7 @@ createNode animCurveTA -n "L_Wing_CNTL1_rotateX";
 	rename -uid "05AD729A-4216-1ADD-9B43-4F9C585458E7";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 20 5 13 13 -24.000000000000004 25 20;
+	setAttr -s 4 ".ktv[0:3]"  1 20 5 35 13 -40 25 20;
 	setAttr -s 4 ".kit[3]"  1;
 	setAttr -s 4 ".kot[3]"  1;
 	setAttr -s 4 ".kix[3]"  1;
@@ -979,7 +1095,7 @@ createNode animCurveTA -n "L_Wing_CNTL2_rotateX";
 	rename -uid "B5116B6D-49AB-CACD-2606-FBB113F8371F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 10 5 0 7 5 9 7 13 -29.999999999999996
+	setAttr -s 9 ".ktv[0:8]"  1 10 5 7 7 5 9 7 13 -29.999999999999996
 		 15 -29.999999999999996 17 -40 21 -6.0000000000000009 25 10;
 	setAttr -s 9 ".kit[8]"  1;
 	setAttr -s 9 ".kot[8]"  1;
@@ -1013,7 +1129,7 @@ createNode animCurveTA -n "R_Wing_CNTL2_rotateX";
 	rename -uid "B98E04E7-463D-7AEB-5DBF-589CC84D765E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 -10 5 0 7 -5 9 -7 13 29.999999999999996
+	setAttr -s 9 ".ktv[0:8]"  1 -10 5 -7 7 -5 9 -7 13 29.999999999999996
 		 15 29.999999999999996 17 40 21 6.0000000000000009 25 -10;
 	setAttr -s 9 ".kit[8]"  1;
 	setAttr -s 9 ".kot[8]"  1;
@@ -1047,7 +1163,7 @@ createNode animCurveTA -n "R_Wing_CNTL1_rotateX";
 	rename -uid "41CC5F28-4629-B566-4D8A-1DA036F5BE62";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 -20 5 -13 13 24.000000000000004 25 -20;
+	setAttr -s 4 ".ktv[0:3]"  1 -20 5 -35 13 40 25 -20;
 	setAttr -s 4 ".kit[3]"  1;
 	setAttr -s 4 ".kot[3]"  1;
 	setAttr -s 4 ".kix[3]"  1;
@@ -1080,7 +1196,7 @@ createNode animCurveTA -n "R_Wing_CNTL_rotateX";
 	rename -uid "2A63FB4A-4A2B-55B2-BBE4-D7885694AB4D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 -40 5 -59.999999999999993 13 75 25 -40;
+	setAttr -s 4 ".ktv[0:3]"  1 -40 5 -40 13 75 25 -40;
 	setAttr -s 4 ".kit[3]"  1;
 	setAttr -s 4 ".kot[3]"  1;
 	setAttr -s 4 ".kix[3]"  1;
@@ -1329,7 +1445,7 @@ createNode animCurveTA -n "R_FeatherBunch_Turn_Grp_rotateX";
 	rename -uid "61E15F70-42B0-C1AD-8DEA-579CB82D8AA2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 -40 5 -27 9 -14 13 34 17 48.000000000000007
+	setAttr -s 7 ".ktv[0:6]"  1 -40 5 -46 9 -14 13 70 17 48.000000000000007
 		 21 4 25 -40;
 	setAttr -s 7 ".kit[6]"  1;
 	setAttr -s 7 ".kot[6]"  1;
@@ -1352,7 +1468,7 @@ createNode animCurveTA -n "R_FeatherBunch_Turn_Grp_rotateZ";
 	rename -uid "01F33DA8-4803-DE1E-CF7E-6E86E338C84F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 0 5 0 9 0 13 6.0000000000000009 17 36
+	setAttr -s 7 ".ktv[0:6]"  1 0 5 8 9 0 13 6.0000000000000009 17 36
 		 21 14.999999999999998 25 0;
 	setAttr -s 7 ".kit[6]"  1;
 	setAttr -s 7 ".kot[6]"  1;
@@ -1364,7 +1480,7 @@ createNode animCurveTA -n "L_FeatherBunch_Turn_CNTL_rotateX";
 	rename -uid "3949157B-41CE-AF27-BDE5-2A8EEEAB603D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 40 5 27 9 14 13 -20 17 -48.000000000000007
+	setAttr -s 7 ".ktv[0:6]"  1 40 5 56 9 14 13 -58.786405293178035 17 -48.000000000000007
 		 21 10 25 40;
 	setAttr -s 7 ".kit[6]"  1;
 	setAttr -s 7 ".kot[6]"  1;
@@ -1388,17 +1504,153 @@ createNode animCurveTA -n "L_FeatherBunch_Turn_CNTL_rotateZ";
 	rename -uid "782E9FD2-42EF-1809-1D3E-D4B6B5AF14E3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 0 5 0 9 -9.4809416325865683e-16 13 5.9999999999999956
-		 17 27 21 14.999999999999998 25 0;
+	setAttr -s 7 ".ktv[0:6]"  1 0 5 -3.0000000000000004 9 -9.4809416325865683e-16
+		 13 -2.3128463448942376 17 27 21 14.999999999999998 25 0;
 	setAttr -s 7 ".kit[6]"  1;
 	setAttr -s 7 ".kot[6]"  1;
 	setAttr -s 7 ".kix[6]"  1;
 	setAttr -s 7 ".kiy[6]"  0;
 	setAttr -s 7 ".kox[6]"  1;
 	setAttr -s 7 ".koy[6]"  0;
+createNode animCurveTA -n "R_Thigh_CNTL_rotateX";
+	rename -uid "0C345A15-4D05-2718-2B8E-409E0FA481F2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 9 0 13 0 17 0 25 0;
+	setAttr -s 6 ".kit[5]"  1;
+	setAttr -s 6 ".kot[5]"  1;
+	setAttr -s 6 ".kix[5]"  1;
+	setAttr -s 6 ".kiy[5]"  0;
+	setAttr -s 6 ".kox[5]"  1;
+	setAttr -s 6 ".koy[5]"  0;
+createNode animCurveTA -n "R_Thigh_CNTL_rotateY";
+	rename -uid "C51F9C73-4D46-A815-9A36-038C5F28278E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 9 0 13 0 17 0 25 0;
+	setAttr -s 6 ".kit[5]"  1;
+	setAttr -s 6 ".kot[5]"  1;
+	setAttr -s 6 ".kix[5]"  1;
+	setAttr -s 6 ".kiy[5]"  0;
+	setAttr -s 6 ".kox[5]"  1;
+	setAttr -s 6 ".koy[5]"  0;
+createNode animCurveTA -n "R_Thigh_CNTL_rotateZ";
+	rename -uid "8C6AA68D-42C0-4280-8DBA-A0BE60F82DC0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 109.77633853031179 5 104.58502253541027
+		 9 99.664045248287835 13 106.42070848556727 17 108.20061462450943 25 109.77633853031179;
+	setAttr -s 6 ".kit[5]"  1;
+	setAttr -s 6 ".kot[5]"  1;
+	setAttr -s 6 ".kix[5]"  1;
+	setAttr -s 6 ".kiy[5]"  0;
+	setAttr -s 6 ".kox[5]"  1;
+	setAttr -s 6 ".koy[5]"  0;
+createNode animCurveTA -n "L_Thigh_CNTL_rotateX";
+	rename -uid "32DFA778-48EB-5D1F-C128-ADB07C3E760E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 9 0 13 0 17 0 25 0;
+	setAttr -s 6 ".kit[5]"  1;
+	setAttr -s 6 ".kot[5]"  1;
+	setAttr -s 6 ".kix[5]"  1;
+	setAttr -s 6 ".kiy[5]"  0;
+	setAttr -s 6 ".kox[5]"  1;
+	setAttr -s 6 ".koy[5]"  0;
+createNode animCurveTA -n "L_Thigh_CNTL_rotateY";
+	rename -uid "34C0ED25-46C5-104D-D618-B8AB848FB3FB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 9 0 13 0 17 0 25 0;
+	setAttr -s 6 ".kit[5]"  1;
+	setAttr -s 6 ".kot[5]"  1;
+	setAttr -s 6 ".kix[5]"  1;
+	setAttr -s 6 ".kiy[5]"  0;
+	setAttr -s 6 ".kox[5]"  1;
+	setAttr -s 6 ".koy[5]"  0;
+createNode animCurveTA -n "L_Thigh_CNTL_rotateZ";
+	rename -uid "F47D469F-46F4-FEF9-3549-01A5497788DB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 109.77633853031179 5 104.58502253541027
+		 9 99.664045248287835 13 106.42070848556727 17 108.20061462450943 25 109.77633853031179;
+	setAttr -s 6 ".kit[5]"  1;
+	setAttr -s 6 ".kot[5]"  1;
+	setAttr -s 6 ".kix[5]"  1;
+	setAttr -s 6 ".kiy[5]"  0;
+	setAttr -s 6 ".kox[5]"  1;
+	setAttr -s 6 ".koy[5]"  0;
+createNode animCurveTA -n "R_ankle_CNTL_rotateX";
+	rename -uid "9770DDFA-45BA-6CE9-3BDD-7B8C39DD359A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 9 0 13 0 17 0 25 0;
+	setAttr -s 6 ".kit[5]"  1;
+	setAttr -s 6 ".kot[5]"  1;
+	setAttr -s 6 ".kix[5]"  1;
+	setAttr -s 6 ".kiy[5]"  0;
+	setAttr -s 6 ".kox[5]"  1;
+	setAttr -s 6 ".koy[5]"  0;
+createNode animCurveTA -n "R_ankle_CNTL_rotateY";
+	rename -uid "0AE64576-4F8C-5B98-1165-738A7899F495";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 9 0 13 0 17 0 25 0;
+	setAttr -s 6 ".kit[5]"  1;
+	setAttr -s 6 ".kot[5]"  1;
+	setAttr -s 6 ".kix[5]"  1;
+	setAttr -s 6 ".kiy[5]"  0;
+	setAttr -s 6 ".kox[5]"  1;
+	setAttr -s 6 ".koy[5]"  0;
+createNode animCurveTA -n "R_ankle_CNTL_rotateZ";
+	rename -uid "BDD46ACC-402A-3CA3-E573-FBA408291931";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 68.028637755600741 5 59.406334177730862
+		 9 53.014607139423468 13 69.673249290444062 17 73.354534408482976 25 68.028637755600741;
+	setAttr -s 6 ".kit[5]"  1;
+	setAttr -s 6 ".kot[5]"  1;
+	setAttr -s 6 ".kix[5]"  1;
+	setAttr -s 6 ".kiy[5]"  0;
+	setAttr -s 6 ".kox[5]"  1;
+	setAttr -s 6 ".koy[5]"  0;
+createNode animCurveTA -n "L_Ankle_CNTL_rotateX";
+	rename -uid "25B57EFE-486A-E96F-DBCC-49B99BB6B9AC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 9 0 13 0 17 0 25 0;
+	setAttr -s 6 ".kit[5]"  1;
+	setAttr -s 6 ".kot[5]"  1;
+	setAttr -s 6 ".kix[5]"  1;
+	setAttr -s 6 ".kiy[5]"  0;
+	setAttr -s 6 ".kox[5]"  1;
+	setAttr -s 6 ".koy[5]"  0;
+createNode animCurveTA -n "L_Ankle_CNTL_rotateY";
+	rename -uid "8783DCCF-4BC3-591F-2658-9E9A660AF59E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 9 0 13 0 17 0 25 0;
+	setAttr -s 6 ".kit[5]"  1;
+	setAttr -s 6 ".kot[5]"  1;
+	setAttr -s 6 ".kix[5]"  1;
+	setAttr -s 6 ".kiy[5]"  0;
+	setAttr -s 6 ".kox[5]"  1;
+	setAttr -s 6 ".koy[5]"  0;
+createNode animCurveTA -n "L_Ankle_CNTL_rotateZ";
+	rename -uid "219078CC-47EA-7434-5A28-0E9E80AFCBFB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  1 68.028637755600741 5 59.406334177730862
+		 9 53.014607139423468 13 69.673249290444062 17 73.354534408482976 25 68.028637755600741;
+	setAttr -s 6 ".kit[5]"  1;
+	setAttr -s 6 ".kot[5]"  1;
+	setAttr -s 6 ".kix[5]"  1;
+	setAttr -s 6 ".kiy[5]"  0;
+	setAttr -s 6 ".kox[5]"  1;
+	setAttr -s 6 ".koy[5]"  0;
 select -ne :time1;
-	setAttr ".o" 24;
-	setAttr ".unw" 24;
+	setAttr ".o" 15;
+	setAttr ".unw" 15;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -1435,18 +1687,18 @@ select -ne :ikSystem;
 connectAttr "COG_CNTL_translateX.o" "Quetzal_RigRN.phl[1]";
 connectAttr "COG_CNTL_translateY.o" "Quetzal_RigRN.phl[2]";
 connectAttr "COG_CNTL_translateZ.o" "Quetzal_RigRN.phl[3]";
-connectAttr "Root_CNTL_rotateZ.o" "Quetzal_RigRN.phl[4]";
-connectAttr "Root_CNTL_rotateX.o" "Quetzal_RigRN.phl[5]";
-connectAttr "Root_CNTL_rotateY.o" "Quetzal_RigRN.phl[6]";
-connectAttr "Chest_CNTL_rotateZ.o" "Quetzal_RigRN.phl[7]";
-connectAttr "Chest_CNTL_rotateX.o" "Quetzal_RigRN.phl[8]";
-connectAttr "Chest_CNTL_rotateY.o" "Quetzal_RigRN.phl[9]";
-connectAttr "Neck_CNTL_rotateZ.o" "Quetzal_RigRN.phl[10]";
-connectAttr "Neck_CNTL_rotateX.o" "Quetzal_RigRN.phl[11]";
-connectAttr "Neck_CNTL_rotateY.o" "Quetzal_RigRN.phl[12]";
-connectAttr "Head_CNTL_rotateZ.o" "Quetzal_RigRN.phl[13]";
-connectAttr "Head_CNTL_rotateX.o" "Quetzal_RigRN.phl[14]";
-connectAttr "Head_CNTL_rotateY.o" "Quetzal_RigRN.phl[15]";
+connectAttr "Root_CNTL_rotateX.o" "Quetzal_RigRN.phl[4]";
+connectAttr "Root_CNTL_rotateY.o" "Quetzal_RigRN.phl[5]";
+connectAttr "Root_CNTL_rotateZ.o" "Quetzal_RigRN.phl[6]";
+connectAttr "Chest_CNTL_rotateX.o" "Quetzal_RigRN.phl[7]";
+connectAttr "Chest_CNTL_rotateY.o" "Quetzal_RigRN.phl[8]";
+connectAttr "Chest_CNTL_rotateZ.o" "Quetzal_RigRN.phl[9]";
+connectAttr "Neck_CNTL_rotateX.o" "Quetzal_RigRN.phl[10]";
+connectAttr "Neck_CNTL_rotateY.o" "Quetzal_RigRN.phl[11]";
+connectAttr "Neck_CNTL_rotateZ.o" "Quetzal_RigRN.phl[12]";
+connectAttr "Head_CNTL_rotateX.o" "Quetzal_RigRN.phl[13]";
+connectAttr "Head_CNTL_rotateY.o" "Quetzal_RigRN.phl[14]";
+connectAttr "Head_CNTL_rotateZ.o" "Quetzal_RigRN.phl[15]";
 connectAttr "Lower_Jaw_CNTL_rotateZ.o" "Quetzal_RigRN.phl[16]";
 connectAttr "Lower_Jaw_CNTL_rotateX.o" "Quetzal_RigRN.phl[17]";
 connectAttr "Lower_Jaw_CNTL_rotateY.o" "Quetzal_RigRN.phl[18]";
@@ -1471,42 +1723,42 @@ connectAttr "L_Wing_CNTL1_rotateZ.o" "Quetzal_RigRN.phl[36]";
 connectAttr "L_Wing_CNTL2_rotateX.o" "Quetzal_RigRN.phl[37]";
 connectAttr "L_Wing_CNTL2_rotateY.o" "Quetzal_RigRN.phl[38]";
 connectAttr "L_Wing_CNTL2_rotateZ.o" "Quetzal_RigRN.phl[39]";
-connectAttr "L_FeatherBunch_Turn_CNTL_rotateZ.o" "Quetzal_RigRN.phl[40]";
-connectAttr "L_FeatherBunch_Turn_CNTL_rotateX.o" "Quetzal_RigRN.phl[41]";
-connectAttr "L_FeatherBunch_Turn_CNTL_rotateY.o" "Quetzal_RigRN.phl[42]";
-connectAttr "L_Thigh_CNTL_rotateZ.o" "Quetzal_RigRN.phl[43]";
-connectAttr "L_Thigh_CNTL_rotateX.o" "Quetzal_RigRN.phl[44]";
-connectAttr "L_Thigh_CNTL_rotateY.o" "Quetzal_RigRN.phl[45]";
-connectAttr "L_Knee_CNTL_rotateZ.o" "Quetzal_RigRN.phl[46]";
-connectAttr "L_Knee_CNTL_rotateX.o" "Quetzal_RigRN.phl[47]";
-connectAttr "L_Knee_CNTL_rotateY.o" "Quetzal_RigRN.phl[48]";
-connectAttr "L_Ankle_CNTL_rotateZ.o" "Quetzal_RigRN.phl[49]";
-connectAttr "L_Ankle_CNTL_rotateX.o" "Quetzal_RigRN.phl[50]";
-connectAttr "L_Ankle_CNTL_rotateY.o" "Quetzal_RigRN.phl[51]";
-connectAttr "R_Thigh_CNTL_rotateZ.o" "Quetzal_RigRN.phl[52]";
-connectAttr "R_Thigh_CNTL_rotateX.o" "Quetzal_RigRN.phl[53]";
-connectAttr "R_Thigh_CNTL_rotateY.o" "Quetzal_RigRN.phl[54]";
-connectAttr "R_Knee_CNTL_rotateZ.o" "Quetzal_RigRN.phl[55]";
-connectAttr "R_Knee_CNTL_rotateX.o" "Quetzal_RigRN.phl[56]";
-connectAttr "R_Knee_CNTL_rotateY.o" "Quetzal_RigRN.phl[57]";
-connectAttr "R_ankle_CNTL_rotateZ.o" "Quetzal_RigRN.phl[58]";
-connectAttr "R_ankle_CNTL_rotateX.o" "Quetzal_RigRN.phl[59]";
-connectAttr "R_ankle_CNTL_rotateY.o" "Quetzal_RigRN.phl[60]";
-connectAttr "Tail_CNTL_rotateZ.o" "Quetzal_RigRN.phl[61]";
-connectAttr "Tail_CNTL_rotateX.o" "Quetzal_RigRN.phl[62]";
-connectAttr "Tail_CNTL_rotateY.o" "Quetzal_RigRN.phl[63]";
-connectAttr "Tail_CNTL1_rotateZ.o" "Quetzal_RigRN.phl[64]";
-connectAttr "Tail_CNTL1_rotateX.o" "Quetzal_RigRN.phl[65]";
-connectAttr "Tail_CNTL1_rotateY.o" "Quetzal_RigRN.phl[66]";
-connectAttr "Tail_CNTL2_rotateZ.o" "Quetzal_RigRN.phl[67]";
-connectAttr "Tail_CNTL2_rotateX.o" "Quetzal_RigRN.phl[68]";
-connectAttr "Tail_CNTL2_rotateY.o" "Quetzal_RigRN.phl[69]";
-connectAttr "Tail_CNTL3_rotateZ.o" "Quetzal_RigRN.phl[70]";
-connectAttr "Tail_CNTL3_rotateX.o" "Quetzal_RigRN.phl[71]";
-connectAttr "Tail_CNTL3_rotateY.o" "Quetzal_RigRN.phl[72]";
-connectAttr "Tail_CNTL4_rotateZ.o" "Quetzal_RigRN.phl[73]";
-connectAttr "Tail_CNTL4_rotateX.o" "Quetzal_RigRN.phl[74]";
-connectAttr "Tail_CNTL4_rotateY.o" "Quetzal_RigRN.phl[75]";
+connectAttr "L_FeatherBunch_Turn_CNTL_rotateX.o" "Quetzal_RigRN.phl[40]";
+connectAttr "L_FeatherBunch_Turn_CNTL_rotateY.o" "Quetzal_RigRN.phl[41]";
+connectAttr "L_FeatherBunch_Turn_CNTL_rotateZ.o" "Quetzal_RigRN.phl[42]";
+connectAttr "L_Thigh_CNTL_rotateX.o" "Quetzal_RigRN.phl[43]";
+connectAttr "L_Thigh_CNTL_rotateY.o" "Quetzal_RigRN.phl[44]";
+connectAttr "L_Thigh_CNTL_rotateZ.o" "Quetzal_RigRN.phl[45]";
+connectAttr "L_Knee_CNTL_rotateX.o" "Quetzal_RigRN.phl[46]";
+connectAttr "L_Knee_CNTL_rotateY.o" "Quetzal_RigRN.phl[47]";
+connectAttr "L_Knee_CNTL_rotateZ.o" "Quetzal_RigRN.phl[48]";
+connectAttr "L_Ankle_CNTL_rotateX.o" "Quetzal_RigRN.phl[49]";
+connectAttr "L_Ankle_CNTL_rotateY.o" "Quetzal_RigRN.phl[50]";
+connectAttr "L_Ankle_CNTL_rotateZ.o" "Quetzal_RigRN.phl[51]";
+connectAttr "R_Thigh_CNTL_rotateX.o" "Quetzal_RigRN.phl[52]";
+connectAttr "R_Thigh_CNTL_rotateY.o" "Quetzal_RigRN.phl[53]";
+connectAttr "R_Thigh_CNTL_rotateZ.o" "Quetzal_RigRN.phl[54]";
+connectAttr "R_Knee_CNTL_rotateX.o" "Quetzal_RigRN.phl[55]";
+connectAttr "R_Knee_CNTL_rotateY.o" "Quetzal_RigRN.phl[56]";
+connectAttr "R_Knee_CNTL_rotateZ.o" "Quetzal_RigRN.phl[57]";
+connectAttr "R_ankle_CNTL_rotateX.o" "Quetzal_RigRN.phl[58]";
+connectAttr "R_ankle_CNTL_rotateY.o" "Quetzal_RigRN.phl[59]";
+connectAttr "R_ankle_CNTL_rotateZ.o" "Quetzal_RigRN.phl[60]";
+connectAttr "Tail_CNTL_rotateX.o" "Quetzal_RigRN.phl[61]";
+connectAttr "Tail_CNTL_rotateY.o" "Quetzal_RigRN.phl[62]";
+connectAttr "Tail_CNTL_rotateZ.o" "Quetzal_RigRN.phl[63]";
+connectAttr "Tail_CNTL1_rotateX.o" "Quetzal_RigRN.phl[64]";
+connectAttr "Tail_CNTL1_rotateY.o" "Quetzal_RigRN.phl[65]";
+connectAttr "Tail_CNTL1_rotateZ.o" "Quetzal_RigRN.phl[66]";
+connectAttr "Tail_CNTL2_rotateX.o" "Quetzal_RigRN.phl[67]";
+connectAttr "Tail_CNTL2_rotateY.o" "Quetzal_RigRN.phl[68]";
+connectAttr "Tail_CNTL2_rotateZ.o" "Quetzal_RigRN.phl[69]";
+connectAttr "Tail_CNTL3_rotateX.o" "Quetzal_RigRN.phl[70]";
+connectAttr "Tail_CNTL3_rotateY.o" "Quetzal_RigRN.phl[71]";
+connectAttr "Tail_CNTL3_rotateZ.o" "Quetzal_RigRN.phl[72]";
+connectAttr "Tail_CNTL4_rotateX.o" "Quetzal_RigRN.phl[73]";
+connectAttr "Tail_CNTL4_rotateY.o" "Quetzal_RigRN.phl[74]";
+connectAttr "Tail_CNTL4_rotateZ.o" "Quetzal_RigRN.phl[75]";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
