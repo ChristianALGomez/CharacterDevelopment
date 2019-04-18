@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Quetzal_Anim.ma
-//Last modified: Thu, Apr 18, 2019 12:58:04 PM
+//Last modified: Thu, Apr 18, 2019 01:25:58 PM
 //Codeset: 1252
 file -rdi 1 -ns "Quetzal_Rig" -rfn "Quetzal_RigRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/10721401/Desktop/CharacterDevelopment/Maya/scenes/Rigs/Quetzal_Rig.ma";
@@ -19,13 +19,13 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "34A583E8-4551-27FB-9ECC-9DAF29091958";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.5419281177280961 2.6638754588640694 55.048363612259287 ;
-	setAttr ".r" -type "double3" -1.5383527295357453 -1443.0000000000748 1.8661637712609442e-17 ;
+	setAttr ".t" -type "double3" 1.9770768356420463 1.5796963637354269 8.8994294980713331 ;
+	setAttr ".r" -type "double3" -9.9383527295349054 -1437.00000000005 -1.9905746893447785e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3E284AC6-47B9-ED20-FF82-07A77AB8F923";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 56.55686953648641;
+	setAttr ".coi" 10.169865431131575;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -51,13 +51,13 @@ createNode camera -s -n "topShape" -p "top";
 createNode transform -s -n "front";
 	rename -uid "4161E9EC-4F0D-AA0A-CA57-72B55045FC6F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.5995236154065895 2.1662873513840575 1000.1 ;
+	setAttr ".t" -type "double3" 2.1173158612980685 0.28346927419863155 1000.1 ;
 createNode camera -s -n "frontShape" -p "front";
 	rename -uid "647A41E2-4327-E095-56DE-77ACA8346FA6";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 26.090694800383677;
+	setAttr ".ow" 21.263907463301226;
 	setAttr ".imn" -type "string" "front";
 	setAttr ".den" -type "string" "front_depth";
 	setAttr ".man" -type "string" "front_mask";
@@ -105,7 +105,7 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].vh" -type "double2" 317.85713022663526 338.09522466054096 ;
 createNode reference -n "Quetzal_RigRN";
 	rename -uid "A5CA90E7-450F-A294-1707-41B50BD79A4A";
-	setAttr -s 75 ".phl";
+	setAttr -s 79 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -181,10 +181,14 @@ createNode reference -n "Quetzal_RigRN";
 	setAttr ".phl[73]" 0;
 	setAttr ".phl[74]" 0;
 	setAttr ".phl[75]" 0;
+	setAttr ".phl[76]" 0;
+	setAttr ".phl[77]" 0;
+	setAttr ".phl[78]" 0;
+	setAttr ".phl[79]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Quetzal_RigRN"
 		"Quetzal_RigRN" 0
-		"Quetzal_RigRN" 295
+		"Quetzal_RigRN" 297
 		2 "|Quetzal_Rig:GEO|Quetzal_Rig:Body|Quetzal_Rig:pSphere1|Quetzal_Rig:pSphereShape1" 
 		"aiTranslator" " -type \"string\" \"polymesh\""
 		2 "|Quetzal_Rig:GEO|Quetzal_Rig:Body|Quetzal_Rig:polySurface85|Quetzal_Rig:polySurface85Shape" 
@@ -358,7 +362,7 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL" "rotate" " -type \"double3\" 0 0 0"
 		
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL" 
-		"translate" " -type \"double3\" 0 0.30057691728528596 0"
+		"translate" " -type \"double3\" 0 0.32838724098007388 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL" 
 		"translateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL" 
@@ -380,19 +384,19 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL" 
-		"rotate" " -type \"double3\" 0 0 -12.44132417017634928"
+		"rotate" " -type \"double3\" 0 0 -13.39019765349083713"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL" 
 		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL" 
-		"rotate" " -type \"double3\" 0 0 29.53334737119494591"
+		"rotate" " -type \"double3\" 0 0 30.04986904136643133"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL" 
 		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL" 
-		"rotate" " -type \"double3\" 0 0 17.69752926047265618"
+		"rotate" " -type \"double3\" 0 0 18.14351025960359465"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL" 
 		"rotateZ" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL|Quetzal_Rig:Lower_Jaw_Grp|Quetzal_Rig:Lower_Jaw_CNTL" 
@@ -404,7 +408,7 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL" 
-		"rotate" " -type \"double3\" 66.48148148148148096 0 0"
+		"rotate" " -type \"double3\" 75 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL" 
@@ -414,13 +418,13 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1" 
-		"rotate" " -type \"double3\" 35.55555555555555713 0 0"
+		"rotate" " -type \"double3\" 40 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1|Quetzal_Rig:R_Wing_Grp2|Quetzal_Rig:R_Wing_CNTL2" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1|Quetzal_Rig:R_Wing_Grp2|Quetzal_Rig:R_Wing_CNTL2" 
-		"rotate" " -type \"double3\" 29.99999999999999645 0 0"
+		"rotate" " -type \"double3\" 43 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1|Quetzal_Rig:R_Wing_Grp2|Quetzal_Rig:R_Wing_CNTL2" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1|Quetzal_Rig:R_Wing_Grp2|Quetzal_Rig:R_Wing_CNTL2" 
@@ -430,7 +434,7 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_FeatherBunch_Turn_Grp|Quetzal_Rig:R_FeatherBunch_Turn_Grp" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_FeatherBunch_Turn_Grp|Quetzal_Rig:R_FeatherBunch_Turn_Grp" 
-		"rotate" " -type \"double3\" 63.12500000000000711 0.12499999999999988 23.25"
+		"rotate" " -type \"double3\" 85 1 6.00000000000000089"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_FeatherBunch_Turn_Grp|Quetzal_Rig:R_FeatherBunch_Turn_Grp" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_FeatherBunch_Turn_Grp|Quetzal_Rig:R_FeatherBunch_Turn_Grp" 
@@ -440,7 +444,7 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL" 
-		"rotate" " -type \"double3\" -66.48148148148148096 0 0"
+		"rotate" " -type \"double3\" -75 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL" 
@@ -450,7 +454,7 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1" 
-		"rotate" " -type \"double3\" -35.55555555555555713 0 0"
+		"rotate" " -type \"double3\" -40 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1" 
@@ -460,7 +464,7 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2" 
-		"rotate" " -type \"double3\" -29.99999999999999645 0 0"
+		"rotate" " -type \"double3\" -43 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2" 
@@ -470,8 +474,7 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL" 
-		"rotate" " -type \"double3\" -57.43810463153078416 0.50000000000000244 12.3435768275528801"
-		
+		"rotate" " -type \"double3\" -72 1.00000000000000222 -2.31284634489424024"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL" 
@@ -481,7 +484,7 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL" 
-		"rotate" " -type \"double3\" 0 0 107.70437922252118312"
+		"rotate" " -type \"double3\" 0 0 106.42070848556727469"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL" 
@@ -491,7 +494,7 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL" 
-		"rotate" " -type \"double3\" 0 0 -156.64804426875159038"
+		"rotate" " -type \"double3\" 0 0 -154.64846901636462917"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL" 
@@ -501,7 +504,7 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL" 
-		"rotate" " -type \"double3\" 0 0 72.78513730377973445"
+		"rotate" " -type \"double3\" 0 0 69.6732492904440619"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL" 
@@ -527,7 +530,7 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL" 
-		"rotate" " -type \"double3\" 0 0 107.70437922252118312"
+		"rotate" " -type \"double3\" 0 0 106.42070848556727469"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL" 
@@ -537,7 +540,7 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL" 
-		"rotate" " -type \"double3\" 0 0 -156.64804426875159038"
+		"rotate" " -type \"double3\" 0 0 -154.64846901636462917"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL" 
@@ -547,7 +550,7 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL" 
-		"rotate" " -type \"double3\" 0 0 72.78513730377973445"
+		"rotate" " -type \"double3\" 0 0 69.6732492904440619"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL" 
@@ -573,7 +576,7 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL" 
-		"rotate" " -type \"double3\" 0 0 -26.77207410273953414"
+		"rotate" " -type \"double3\" 0 0 -17.91593671171191815"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL" 
@@ -583,7 +586,7 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1" 
-		"rotate" " -type \"double3\" 0 0 -3.51643352273758181"
+		"rotate" " -type \"double3\" 0 0 -1.61773897884631435"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1" 
@@ -593,7 +596,7 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2" 
-		"rotate" " -type \"double3\" 0 0 1.82321157358788821"
+		"rotate" " -type \"double3\" 0 0 7.89828399406614956"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2" 
@@ -603,7 +606,7 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3" 
-		"rotate" " -type \"double3\" 0 0 8.78992516401552493"
+		"rotate" " -type \"double3\" 0 0 11.01063118480030845"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3" 
@@ -613,7 +616,7 @@ createNode reference -n "Quetzal_RigRN";
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3|Quetzal_Rig:Tail_Grp4|Quetzal_Rig:Tail_CNTL4" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3|Quetzal_Rig:Tail_Grp4|Quetzal_Rig:Tail_CNTL4" 
-		"rotate" " -type \"double3\" 0 0 9.37337657381763734"
+		"rotate" " -type \"double3\" 0 0 11.01063118480030845"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3|Quetzal_Rig:Tail_Grp4|Quetzal_Rig:Tail_CNTL4" 
 		"rotateX" " -av"
 		2 "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3|Quetzal_Rig:Tail_Grp4|Quetzal_Rig:Tail_CNTL4" 
@@ -623,156 +626,160 @@ createNode reference -n "Quetzal_RigRN";
 		2 "Quetzal_Rig:Feathers" "visibility" " 1"
 		2 "Quetzal_Rig:Rig" "visibility" " 0"
 		2 "Quetzal_Rig:CNTL_Layer" "visibility" " 1"
+		5 0 "Quetzal_RigRN" "Quetzal_Rig:CNTL_Layer.drawInfo" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL.drawOverride" 
+		"Quetzal_RigRN.placeHolderList[1]" "Quetzal_RigRN.placeHolderList[2]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL.translateX" 
-		"Quetzal_RigRN.placeHolderList[1]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL.translateY" 
-		"Quetzal_RigRN.placeHolderList[2]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL.translateZ" 
 		"Quetzal_RigRN.placeHolderList[3]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL.translateY" 
 		"Quetzal_RigRN.placeHolderList[4]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL.translateZ" 
 		"Quetzal_RigRN.placeHolderList[5]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL.rotateZ" 
-		"Quetzal_RigRN.placeHolderList[6]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL.rotateX" 
-		"Quetzal_RigRN.placeHolderList[7]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL.rotateY" 
+		5 0 "Quetzal_RigRN" "Quetzal_Rig:CNTL_Layer.drawInfo" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL.drawOverride" 
+		"Quetzal_RigRN.placeHolderList[6]" "Quetzal_RigRN.placeHolderList[7]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL.rotateX" 
 		"Quetzal_RigRN.placeHolderList[8]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL.rotateY" 
 		"Quetzal_RigRN.placeHolderList[9]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[10]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL.rotateX" 
 		"Quetzal_RigRN.placeHolderList[11]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL.rotateY" 
 		"Quetzal_RigRN.placeHolderList[12]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[13]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL.rotateX" 
 		"Quetzal_RigRN.placeHolderList[14]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL.rotateY" 
 		"Quetzal_RigRN.placeHolderList[15]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL|Quetzal_Rig:Lower_Jaw_Grp|Quetzal_Rig:Lower_Jaw_CNTL.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[16]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL|Quetzal_Rig:Lower_Jaw_Grp|Quetzal_Rig:Lower_Jaw_CNTL.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL.rotateX" 
 		"Quetzal_RigRN.placeHolderList[17]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL|Quetzal_Rig:Lower_Jaw_Grp|Quetzal_Rig:Lower_Jaw_CNTL.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL.rotateY" 
 		"Quetzal_RigRN.placeHolderList[18]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[19]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL|Quetzal_Rig:Lower_Jaw_Grp|Quetzal_Rig:Lower_Jaw_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[20]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL|Quetzal_Rig:Lower_Jaw_Grp|Quetzal_Rig:Lower_Jaw_CNTL.rotateX" 
 		"Quetzal_RigRN.placeHolderList[21]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:Neck_Grp|Quetzal_Rig:Neck_CNTL|Quetzal_Rig:Head_Grp|Quetzal_Rig:Head_CNTL|Quetzal_Rig:Lower_Jaw_Grp|Quetzal_Rig:Lower_Jaw_CNTL.rotateY" 
 		"Quetzal_RigRN.placeHolderList[22]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL.rotateX" 
 		"Quetzal_RigRN.placeHolderList[23]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL.rotateY" 
 		"Quetzal_RigRN.placeHolderList[24]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1|Quetzal_Rig:R_Wing_Grp2|Quetzal_Rig:R_Wing_CNTL2.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[25]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1|Quetzal_Rig:R_Wing_Grp2|Quetzal_Rig:R_Wing_CNTL2.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1.rotateX" 
 		"Quetzal_RigRN.placeHolderList[26]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1|Quetzal_Rig:R_Wing_Grp2|Quetzal_Rig:R_Wing_CNTL2.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1.rotateY" 
 		"Quetzal_RigRN.placeHolderList[27]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_FeatherBunch_Turn_Grp|Quetzal_Rig:R_FeatherBunch_Turn_Grp.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[28]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_FeatherBunch_Turn_Grp|Quetzal_Rig:R_FeatherBunch_Turn_Grp.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1|Quetzal_Rig:R_Wing_Grp2|Quetzal_Rig:R_Wing_CNTL2.rotateX" 
 		"Quetzal_RigRN.placeHolderList[29]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_FeatherBunch_Turn_Grp|Quetzal_Rig:R_FeatherBunch_Turn_Grp.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1|Quetzal_Rig:R_Wing_Grp2|Quetzal_Rig:R_Wing_CNTL2.rotateY" 
 		"Quetzal_RigRN.placeHolderList[30]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_Wing_Grp1|Quetzal_Rig:R_Wing_CNTL1|Quetzal_Rig:R_Wing_Grp2|Quetzal_Rig:R_Wing_CNTL2.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[31]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_FeatherBunch_Turn_Grp|Quetzal_Rig:R_FeatherBunch_Turn_Grp.rotateX" 
 		"Quetzal_RigRN.placeHolderList[32]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_FeatherBunch_Turn_Grp|Quetzal_Rig:R_FeatherBunch_Turn_Grp.rotateY" 
 		"Quetzal_RigRN.placeHolderList[33]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:R_Wing_Grp|Quetzal_Rig:R_Wing_CNTL|Quetzal_Rig:R_FeatherBunch_Turn_Grp|Quetzal_Rig:R_FeatherBunch_Turn_Grp.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[34]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL.rotateX" 
 		"Quetzal_RigRN.placeHolderList[35]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL.rotateY" 
 		"Quetzal_RigRN.placeHolderList[36]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[37]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1.rotateX" 
 		"Quetzal_RigRN.placeHolderList[38]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1.rotateY" 
 		"Quetzal_RigRN.placeHolderList[39]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[40]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2.rotateX" 
 		"Quetzal_RigRN.placeHolderList[41]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2.rotateY" 
 		"Quetzal_RigRN.placeHolderList[42]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_Wing_Grp1|Quetzal_Rig:L_Wing_CNTL1|Quetzal_Rig:L_Wing_Grp2|Quetzal_Rig:L_Wing_CNTL2.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[43]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL.rotateX" 
 		"Quetzal_RigRN.placeHolderList[44]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL.rotateY" 
 		"Quetzal_RigRN.placeHolderList[45]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Chest_Grp|Quetzal_Rig:Chest_CNTL|Quetzal_Rig:L_Wing_Grp|Quetzal_Rig:L_Wing_CNTL|Quetzal_Rig:L_FeatherBunch_Turn_Grp|Quetzal_Rig:L_FeatherBunch_Turn_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[46]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL.rotateX" 
 		"Quetzal_RigRN.placeHolderList[47]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL.rotateY" 
 		"Quetzal_RigRN.placeHolderList[48]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[49]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL.rotateX" 
 		"Quetzal_RigRN.placeHolderList[50]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL.rotateY" 
 		"Quetzal_RigRN.placeHolderList[51]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[52]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL.rotateX" 
 		"Quetzal_RigRN.placeHolderList[53]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL.rotateY" 
 		"Quetzal_RigRN.placeHolderList[54]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:L_Thigh_Grp|Quetzal_Rig:L_Thigh_CNTL|Quetzal_Rig:L_Knee_Grp|Quetzal_Rig:L_Knee_CNTL|Quetzal_Rig:L_Ankle_Grp|Quetzal_Rig:L_Ankle_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[55]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL.rotateX" 
 		"Quetzal_RigRN.placeHolderList[56]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL.rotateY" 
 		"Quetzal_RigRN.placeHolderList[57]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[58]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL.rotateX" 
 		"Quetzal_RigRN.placeHolderList[59]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL.rotateY" 
 		"Quetzal_RigRN.placeHolderList[60]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[61]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL.rotateX" 
 		"Quetzal_RigRN.placeHolderList[62]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL.rotateY" 
 		"Quetzal_RigRN.placeHolderList[63]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:R_Thigh_Grp|Quetzal_Rig:R_Thigh_CNTL|Quetzal_Rig:R_Knee_Grp|Quetzal_Rig:R_Knee_CNTL|Quetzal_Rig:R_Ankle_Grp|Quetzal_Rig:R_ankle_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[64]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL.rotateX" 
 		"Quetzal_RigRN.placeHolderList[65]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL.rotateY" 
 		"Quetzal_RigRN.placeHolderList[66]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[67]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1.rotateX" 
 		"Quetzal_RigRN.placeHolderList[68]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1.rotateY" 
 		"Quetzal_RigRN.placeHolderList[69]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[70]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2.rotateX" 
 		"Quetzal_RigRN.placeHolderList[71]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3.rotateZ" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2.rotateY" 
 		"Quetzal_RigRN.placeHolderList[72]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3|Quetzal_Rig:Tail_Grp4|Quetzal_Rig:Tail_CNTL4.rotateX" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2.rotateZ" 
 		"Quetzal_RigRN.placeHolderList[73]" ""
-		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3|Quetzal_Rig:Tail_Grp4|Quetzal_Rig:Tail_CNTL4.rotateY" 
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3.rotateX" 
 		"Quetzal_RigRN.placeHolderList[74]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3.rotateY" 
+		"Quetzal_RigRN.placeHolderList[75]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3.rotateZ" 
+		"Quetzal_RigRN.placeHolderList[76]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3|Quetzal_Rig:Tail_Grp4|Quetzal_Rig:Tail_CNTL4.rotateX" 
+		"Quetzal_RigRN.placeHolderList[77]" ""
+		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3|Quetzal_Rig:Tail_Grp4|Quetzal_Rig:Tail_CNTL4.rotateY" 
+		"Quetzal_RigRN.placeHolderList[78]" ""
 		5 4 "Quetzal_RigRN" "|Quetzal_Rig:Transform_Grp|Quetzal_Rig:Transform_CNTL|Quetzal_Rig:COG_Grp|Quetzal_Rig:COG_CNTL|Quetzal_Rig:CNTL|Quetzal_Rig:Root_Grp|Quetzal_Rig:Root_CNTL|Quetzal_Rig:Tail_Grp|Quetzal_Rig:Tail_CNTL|Quetzal_Rig:Tail_Grp1|Quetzal_Rig:Tail_CNTL1|Quetzal_Rig:Tail_Grp2|Quetzal_Rig:Tail_CNTL2|Quetzal_Rig:Tail_Grp3|Quetzal_Rig:Tail_CNTL3|Quetzal_Rig:Tail_Grp4|Quetzal_Rig:Tail_CNTL4.rotateZ" 
-		"Quetzal_RigRN.placeHolderList[75]" "";
+		"Quetzal_RigRN.placeHolderList[79]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode script -n "uiConfigurationScriptNode";
@@ -1095,8 +1102,8 @@ createNode animCurveTA -n "L_Wing_CNTL2_rotateX";
 	rename -uid "B5116B6D-49AB-CACD-2606-FBB113F8371F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 10 5 7 7 5 9 7 13 -29.999999999999996
-		 15 -29.999999999999996 17 -40 21 -6.0000000000000009 25 10;
+	setAttr -s 9 ".ktv[0:8]"  1 10 5 7 7 5 9 7 13 -43 15 -29.999999999999996
+		 17 -40 21 -6.0000000000000009 25 10;
 	setAttr -s 9 ".kit[8]"  1;
 	setAttr -s 9 ".kot[8]"  1;
 	setAttr -s 9 ".kix[8]"  1;
@@ -1129,8 +1136,8 @@ createNode animCurveTA -n "R_Wing_CNTL2_rotateX";
 	rename -uid "B98E04E7-463D-7AEB-5DBF-589CC84D765E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  1 -10 5 -7 7 -5 9 -7 13 29.999999999999996
-		 15 29.999999999999996 17 40 21 6.0000000000000009 25 -10;
+	setAttr -s 9 ".ktv[0:8]"  1 -10 5 -7 7 -5 9 -7 13 43 15 29.999999999999996
+		 17 40 21 6.0000000000000009 25 -10;
 	setAttr -s 9 ".kit[8]"  1;
 	setAttr -s 9 ".kot[8]"  1;
 	setAttr -s 9 ".kix[8]"  1;
@@ -1445,7 +1452,7 @@ createNode animCurveTA -n "R_FeatherBunch_Turn_Grp_rotateX";
 	rename -uid "61E15F70-42B0-C1AD-8DEA-579CB82D8AA2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 -40 5 -46 9 -14 13 70 17 48.000000000000007
+	setAttr -s 7 ".ktv[0:6]"  1 -40 5 -46 9 -14 13 85 17 48.000000000000007
 		 21 4 25 -40;
 	setAttr -s 7 ".kit[6]"  1;
 	setAttr -s 7 ".kot[6]"  1;
@@ -1480,7 +1487,7 @@ createNode animCurveTA -n "L_FeatherBunch_Turn_CNTL_rotateX";
 	rename -uid "3949157B-41CE-AF27-BDE5-2A8EEEAB603D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 40 5 56 9 14 13 -58.786405293178035 17 -48.000000000000007
+	setAttr -s 7 ".ktv[0:6]"  1 40 5 56 9 14 13 -72 17 -48.000000000000007
 		 21 10 25 40;
 	setAttr -s 7 ".kit[6]"  1;
 	setAttr -s 7 ".kot[6]"  1;
@@ -1492,7 +1499,7 @@ createNode animCurveTA -n "L_FeatherBunch_Turn_CNTL_rotateY";
 	rename -uid "BF9E486D-460D-9C0A-DA15-F3B61A41046B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 0 5 0 9 -33.000000000000021 13 1.0000000000000016
+	setAttr -s 7 ".ktv[0:6]"  1 0 5 0 9 -33.000000000000021 13 1.0000000000000022
 		 17 3.1805546814635164e-15 21 8 25 0;
 	setAttr -s 7 ".kit[6]"  1;
 	setAttr -s 7 ".kot[6]"  1;
@@ -1505,7 +1512,7 @@ createNode animCurveTA -n "L_FeatherBunch_Turn_CNTL_rotateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 7 ".ktv[0:6]"  1 0 5 -3.0000000000000004 9 -9.4809416325865683e-16
-		 13 -2.3128463448942376 17 27 21 14.999999999999998 25 0;
+		 13 -2.3128463448942402 17 27 21 14.999999999999998 25 0;
 	setAttr -s 7 ".kit[6]"  1;
 	setAttr -s 7 ".kot[6]"  1;
 	setAttr -s 7 ".kix[6]"  1;
@@ -1649,8 +1656,8 @@ createNode animCurveTA -n "L_Ankle_CNTL_rotateZ";
 	setAttr -s 6 ".kox[5]"  1;
 	setAttr -s 6 ".koy[5]"  0;
 select -ne :time1;
-	setAttr ".o" 15;
-	setAttr ".unw" 15;
+	setAttr ".o" 13;
+	setAttr ".unw" 13;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -1684,81 +1691,83 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".btrs" 512;
 select -ne :ikSystem;
 	setAttr -s 4 ".sol";
-connectAttr "COG_CNTL_translateX.o" "Quetzal_RigRN.phl[1]";
-connectAttr "COG_CNTL_translateY.o" "Quetzal_RigRN.phl[2]";
-connectAttr "COG_CNTL_translateZ.o" "Quetzal_RigRN.phl[3]";
-connectAttr "Root_CNTL_rotateX.o" "Quetzal_RigRN.phl[4]";
-connectAttr "Root_CNTL_rotateY.o" "Quetzal_RigRN.phl[5]";
-connectAttr "Root_CNTL_rotateZ.o" "Quetzal_RigRN.phl[6]";
-connectAttr "Chest_CNTL_rotateX.o" "Quetzal_RigRN.phl[7]";
-connectAttr "Chest_CNTL_rotateY.o" "Quetzal_RigRN.phl[8]";
-connectAttr "Chest_CNTL_rotateZ.o" "Quetzal_RigRN.phl[9]";
-connectAttr "Neck_CNTL_rotateX.o" "Quetzal_RigRN.phl[10]";
-connectAttr "Neck_CNTL_rotateY.o" "Quetzal_RigRN.phl[11]";
-connectAttr "Neck_CNTL_rotateZ.o" "Quetzal_RigRN.phl[12]";
-connectAttr "Head_CNTL_rotateX.o" "Quetzal_RigRN.phl[13]";
-connectAttr "Head_CNTL_rotateY.o" "Quetzal_RigRN.phl[14]";
-connectAttr "Head_CNTL_rotateZ.o" "Quetzal_RigRN.phl[15]";
-connectAttr "Lower_Jaw_CNTL_rotateZ.o" "Quetzal_RigRN.phl[16]";
-connectAttr "Lower_Jaw_CNTL_rotateX.o" "Quetzal_RigRN.phl[17]";
-connectAttr "Lower_Jaw_CNTL_rotateY.o" "Quetzal_RigRN.phl[18]";
-connectAttr "R_Wing_CNTL_rotateX.o" "Quetzal_RigRN.phl[19]";
-connectAttr "R_Wing_CNTL_rotateY.o" "Quetzal_RigRN.phl[20]";
-connectAttr "R_Wing_CNTL_rotateZ.o" "Quetzal_RigRN.phl[21]";
-connectAttr "R_Wing_CNTL1_rotateX.o" "Quetzal_RigRN.phl[22]";
-connectAttr "R_Wing_CNTL1_rotateY.o" "Quetzal_RigRN.phl[23]";
-connectAttr "R_Wing_CNTL1_rotateZ.o" "Quetzal_RigRN.phl[24]";
-connectAttr "R_Wing_CNTL2_rotateX.o" "Quetzal_RigRN.phl[25]";
-connectAttr "R_Wing_CNTL2_rotateY.o" "Quetzal_RigRN.phl[26]";
-connectAttr "R_Wing_CNTL2_rotateZ.o" "Quetzal_RigRN.phl[27]";
-connectAttr "R_FeatherBunch_Turn_Grp_rotateX.o" "Quetzal_RigRN.phl[28]";
-connectAttr "R_FeatherBunch_Turn_Grp_rotateY.o" "Quetzal_RigRN.phl[29]";
-connectAttr "R_FeatherBunch_Turn_Grp_rotateZ.o" "Quetzal_RigRN.phl[30]";
-connectAttr "L_Wing_CNTL_rotateX.o" "Quetzal_RigRN.phl[31]";
-connectAttr "L_Wing_CNTL_rotateY.o" "Quetzal_RigRN.phl[32]";
-connectAttr "L_Wing_CNTL_rotateZ.o" "Quetzal_RigRN.phl[33]";
-connectAttr "L_Wing_CNTL1_rotateX.o" "Quetzal_RigRN.phl[34]";
-connectAttr "L_Wing_CNTL1_rotateY.o" "Quetzal_RigRN.phl[35]";
-connectAttr "L_Wing_CNTL1_rotateZ.o" "Quetzal_RigRN.phl[36]";
-connectAttr "L_Wing_CNTL2_rotateX.o" "Quetzal_RigRN.phl[37]";
-connectAttr "L_Wing_CNTL2_rotateY.o" "Quetzal_RigRN.phl[38]";
-connectAttr "L_Wing_CNTL2_rotateZ.o" "Quetzal_RigRN.phl[39]";
-connectAttr "L_FeatherBunch_Turn_CNTL_rotateX.o" "Quetzal_RigRN.phl[40]";
-connectAttr "L_FeatherBunch_Turn_CNTL_rotateY.o" "Quetzal_RigRN.phl[41]";
-connectAttr "L_FeatherBunch_Turn_CNTL_rotateZ.o" "Quetzal_RigRN.phl[42]";
-connectAttr "L_Thigh_CNTL_rotateX.o" "Quetzal_RigRN.phl[43]";
-connectAttr "L_Thigh_CNTL_rotateY.o" "Quetzal_RigRN.phl[44]";
-connectAttr "L_Thigh_CNTL_rotateZ.o" "Quetzal_RigRN.phl[45]";
-connectAttr "L_Knee_CNTL_rotateX.o" "Quetzal_RigRN.phl[46]";
-connectAttr "L_Knee_CNTL_rotateY.o" "Quetzal_RigRN.phl[47]";
-connectAttr "L_Knee_CNTL_rotateZ.o" "Quetzal_RigRN.phl[48]";
-connectAttr "L_Ankle_CNTL_rotateX.o" "Quetzal_RigRN.phl[49]";
-connectAttr "L_Ankle_CNTL_rotateY.o" "Quetzal_RigRN.phl[50]";
-connectAttr "L_Ankle_CNTL_rotateZ.o" "Quetzal_RigRN.phl[51]";
-connectAttr "R_Thigh_CNTL_rotateX.o" "Quetzal_RigRN.phl[52]";
-connectAttr "R_Thigh_CNTL_rotateY.o" "Quetzal_RigRN.phl[53]";
-connectAttr "R_Thigh_CNTL_rotateZ.o" "Quetzal_RigRN.phl[54]";
-connectAttr "R_Knee_CNTL_rotateX.o" "Quetzal_RigRN.phl[55]";
-connectAttr "R_Knee_CNTL_rotateY.o" "Quetzal_RigRN.phl[56]";
-connectAttr "R_Knee_CNTL_rotateZ.o" "Quetzal_RigRN.phl[57]";
-connectAttr "R_ankle_CNTL_rotateX.o" "Quetzal_RigRN.phl[58]";
-connectAttr "R_ankle_CNTL_rotateY.o" "Quetzal_RigRN.phl[59]";
-connectAttr "R_ankle_CNTL_rotateZ.o" "Quetzal_RigRN.phl[60]";
-connectAttr "Tail_CNTL_rotateX.o" "Quetzal_RigRN.phl[61]";
-connectAttr "Tail_CNTL_rotateY.o" "Quetzal_RigRN.phl[62]";
-connectAttr "Tail_CNTL_rotateZ.o" "Quetzal_RigRN.phl[63]";
-connectAttr "Tail_CNTL1_rotateX.o" "Quetzal_RigRN.phl[64]";
-connectAttr "Tail_CNTL1_rotateY.o" "Quetzal_RigRN.phl[65]";
-connectAttr "Tail_CNTL1_rotateZ.o" "Quetzal_RigRN.phl[66]";
-connectAttr "Tail_CNTL2_rotateX.o" "Quetzal_RigRN.phl[67]";
-connectAttr "Tail_CNTL2_rotateY.o" "Quetzal_RigRN.phl[68]";
-connectAttr "Tail_CNTL2_rotateZ.o" "Quetzal_RigRN.phl[69]";
-connectAttr "Tail_CNTL3_rotateX.o" "Quetzal_RigRN.phl[70]";
-connectAttr "Tail_CNTL3_rotateY.o" "Quetzal_RigRN.phl[71]";
-connectAttr "Tail_CNTL3_rotateZ.o" "Quetzal_RigRN.phl[72]";
-connectAttr "Tail_CNTL4_rotateX.o" "Quetzal_RigRN.phl[73]";
-connectAttr "Tail_CNTL4_rotateY.o" "Quetzal_RigRN.phl[74]";
-connectAttr "Tail_CNTL4_rotateZ.o" "Quetzal_RigRN.phl[75]";
+connectAttr "Quetzal_RigRN.phl[1]" "Quetzal_RigRN.phl[2]";
+connectAttr "COG_CNTL_translateX.o" "Quetzal_RigRN.phl[3]";
+connectAttr "COG_CNTL_translateY.o" "Quetzal_RigRN.phl[4]";
+connectAttr "COG_CNTL_translateZ.o" "Quetzal_RigRN.phl[5]";
+connectAttr "Quetzal_RigRN.phl[6]" "Quetzal_RigRN.phl[7]";
+connectAttr "Root_CNTL_rotateX.o" "Quetzal_RigRN.phl[8]";
+connectAttr "Root_CNTL_rotateY.o" "Quetzal_RigRN.phl[9]";
+connectAttr "Root_CNTL_rotateZ.o" "Quetzal_RigRN.phl[10]";
+connectAttr "Chest_CNTL_rotateX.o" "Quetzal_RigRN.phl[11]";
+connectAttr "Chest_CNTL_rotateY.o" "Quetzal_RigRN.phl[12]";
+connectAttr "Chest_CNTL_rotateZ.o" "Quetzal_RigRN.phl[13]";
+connectAttr "Neck_CNTL_rotateX.o" "Quetzal_RigRN.phl[14]";
+connectAttr "Neck_CNTL_rotateY.o" "Quetzal_RigRN.phl[15]";
+connectAttr "Neck_CNTL_rotateZ.o" "Quetzal_RigRN.phl[16]";
+connectAttr "Head_CNTL_rotateX.o" "Quetzal_RigRN.phl[17]";
+connectAttr "Head_CNTL_rotateY.o" "Quetzal_RigRN.phl[18]";
+connectAttr "Head_CNTL_rotateZ.o" "Quetzal_RigRN.phl[19]";
+connectAttr "Lower_Jaw_CNTL_rotateZ.o" "Quetzal_RigRN.phl[20]";
+connectAttr "Lower_Jaw_CNTL_rotateX.o" "Quetzal_RigRN.phl[21]";
+connectAttr "Lower_Jaw_CNTL_rotateY.o" "Quetzal_RigRN.phl[22]";
+connectAttr "R_Wing_CNTL_rotateX.o" "Quetzal_RigRN.phl[23]";
+connectAttr "R_Wing_CNTL_rotateY.o" "Quetzal_RigRN.phl[24]";
+connectAttr "R_Wing_CNTL_rotateZ.o" "Quetzal_RigRN.phl[25]";
+connectAttr "R_Wing_CNTL1_rotateX.o" "Quetzal_RigRN.phl[26]";
+connectAttr "R_Wing_CNTL1_rotateY.o" "Quetzal_RigRN.phl[27]";
+connectAttr "R_Wing_CNTL1_rotateZ.o" "Quetzal_RigRN.phl[28]";
+connectAttr "R_Wing_CNTL2_rotateX.o" "Quetzal_RigRN.phl[29]";
+connectAttr "R_Wing_CNTL2_rotateY.o" "Quetzal_RigRN.phl[30]";
+connectAttr "R_Wing_CNTL2_rotateZ.o" "Quetzal_RigRN.phl[31]";
+connectAttr "R_FeatherBunch_Turn_Grp_rotateX.o" "Quetzal_RigRN.phl[32]";
+connectAttr "R_FeatherBunch_Turn_Grp_rotateY.o" "Quetzal_RigRN.phl[33]";
+connectAttr "R_FeatherBunch_Turn_Grp_rotateZ.o" "Quetzal_RigRN.phl[34]";
+connectAttr "L_Wing_CNTL_rotateX.o" "Quetzal_RigRN.phl[35]";
+connectAttr "L_Wing_CNTL_rotateY.o" "Quetzal_RigRN.phl[36]";
+connectAttr "L_Wing_CNTL_rotateZ.o" "Quetzal_RigRN.phl[37]";
+connectAttr "L_Wing_CNTL1_rotateX.o" "Quetzal_RigRN.phl[38]";
+connectAttr "L_Wing_CNTL1_rotateY.o" "Quetzal_RigRN.phl[39]";
+connectAttr "L_Wing_CNTL1_rotateZ.o" "Quetzal_RigRN.phl[40]";
+connectAttr "L_Wing_CNTL2_rotateX.o" "Quetzal_RigRN.phl[41]";
+connectAttr "L_Wing_CNTL2_rotateY.o" "Quetzal_RigRN.phl[42]";
+connectAttr "L_Wing_CNTL2_rotateZ.o" "Quetzal_RigRN.phl[43]";
+connectAttr "L_FeatherBunch_Turn_CNTL_rotateX.o" "Quetzal_RigRN.phl[44]";
+connectAttr "L_FeatherBunch_Turn_CNTL_rotateY.o" "Quetzal_RigRN.phl[45]";
+connectAttr "L_FeatherBunch_Turn_CNTL_rotateZ.o" "Quetzal_RigRN.phl[46]";
+connectAttr "L_Thigh_CNTL_rotateX.o" "Quetzal_RigRN.phl[47]";
+connectAttr "L_Thigh_CNTL_rotateY.o" "Quetzal_RigRN.phl[48]";
+connectAttr "L_Thigh_CNTL_rotateZ.o" "Quetzal_RigRN.phl[49]";
+connectAttr "L_Knee_CNTL_rotateX.o" "Quetzal_RigRN.phl[50]";
+connectAttr "L_Knee_CNTL_rotateY.o" "Quetzal_RigRN.phl[51]";
+connectAttr "L_Knee_CNTL_rotateZ.o" "Quetzal_RigRN.phl[52]";
+connectAttr "L_Ankle_CNTL_rotateX.o" "Quetzal_RigRN.phl[53]";
+connectAttr "L_Ankle_CNTL_rotateY.o" "Quetzal_RigRN.phl[54]";
+connectAttr "L_Ankle_CNTL_rotateZ.o" "Quetzal_RigRN.phl[55]";
+connectAttr "R_Thigh_CNTL_rotateX.o" "Quetzal_RigRN.phl[56]";
+connectAttr "R_Thigh_CNTL_rotateY.o" "Quetzal_RigRN.phl[57]";
+connectAttr "R_Thigh_CNTL_rotateZ.o" "Quetzal_RigRN.phl[58]";
+connectAttr "R_Knee_CNTL_rotateX.o" "Quetzal_RigRN.phl[59]";
+connectAttr "R_Knee_CNTL_rotateY.o" "Quetzal_RigRN.phl[60]";
+connectAttr "R_Knee_CNTL_rotateZ.o" "Quetzal_RigRN.phl[61]";
+connectAttr "R_ankle_CNTL_rotateX.o" "Quetzal_RigRN.phl[62]";
+connectAttr "R_ankle_CNTL_rotateY.o" "Quetzal_RigRN.phl[63]";
+connectAttr "R_ankle_CNTL_rotateZ.o" "Quetzal_RigRN.phl[64]";
+connectAttr "Tail_CNTL_rotateX.o" "Quetzal_RigRN.phl[65]";
+connectAttr "Tail_CNTL_rotateY.o" "Quetzal_RigRN.phl[66]";
+connectAttr "Tail_CNTL_rotateZ.o" "Quetzal_RigRN.phl[67]";
+connectAttr "Tail_CNTL1_rotateX.o" "Quetzal_RigRN.phl[68]";
+connectAttr "Tail_CNTL1_rotateY.o" "Quetzal_RigRN.phl[69]";
+connectAttr "Tail_CNTL1_rotateZ.o" "Quetzal_RigRN.phl[70]";
+connectAttr "Tail_CNTL2_rotateX.o" "Quetzal_RigRN.phl[71]";
+connectAttr "Tail_CNTL2_rotateY.o" "Quetzal_RigRN.phl[72]";
+connectAttr "Tail_CNTL2_rotateZ.o" "Quetzal_RigRN.phl[73]";
+connectAttr "Tail_CNTL3_rotateX.o" "Quetzal_RigRN.phl[74]";
+connectAttr "Tail_CNTL3_rotateY.o" "Quetzal_RigRN.phl[75]";
+connectAttr "Tail_CNTL3_rotateZ.o" "Quetzal_RigRN.phl[76]";
+connectAttr "Tail_CNTL4_rotateX.o" "Quetzal_RigRN.phl[77]";
+connectAttr "Tail_CNTL4_rotateY.o" "Quetzal_RigRN.phl[78]";
+connectAttr "Tail_CNTL4_rotateZ.o" "Quetzal_RigRN.phl[79]";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
