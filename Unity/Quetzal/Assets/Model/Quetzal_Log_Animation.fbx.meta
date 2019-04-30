@@ -1,0 +1,755 @@
+fileFormatVersion: 2
+guid: 400876606c7b17a4c9c17ab0dbe2b62b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Quetzal_Rig:Body
+    100004: Quetzal_Rig:Cap
+    100006: Quetzal_Rig:Cap 1
+    100008: Quetzal_Rig:Chest
+    100010: Quetzal_Rig:Chest_CNTL
+    100012: Quetzal_Rig:Chest_Grp
+    100014: Quetzal_Rig:CNTL
+    100016: Quetzal_Rig:COG_CNTL
+    100018: Quetzal_Rig:COG_Grp
+    100020: Quetzal_Rig:FeatherCards
+    100022: Quetzal_Rig:GEO
+    100024: Quetzal_Rig:Head
+    100026: Quetzal_Rig:Head_CNTL
+    100028: Quetzal_Rig:Head_Grp
+    100030: Quetzal_Rig:JNT
+    100032: Quetzal_Rig:joint22
+    100034: Quetzal_Rig:joint23
+    100036: Quetzal_Rig:joint6
+    100038: Quetzal_Rig:L_Ankle_CNTL
+    100040: Quetzal_Rig:L_Ankle_Grp
+    100042: Quetzal_Rig:L_Ankle_JNT
+    100044: Quetzal_Rig:L_B_Claw_CNTL
+    100046: Quetzal_Rig:L_B_Claw_Grp
+    100048: Quetzal_Rig:L_Back_Claw_JNT
+    100050: Quetzal_Rig:L_E_Toe_1_JNT
+    100052: Quetzal_Rig:L_Feather_Grp
+    100054: Quetzal_Rig:L_Feather_Top_Grp
+    100056: Quetzal_Rig:L_Knee_CNTL
+    100058: Quetzal_Rig:L_Knee_Grp
+    100060: Quetzal_Rig:L_Knee_JNT
+    100062: Quetzal_Rig:L_L_Claw_CNTL
+    100064: Quetzal_Rig:L_L_Claw_Grp1
+    100066: Quetzal_Rig:L_M_Clase_Grp
+    100068: Quetzal_Rig:L_M_Claw_CNTL
+    100070: Quetzal_Rig:L_M_Toe_1_JNT
+    100072: Quetzal_Rig:L_R_Claw_CNTL
+    100074: Quetzal_Rig:L_R_Claw_Grp
+    100076: Quetzal_Rig:L_Thigh_CNTL
+    100078: Quetzal_Rig:L_Thigh_Grp
+    100080: Quetzal_Rig:L_Thigh_JNT
+    100082: Quetzal_Rig:L_Toe_1_JNT
+    100084: Quetzal_Rig:L_Wing_1_JNT
+    100086: Quetzal_Rig:L_Wing_2_JNT
+    100088: Quetzal_Rig:L_Wing_3_JNT
+    100090: Quetzal_Rig:L_Wing_CNTL
+    100092: Quetzal_Rig:L_Wing_CNTL1
+    100094: Quetzal_Rig:L_Wing_CNTL2
+    100096: Quetzal_Rig:L_Wing_Grp
+    100098: Quetzal_Rig:L_Wing_Grp1
+    100100: Quetzal_Rig:L_Wing_Grp2
+    100102: Quetzal_Rig:Lower_Jaw_CNTL
+    100104: Quetzal_Rig:Lower_Jaw_Grp
+    100106: Quetzal_Rig:Lower_Jaw_JNT
+    100108: Quetzal_Rig:Neck_CNTL
+    100110: Quetzal_Rig:Neck_Grp
+    100112: Quetzal_Rig:polySurface85
+    100114: Quetzal_Rig:pPlane25
+    100116: Quetzal_Rig:pPlane32
+    100118: Quetzal_Rig:pPlane36
+    100120: Quetzal_Rig:pPlane37
+    100122: Quetzal_Rig:pPlane37 1
+    100124: Quetzal_Rig:pPlane38
+    100126: Quetzal_Rig:pPlane38 1
+    100128: Quetzal_Rig:pPlane39
+    100130: Quetzal_Rig:pPlane40
+    100132: Quetzal_Rig:pPlane40 1
+    100134: Quetzal_Rig:pPlane41
+    100136: Quetzal_Rig:pPlane41 1
+    100138: Quetzal_Rig:pPlane42
+    100140: Quetzal_Rig:pPlane42 1
+    100142: Quetzal_Rig:pPlane43
+    100144: Quetzal_Rig:pPlane43 1
+    100146: Quetzal_Rig:pPlane44
+    100148: Quetzal_Rig:pPlane44 1
+    100150: Quetzal_Rig:pPlane45
+    100152: Quetzal_Rig:pPlane45 1
+    100154: Quetzal_Rig:pPlane46
+    100156: Quetzal_Rig:pPlane46 1
+    100158: Quetzal_Rig:pPlane47
+    100160: Quetzal_Rig:pPlane47 1
+    100162: Quetzal_Rig:pPlane48
+    100164: Quetzal_Rig:pPlane48 1
+    100166: Quetzal_Rig:pPlane49
+    100168: Quetzal_Rig:pPlane49 1
+    100170: Quetzal_Rig:pPlane50
+    100172: Quetzal_Rig:pPlane50 1
+    100174: Quetzal_Rig:pPlane51
+    100176: Quetzal_Rig:pPlane51 1
+    100178: Quetzal_Rig:pPlane52
+    100180: Quetzal_Rig:pPlane52 1
+    100182: Quetzal_Rig:pPlane53
+    100184: Quetzal_Rig:pPlane53 1
+    100186: Quetzal_Rig:pPlane54
+    100188: Quetzal_Rig:pPlane54 1
+    100190: Quetzal_Rig:pPlane55
+    100192: Quetzal_Rig:pPlane55 1
+    100194: Quetzal_Rig:pPlane57
+    100196: Quetzal_Rig:pPlane57 1
+    100198: Quetzal_Rig:pPlane58
+    100200: Quetzal_Rig:pPlane58 1
+    100202: Quetzal_Rig:pPlane59
+    100204: Quetzal_Rig:pPlane59 1
+    100206: Quetzal_Rig:pPlane60
+    100208: Quetzal_Rig:pPlane60 1
+    100210: Quetzal_Rig:pPlane61
+    100212: Quetzal_Rig:pPlane61 1
+    100214: Quetzal_Rig:pPlane62
+    100216: Quetzal_Rig:pPlane62 1
+    100218: Quetzal_Rig:pPlane63
+    100220: Quetzal_Rig:pPlane63 1
+    100222: Quetzal_Rig:pPlane64
+    100224: Quetzal_Rig:pPlane64 1
+    100226: Quetzal_Rig:pPlane65
+    100228: Quetzal_Rig:pPlane65 1
+    100230: Quetzal_Rig:pPlane66
+    100232: Quetzal_Rig:pPlane66 1
+    100234: Quetzal_Rig:pPlane67
+    100236: Quetzal_Rig:pPlane67 1
+    100238: Quetzal_Rig:pPlane68
+    100240: Quetzal_Rig:pPlane68 1
+    100242: Quetzal_Rig:pPlane69
+    100244: Quetzal_Rig:pPlane69 1
+    100246: Quetzal_Rig:pPlane70
+    100248: Quetzal_Rig:pPlane70 1
+    100250: Quetzal_Rig:pPlane71
+    100252: Quetzal_Rig:pPlane71 1
+    100254: Quetzal_Rig:pPlane72
+    100256: Quetzal_Rig:pPlane72 1
+    100258: Quetzal_Rig:pPlane73
+    100260: Quetzal_Rig:pPlane73 1
+    100262: Quetzal_Rig:pSphere1
+    100264: Quetzal_Rig:pSphere2
+    100266: Quetzal_Rig:R_ankle_CNTL
+    100268: Quetzal_Rig:R_Ankle_Grp
+    100270: Quetzal_Rig:R_Ankle_JNT
+    100272: Quetzal_Rig:R_B_Claw_CNTL
+    100274: Quetzal_Rig:R_B_Claw_Grp
+    100276: Quetzal_Rig:R_BackToe0_JNT
+    100278: Quetzal_Rig:R_E_Toe_1_JNT
+    100280: Quetzal_Rig:R_Feather_Grp
+    100282: Quetzal_Rig:R_Feather_Top_Grp
+    100284: Quetzal_Rig:R_Knee_CNTL
+    100286: Quetzal_Rig:R_Knee_Grp
+    100288: Quetzal_Rig:R_Knee_JNT
+    100290: Quetzal_Rig:R_L_Claw_CNTL
+    100292: Quetzal_Rig:R_L_Claw_Grp
+    100294: Quetzal_Rig:R_M_Clase_Grp
+    100296: Quetzal_Rig:R_M_Claw_CNTL
+    100298: Quetzal_Rig:R_M_Toe_1_JNT
+    100300: Quetzal_Rig:R_R_Claw_CNTL
+    100302: Quetzal_Rig:R_R_Claw_Grp
+    100304: Quetzal_Rig:R_Thigh_CNTL
+    100306: Quetzal_Rig:R_Thigh_Grp
+    100308: Quetzal_Rig:R_Thigh_JNT
+    100310: Quetzal_Rig:R_Toe_1_JNT
+    100312: Quetzal_Rig:R_Wing_1_JNT
+    100314: Quetzal_Rig:R_Wing_2_JNT
+    100316: Quetzal_Rig:R_Wing_3_JNT
+    100318: Quetzal_Rig:R_Wing_CNTL
+    100320: Quetzal_Rig:R_Wing_CNTL1
+    100322: Quetzal_Rig:R_Wing_CNTL2
+    100324: Quetzal_Rig:R_Wing_Grp
+    100326: Quetzal_Rig:R_Wing_Grp1
+    100328: Quetzal_Rig:R_Wing_Grp2
+    100330: Quetzal_Rig:Root_CNTL
+    100332: Quetzal_Rig:Root_Grp
+    100334: Quetzal_Rig:Tail
+    100336: Quetzal_Rig:Tail_1_JNT
+    100338: Quetzal_Rig:Tail_2_JNT
+    100340: Quetzal_Rig:Tail_3_JNT
+    100342: Quetzal_Rig:Tail_CNTL
+    100344: Quetzal_Rig:Tail_CNTL1
+    100346: Quetzal_Rig:Tail_CNTL2
+    100348: Quetzal_Rig:Tail_CNTL3
+    100350: Quetzal_Rig:Tail_CNTL4
+    100352: Quetzal_Rig:Tail_Grp
+    100354: Quetzal_Rig:Tail_Grp1
+    100356: Quetzal_Rig:Tail_Grp2
+    100358: Quetzal_Rig:Tail_Grp3
+    100360: Quetzal_Rig:Tail_Grp4
+    100362: Quetzal_Rig:Tip
+    100364: Quetzal_Rig:Tip 1
+    100366: Quetzal_Rig:Transform_CNTL
+    100368: Quetzal_Rig:Transform_Grp
+    100370: Quetzal_Rig:Waist
+    400000: //RootNode
+    400002: Quetzal_Rig:Body
+    400004: Quetzal_Rig:Cap
+    400006: Quetzal_Rig:Cap 1
+    400008: Quetzal_Rig:Chest
+    400010: Quetzal_Rig:Chest_CNTL
+    400012: Quetzal_Rig:Chest_Grp
+    400014: Quetzal_Rig:CNTL
+    400016: Quetzal_Rig:COG_CNTL
+    400018: Quetzal_Rig:COG_Grp
+    400020: Quetzal_Rig:FeatherCards
+    400022: Quetzal_Rig:GEO
+    400024: Quetzal_Rig:Head
+    400026: Quetzal_Rig:Head_CNTL
+    400028: Quetzal_Rig:Head_Grp
+    400030: Quetzal_Rig:JNT
+    400032: Quetzal_Rig:joint22
+    400034: Quetzal_Rig:joint23
+    400036: Quetzal_Rig:joint6
+    400038: Quetzal_Rig:L_Ankle_CNTL
+    400040: Quetzal_Rig:L_Ankle_Grp
+    400042: Quetzal_Rig:L_Ankle_JNT
+    400044: Quetzal_Rig:L_B_Claw_CNTL
+    400046: Quetzal_Rig:L_B_Claw_Grp
+    400048: Quetzal_Rig:L_Back_Claw_JNT
+    400050: Quetzal_Rig:L_E_Toe_1_JNT
+    400052: Quetzal_Rig:L_Feather_Grp
+    400054: Quetzal_Rig:L_Feather_Top_Grp
+    400056: Quetzal_Rig:L_Knee_CNTL
+    400058: Quetzal_Rig:L_Knee_Grp
+    400060: Quetzal_Rig:L_Knee_JNT
+    400062: Quetzal_Rig:L_L_Claw_CNTL
+    400064: Quetzal_Rig:L_L_Claw_Grp1
+    400066: Quetzal_Rig:L_M_Clase_Grp
+    400068: Quetzal_Rig:L_M_Claw_CNTL
+    400070: Quetzal_Rig:L_M_Toe_1_JNT
+    400072: Quetzal_Rig:L_R_Claw_CNTL
+    400074: Quetzal_Rig:L_R_Claw_Grp
+    400076: Quetzal_Rig:L_Thigh_CNTL
+    400078: Quetzal_Rig:L_Thigh_Grp
+    400080: Quetzal_Rig:L_Thigh_JNT
+    400082: Quetzal_Rig:L_Toe_1_JNT
+    400084: Quetzal_Rig:L_Wing_1_JNT
+    400086: Quetzal_Rig:L_Wing_2_JNT
+    400088: Quetzal_Rig:L_Wing_3_JNT
+    400090: Quetzal_Rig:L_Wing_CNTL
+    400092: Quetzal_Rig:L_Wing_CNTL1
+    400094: Quetzal_Rig:L_Wing_CNTL2
+    400096: Quetzal_Rig:L_Wing_Grp
+    400098: Quetzal_Rig:L_Wing_Grp1
+    400100: Quetzal_Rig:L_Wing_Grp2
+    400102: Quetzal_Rig:Lower_Jaw_CNTL
+    400104: Quetzal_Rig:Lower_Jaw_Grp
+    400106: Quetzal_Rig:Lower_Jaw_JNT
+    400108: Quetzal_Rig:Neck_CNTL
+    400110: Quetzal_Rig:Neck_Grp
+    400112: Quetzal_Rig:polySurface85
+    400114: Quetzal_Rig:pPlane25
+    400116: Quetzal_Rig:pPlane32
+    400118: Quetzal_Rig:pPlane36
+    400120: Quetzal_Rig:pPlane37
+    400122: Quetzal_Rig:pPlane37 1
+    400124: Quetzal_Rig:pPlane38
+    400126: Quetzal_Rig:pPlane38 1
+    400128: Quetzal_Rig:pPlane39
+    400130: Quetzal_Rig:pPlane40
+    400132: Quetzal_Rig:pPlane40 1
+    400134: Quetzal_Rig:pPlane41
+    400136: Quetzal_Rig:pPlane41 1
+    400138: Quetzal_Rig:pPlane42
+    400140: Quetzal_Rig:pPlane42 1
+    400142: Quetzal_Rig:pPlane43
+    400144: Quetzal_Rig:pPlane43 1
+    400146: Quetzal_Rig:pPlane44
+    400148: Quetzal_Rig:pPlane44 1
+    400150: Quetzal_Rig:pPlane45
+    400152: Quetzal_Rig:pPlane45 1
+    400154: Quetzal_Rig:pPlane46
+    400156: Quetzal_Rig:pPlane46 1
+    400158: Quetzal_Rig:pPlane47
+    400160: Quetzal_Rig:pPlane47 1
+    400162: Quetzal_Rig:pPlane48
+    400164: Quetzal_Rig:pPlane48 1
+    400166: Quetzal_Rig:pPlane49
+    400168: Quetzal_Rig:pPlane49 1
+    400170: Quetzal_Rig:pPlane50
+    400172: Quetzal_Rig:pPlane50 1
+    400174: Quetzal_Rig:pPlane51
+    400176: Quetzal_Rig:pPlane51 1
+    400178: Quetzal_Rig:pPlane52
+    400180: Quetzal_Rig:pPlane52 1
+    400182: Quetzal_Rig:pPlane53
+    400184: Quetzal_Rig:pPlane53 1
+    400186: Quetzal_Rig:pPlane54
+    400188: Quetzal_Rig:pPlane54 1
+    400190: Quetzal_Rig:pPlane55
+    400192: Quetzal_Rig:pPlane55 1
+    400194: Quetzal_Rig:pPlane57
+    400196: Quetzal_Rig:pPlane57 1
+    400198: Quetzal_Rig:pPlane58
+    400200: Quetzal_Rig:pPlane58 1
+    400202: Quetzal_Rig:pPlane59
+    400204: Quetzal_Rig:pPlane59 1
+    400206: Quetzal_Rig:pPlane60
+    400208: Quetzal_Rig:pPlane60 1
+    400210: Quetzal_Rig:pPlane61
+    400212: Quetzal_Rig:pPlane61 1
+    400214: Quetzal_Rig:pPlane62
+    400216: Quetzal_Rig:pPlane62 1
+    400218: Quetzal_Rig:pPlane63
+    400220: Quetzal_Rig:pPlane63 1
+    400222: Quetzal_Rig:pPlane64
+    400224: Quetzal_Rig:pPlane64 1
+    400226: Quetzal_Rig:pPlane65
+    400228: Quetzal_Rig:pPlane65 1
+    400230: Quetzal_Rig:pPlane66
+    400232: Quetzal_Rig:pPlane66 1
+    400234: Quetzal_Rig:pPlane67
+    400236: Quetzal_Rig:pPlane67 1
+    400238: Quetzal_Rig:pPlane68
+    400240: Quetzal_Rig:pPlane68 1
+    400242: Quetzal_Rig:pPlane69
+    400244: Quetzal_Rig:pPlane69 1
+    400246: Quetzal_Rig:pPlane70
+    400248: Quetzal_Rig:pPlane70 1
+    400250: Quetzal_Rig:pPlane71
+    400252: Quetzal_Rig:pPlane71 1
+    400254: Quetzal_Rig:pPlane72
+    400256: Quetzal_Rig:pPlane72 1
+    400258: Quetzal_Rig:pPlane73
+    400260: Quetzal_Rig:pPlane73 1
+    400262: Quetzal_Rig:pSphere1
+    400264: Quetzal_Rig:pSphere2
+    400266: Quetzal_Rig:R_ankle_CNTL
+    400268: Quetzal_Rig:R_Ankle_Grp
+    400270: Quetzal_Rig:R_Ankle_JNT
+    400272: Quetzal_Rig:R_B_Claw_CNTL
+    400274: Quetzal_Rig:R_B_Claw_Grp
+    400276: Quetzal_Rig:R_BackToe0_JNT
+    400278: Quetzal_Rig:R_E_Toe_1_JNT
+    400280: Quetzal_Rig:R_Feather_Grp
+    400282: Quetzal_Rig:R_Feather_Top_Grp
+    400284: Quetzal_Rig:R_Knee_CNTL
+    400286: Quetzal_Rig:R_Knee_Grp
+    400288: Quetzal_Rig:R_Knee_JNT
+    400290: Quetzal_Rig:R_L_Claw_CNTL
+    400292: Quetzal_Rig:R_L_Claw_Grp
+    400294: Quetzal_Rig:R_M_Clase_Grp
+    400296: Quetzal_Rig:R_M_Claw_CNTL
+    400298: Quetzal_Rig:R_M_Toe_1_JNT
+    400300: Quetzal_Rig:R_R_Claw_CNTL
+    400302: Quetzal_Rig:R_R_Claw_Grp
+    400304: Quetzal_Rig:R_Thigh_CNTL
+    400306: Quetzal_Rig:R_Thigh_Grp
+    400308: Quetzal_Rig:R_Thigh_JNT
+    400310: Quetzal_Rig:R_Toe_1_JNT
+    400312: Quetzal_Rig:R_Wing_1_JNT
+    400314: Quetzal_Rig:R_Wing_2_JNT
+    400316: Quetzal_Rig:R_Wing_3_JNT
+    400318: Quetzal_Rig:R_Wing_CNTL
+    400320: Quetzal_Rig:R_Wing_CNTL1
+    400322: Quetzal_Rig:R_Wing_CNTL2
+    400324: Quetzal_Rig:R_Wing_Grp
+    400326: Quetzal_Rig:R_Wing_Grp1
+    400328: Quetzal_Rig:R_Wing_Grp2
+    400330: Quetzal_Rig:Root_CNTL
+    400332: Quetzal_Rig:Root_Grp
+    400334: Quetzal_Rig:Tail
+    400336: Quetzal_Rig:Tail_1_JNT
+    400338: Quetzal_Rig:Tail_2_JNT
+    400340: Quetzal_Rig:Tail_3_JNT
+    400342: Quetzal_Rig:Tail_CNTL
+    400344: Quetzal_Rig:Tail_CNTL1
+    400346: Quetzal_Rig:Tail_CNTL2
+    400348: Quetzal_Rig:Tail_CNTL3
+    400350: Quetzal_Rig:Tail_CNTL4
+    400352: Quetzal_Rig:Tail_Grp
+    400354: Quetzal_Rig:Tail_Grp1
+    400356: Quetzal_Rig:Tail_Grp2
+    400358: Quetzal_Rig:Tail_Grp3
+    400360: Quetzal_Rig:Tail_Grp4
+    400362: Quetzal_Rig:Tip
+    400364: Quetzal_Rig:Tip 1
+    400366: Quetzal_Rig:Transform_CNTL
+    400368: Quetzal_Rig:Transform_Grp
+    400370: Quetzal_Rig:Waist
+    2100000: Quetzal_Rig_Body1
+    2100002: Quetzal_Rig_Green
+    2100004: Quetzal_Rig_FeatherGreen
+    2100006: Quetzal_Rig_FeatherBlack
+    2100008: Quetzal_Rig_Feather
+    2300000: Quetzal_Rig:pPlane25
+    2300002: Quetzal_Rig:pPlane32
+    2300004: Quetzal_Rig:pPlane36
+    2300006: Quetzal_Rig:pPlane37
+    2300008: Quetzal_Rig:pPlane37 1
+    2300010: Quetzal_Rig:pPlane38
+    2300012: Quetzal_Rig:pPlane38 1
+    2300014: Quetzal_Rig:pPlane39
+    2300016: Quetzal_Rig:pPlane40
+    2300018: Quetzal_Rig:pPlane40 1
+    2300020: Quetzal_Rig:pPlane41
+    2300022: Quetzal_Rig:pPlane41 1
+    2300024: Quetzal_Rig:pPlane42
+    2300026: Quetzal_Rig:pPlane42 1
+    2300028: Quetzal_Rig:pPlane43
+    2300030: Quetzal_Rig:pPlane43 1
+    2300032: Quetzal_Rig:pPlane44
+    2300034: Quetzal_Rig:pPlane44 1
+    2300036: Quetzal_Rig:pPlane45
+    2300038: Quetzal_Rig:pPlane45 1
+    2300040: Quetzal_Rig:pPlane46
+    2300042: Quetzal_Rig:pPlane46 1
+    2300044: Quetzal_Rig:pPlane47
+    2300046: Quetzal_Rig:pPlane47 1
+    2300048: Quetzal_Rig:pPlane48
+    2300050: Quetzal_Rig:pPlane48 1
+    2300052: Quetzal_Rig:pPlane49
+    2300054: Quetzal_Rig:pPlane49 1
+    2300056: Quetzal_Rig:pPlane50
+    2300058: Quetzal_Rig:pPlane50 1
+    2300060: Quetzal_Rig:pPlane51
+    2300062: Quetzal_Rig:pPlane51 1
+    2300064: Quetzal_Rig:pPlane52
+    2300066: Quetzal_Rig:pPlane52 1
+    2300068: Quetzal_Rig:pPlane53
+    2300070: Quetzal_Rig:pPlane53 1
+    2300072: Quetzal_Rig:pPlane54
+    2300074: Quetzal_Rig:pPlane54 1
+    2300076: Quetzal_Rig:pPlane55
+    2300078: Quetzal_Rig:pPlane55 1
+    2300080: Quetzal_Rig:pPlane57
+    2300082: Quetzal_Rig:pPlane57 1
+    2300084: Quetzal_Rig:pPlane58
+    2300086: Quetzal_Rig:pPlane58 1
+    2300088: Quetzal_Rig:pPlane59
+    2300090: Quetzal_Rig:pPlane59 1
+    2300092: Quetzal_Rig:pPlane60
+    2300094: Quetzal_Rig:pPlane60 1
+    2300096: Quetzal_Rig:pPlane61
+    2300098: Quetzal_Rig:pPlane61 1
+    2300100: Quetzal_Rig:pPlane62
+    2300102: Quetzal_Rig:pPlane62 1
+    2300104: Quetzal_Rig:pPlane63
+    2300106: Quetzal_Rig:pPlane63 1
+    2300108: Quetzal_Rig:pPlane64
+    2300110: Quetzal_Rig:pPlane64 1
+    2300112: Quetzal_Rig:pPlane65
+    2300114: Quetzal_Rig:pPlane65 1
+    2300116: Quetzal_Rig:pPlane66
+    2300118: Quetzal_Rig:pPlane66 1
+    2300120: Quetzal_Rig:pPlane67
+    2300122: Quetzal_Rig:pPlane67 1
+    2300124: Quetzal_Rig:pPlane68
+    2300126: Quetzal_Rig:pPlane68 1
+    2300128: Quetzal_Rig:pPlane69
+    2300130: Quetzal_Rig:pPlane69 1
+    2300132: Quetzal_Rig:pPlane70
+    2300134: Quetzal_Rig:pPlane70 1
+    2300136: Quetzal_Rig:pPlane71
+    2300138: Quetzal_Rig:pPlane71 1
+    2300140: Quetzal_Rig:pPlane72
+    2300142: Quetzal_Rig:pPlane72 1
+    2300144: Quetzal_Rig:pPlane73
+    2300146: Quetzal_Rig:pPlane73 1
+    2300148: Quetzal_Rig:pSphere1
+    2300150: Quetzal_Rig:pSphere2
+    3300000: Quetzal_Rig:pPlane25
+    3300002: Quetzal_Rig:pPlane32
+    3300004: Quetzal_Rig:pPlane36
+    3300006: Quetzal_Rig:pPlane37
+    3300008: Quetzal_Rig:pPlane37 1
+    3300010: Quetzal_Rig:pPlane38
+    3300012: Quetzal_Rig:pPlane38 1
+    3300014: Quetzal_Rig:pPlane39
+    3300016: Quetzal_Rig:pPlane40
+    3300018: Quetzal_Rig:pPlane40 1
+    3300020: Quetzal_Rig:pPlane41
+    3300022: Quetzal_Rig:pPlane41 1
+    3300024: Quetzal_Rig:pPlane42
+    3300026: Quetzal_Rig:pPlane42 1
+    3300028: Quetzal_Rig:pPlane43
+    3300030: Quetzal_Rig:pPlane43 1
+    3300032: Quetzal_Rig:pPlane44
+    3300034: Quetzal_Rig:pPlane44 1
+    3300036: Quetzal_Rig:pPlane45
+    3300038: Quetzal_Rig:pPlane45 1
+    3300040: Quetzal_Rig:pPlane46
+    3300042: Quetzal_Rig:pPlane46 1
+    3300044: Quetzal_Rig:pPlane47
+    3300046: Quetzal_Rig:pPlane47 1
+    3300048: Quetzal_Rig:pPlane48
+    3300050: Quetzal_Rig:pPlane48 1
+    3300052: Quetzal_Rig:pPlane49
+    3300054: Quetzal_Rig:pPlane49 1
+    3300056: Quetzal_Rig:pPlane50
+    3300058: Quetzal_Rig:pPlane50 1
+    3300060: Quetzal_Rig:pPlane51
+    3300062: Quetzal_Rig:pPlane51 1
+    3300064: Quetzal_Rig:pPlane52
+    3300066: Quetzal_Rig:pPlane52 1
+    3300068: Quetzal_Rig:pPlane53
+    3300070: Quetzal_Rig:pPlane53 1
+    3300072: Quetzal_Rig:pPlane54
+    3300074: Quetzal_Rig:pPlane54 1
+    3300076: Quetzal_Rig:pPlane55
+    3300078: Quetzal_Rig:pPlane55 1
+    3300080: Quetzal_Rig:pPlane57
+    3300082: Quetzal_Rig:pPlane57 1
+    3300084: Quetzal_Rig:pPlane58
+    3300086: Quetzal_Rig:pPlane58 1
+    3300088: Quetzal_Rig:pPlane59
+    3300090: Quetzal_Rig:pPlane59 1
+    3300092: Quetzal_Rig:pPlane60
+    3300094: Quetzal_Rig:pPlane60 1
+    3300096: Quetzal_Rig:pPlane61
+    3300098: Quetzal_Rig:pPlane61 1
+    3300100: Quetzal_Rig:pPlane62
+    3300102: Quetzal_Rig:pPlane62 1
+    3300104: Quetzal_Rig:pPlane63
+    3300106: Quetzal_Rig:pPlane63 1
+    3300108: Quetzal_Rig:pPlane64
+    3300110: Quetzal_Rig:pPlane64 1
+    3300112: Quetzal_Rig:pPlane65
+    3300114: Quetzal_Rig:pPlane65 1
+    3300116: Quetzal_Rig:pPlane66
+    3300118: Quetzal_Rig:pPlane66 1
+    3300120: Quetzal_Rig:pPlane67
+    3300122: Quetzal_Rig:pPlane67 1
+    3300124: Quetzal_Rig:pPlane68
+    3300126: Quetzal_Rig:pPlane68 1
+    3300128: Quetzal_Rig:pPlane69
+    3300130: Quetzal_Rig:pPlane69 1
+    3300132: Quetzal_Rig:pPlane70
+    3300134: Quetzal_Rig:pPlane70 1
+    3300136: Quetzal_Rig:pPlane71
+    3300138: Quetzal_Rig:pPlane71 1
+    3300140: Quetzal_Rig:pPlane72
+    3300142: Quetzal_Rig:pPlane72 1
+    3300144: Quetzal_Rig:pPlane73
+    3300146: Quetzal_Rig:pPlane73 1
+    3300148: Quetzal_Rig:pSphere1
+    3300150: Quetzal_Rig:pSphere2
+    4300000: Quetzal_Rig:pSphere1
+    4300002: Quetzal_Rig:polySurface85
+    4300004: Quetzal_Rig:pSphere2
+    4300006: Quetzal_Rig:pPlane32
+    4300008: Quetzal_Rig:pPlane25
+    4300010: Quetzal_Rig:pPlane36
+    4300012: Quetzal_Rig:pPlane39
+    4300014: Quetzal_Rig:pPlane46
+    4300016: Quetzal_Rig:pPlane45
+    4300018: Quetzal_Rig:pPlane42
+    4300020: Quetzal_Rig:pPlane41
+    4300022: Quetzal_Rig:pPlane44
+    4300024: Quetzal_Rig:pPlane43
+    4300026: Quetzal_Rig:pPlane47
+    4300028: Quetzal_Rig:pPlane50
+    4300030: Quetzal_Rig:pPlane51
+    4300032: Quetzal_Rig:pPlane48
+    4300034: Quetzal_Rig:pPlane49
+    4300036: Quetzal_Rig:pPlane52
+    4300038: Quetzal_Rig:pPlane54
+    4300040: Quetzal_Rig:pPlane53
+    4300042: Quetzal_Rig:pPlane37
+    4300044: Quetzal_Rig:pPlane40
+    4300046: Quetzal_Rig:pPlane38
+    4300048: Quetzal_Rig:pPlane46
+    4300050: Quetzal_Rig:pPlane45
+    4300052: Quetzal_Rig:pPlane42
+    4300054: Quetzal_Rig:pPlane41
+    4300056: Quetzal_Rig:pPlane44
+    4300058: Quetzal_Rig:pPlane43
+    4300060: Quetzal_Rig:pPlane47
+    4300062: Quetzal_Rig:pPlane50
+    4300064: Quetzal_Rig:pPlane51
+    4300066: Quetzal_Rig:pPlane48
+    4300068: Quetzal_Rig:pPlane49
+    4300070: Quetzal_Rig:pPlane52
+    4300072: Quetzal_Rig:pPlane55
+    4300074: Quetzal_Rig:pPlane54
+    4300076: Quetzal_Rig:pPlane53
+    4300078: Quetzal_Rig:pPlane37
+    4300080: Quetzal_Rig:pPlane40
+    4300082: Quetzal_Rig:pPlane38
+    4300084: Quetzal_Rig:Tail
+    4300086: Quetzal_Rig:pPlane59
+    4300088: Quetzal_Rig:pPlane58
+    4300090: Quetzal_Rig:pPlane64
+    4300092: Quetzal_Rig:pPlane61
+    4300094: Quetzal_Rig:pPlane62
+    4300096: Quetzal_Rig:pPlane63
+    4300098: Quetzal_Rig:pPlane66
+    4300100: Quetzal_Rig:pPlane60
+    4300102: Quetzal_Rig:pPlane65
+    4300104: Quetzal_Rig:pPlane67
+    4300106: Quetzal_Rig:pPlane55
+    4300108: Quetzal_Rig:pPlane73
+    4300110: Quetzal_Rig:pPlane72
+    4300112: Quetzal_Rig:pPlane71
+    4300114: Quetzal_Rig:pPlane70
+    4300116: Quetzal_Rig:pPlane69
+    4300118: Quetzal_Rig:pPlane68
+    4300120: Quetzal_Rig:pPlane57
+    4300122: Quetzal_Rig:pPlane58
+    4300124: Quetzal_Rig:pPlane59
+    4300126: Quetzal_Rig:pPlane60
+    4300128: Quetzal_Rig:pPlane61
+    4300130: Quetzal_Rig:pPlane62
+    4300132: Quetzal_Rig:pPlane63
+    4300134: Quetzal_Rig:pPlane64
+    4300136: Quetzal_Rig:pPlane65
+    4300138: Quetzal_Rig:pPlane67
+    4300140: Quetzal_Rig:pPlane66
+    4300142: Quetzal_Rig:pPlane73
+    4300144: Quetzal_Rig:pPlane72
+    4300146: Quetzal_Rig:pPlane71
+    4300148: Quetzal_Rig:pPlane70
+    4300150: Quetzal_Rig:pPlane69
+    4300152: Quetzal_Rig:pPlane68
+    4300154: Quetzal_Rig:pPlane57
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Quetzal_Rig:polySurface85
+    13700002: Quetzal_Rig:Tail
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Quetzal_Rig_Body1
+    second: {fileID: 2100000, guid: 6af2d54ca5feb234ea91ea47961df6ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Quetzal_Rig_Feather
+    second: {fileID: 2100000, guid: a14c77ae6ea47934abc5aded81e35505, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Quetzal_Rig_FeatherBlack
+    second: {fileID: 2100000, guid: 47ef20fae2927e9469de4819a1811dd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Quetzal_Rig_FeatherGreen
+    second: {fileID: 2100000, guid: 47ef20fae2927e9469de4819a1811dd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Quetzal_Rig_Green
+    second: {fileID: 2100000, guid: 5ebfa315444999e4cbbcb189743ff6c0, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 6
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
